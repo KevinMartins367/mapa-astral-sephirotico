@@ -109,7 +109,6 @@ export class AppComponent {
       },
 
     };
-    console.log(horoscope);
     this.sephiroth_json = JSON.stringify(this.sephiroth);
     this.horoscope_json = horoscope;
     var settings = {COLORS_SIGNS:["#DD0A2D",  "#EE7F3A", "#FD9D24", "#FFB441", "#FFE41A", "#D1E11E", "#0C864B", "#026779", "#086EAE", "#441E69", "#7D2F61", "#BA1851"], MARGIN:80, SYMBOL_SCALE:1, POINTS_TEXT_SIZE:11
