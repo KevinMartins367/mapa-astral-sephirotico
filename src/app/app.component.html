@@ -1,21 +1,366 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="card">
+  <div class="card-content">
+
+    <div class="card-body">
+
+      <div class="card">
+        <div class="card-content">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-2">
+                <label for="date">
+                  Data:
+                </label>
+                <br>
+                <input class="form-control" id="date" type="date" #date>
+              </div>
+              <div class="col-md-2">
+                <label for="date">
+                  Horário:
+                </label>
+                <br>
+                <input class="form-control" type="time" id="time" name="time" #time >
+              </div>
+              <div class="col-md-2">
+                <label for="state">
+                  Estado:
+                </label>
+                <br>
+                <input class="form-control" id="state" type="text" #state>
+              </div>
+              <div class="col-md-2">
+                <label for="city">
+                  Cidade
+                </label>
+                <br>
+                <div class="ng-autocomplete">
+                  <ng-autocomplete
+                    [data]="data"
+                    [searchKeyword]="keyword"
+                    [isLoading]=false
+                    (selected)='selectEvent($event)'
+                    (inputChanged)='onChangeSearch($event, state.value)'
+                    [itemTemplate]="itemTemplate"
+                    [notFoundTemplate]="notFoundTemplate">
+                  </ng-autocomplete>
+
+                  <ng-template #itemTemplate let-item>
+                  <a [innerHTML]="item.name"></a>
+                  </ng-template>
+
+                  <ng-template #notFoundTemplate let-notFound>
+                  <div [innerHTML]="notFound"></div>
+                  </ng-template>
+                  </div>
+              </div>
+              <div class="col-md-2">
+              </div>
+              <div class="col-md-2">
+                <button type="button" class="btn btn-primary" (click)='getInfo(date.value, time.value)'>Produzir</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ng-container *ngIf="sephiroth != ''">
+
+        <div class="card">
+          <div class="card-content">
+
+            <div class="card-body">
+
+              <p>Sol ☉:
+                {{horoscope_json['CelestialBodies']['sun']['Sign']['label']}}
+                {{horoscope_json['CelestialBodies']['sun']['ChartPosition']['Ecliptic']['ArcDegreesFormatted30']}}
+              </p>
+              <p>Ascendente:
+                {{horoscope_json['Ascendant']['Sign']['label']}}
+                {{horoscope_json['Ascendant']['ChartPosition']['Ecliptic']['ArcDegreesFormatted30']}}
+              </p>
+              <p>Lua ☽:
+                {{horoscope_json['CelestialBodies']['moon']['Sign']['label']}}
+                {{horoscope_json['CelestialBodies']['moon']['ChartPosition']['Ecliptic']['ArcDegreesFormatted30']}}
+              </p>
+              <p>Mercúrio ☿:
+                {{horoscope_json['CelestialBodies']['mercury']['Sign']['label']}}
+                {{horoscope_json['CelestialBodies']['mercury']['ChartPosition']['Ecliptic']['ArcDegreesFormatted30']}}
+                <span *ngIf="horoscope_json['CelestialBodies']['mercury']['isRetrograde']">R</span>
+              </p>
+              <p>Vênus ♀:
+                {{horoscope_json['CelestialBodies']['venus']['Sign']['label']}}
+                {{horoscope_json['CelestialBodies']['venus']['ChartPosition']['Ecliptic']['ArcDegreesFormatted30']}}
+                <span *ngIf="horoscope_json['CelestialBodies']['venus']['isRetrograde']">R</span>
+              </p>
+              <p>Marte ♂:
+                {{horoscope_json['CelestialBodies']['mars']['Sign']['label']}}
+                {{horoscope_json['CelestialBodies']['mars']['ChartPosition']['Ecliptic']['ArcDegreesFormatted30']}}
+                <span *ngIf="horoscope_json['CelestialBodies']['mars']['isRetrograde']">R</span>
+              </p>
+              <p>Júpiter ♃:
+                {{horoscope_json['CelestialBodies']['jupiter']['Sign']['label']}}
+                {{horoscope_json['CelestialBodies']['jupiter']['ChartPosition']['Ecliptic']['ArcDegreesFormatted30']}}
+                <span *ngIf="horoscope_json['CelestialBodies']['jupiter']['isRetrograde']">R</span>
+              </p>
+              <p>Saturno ♄:
+                {{horoscope_json['CelestialBodies']['saturn']['Sign']['label']}}
+                {{horoscope_json['CelestialBodies']['saturn']['ChartPosition']['Ecliptic']['ArcDegreesFormatted30']}}
+                <span *ngIf="horoscope_json['CelestialBodies']['saturn']['isRetrograde']">R</span>
+              </p>
+              <p>Urano ♅:
+                {{horoscope_json['CelestialBodies']['uranus']['Sign']['label']}}
+                {{horoscope_json['CelestialBodies']['uranus']['ChartPosition']['Ecliptic']['ArcDegreesFormatted30']}}
+                <span *ngIf="horoscope_json['CelestialBodies']['uranus']['isRetrograde']">R</span>
+              </p>
+              <p>Netuno ♆:
+                {{horoscope_json['CelestialBodies']['neptune']['Sign']['label']}}
+                {{horoscope_json['CelestialBodies']['neptune']['ChartPosition']['Ecliptic']['ArcDegreesFormatted30']}}
+                <span *ngIf="horoscope_json['CelestialBodies']['neptune']['isRetrograde']">R</span>
+              </p>
+              <p>Plutão ♇:
+                {{horoscope_json['CelestialBodies']['pluto']['Sign']['label']}}
+                {{horoscope_json['CelestialBodies']['pluto']['ChartPosition']['Ecliptic']['ArcDegreesFormatted30']}}
+                <span *ngIf="horoscope_json['CelestialBodies']['pluto']['isRetrograde']">R</span>
+              </p>
+              <p>Quíron ⚷:
+                {{horoscope_json['CelestialBodies']['chiron']['Sign']['label']}}
+                {{horoscope_json['CelestialBodies']['chiron']['ChartPosition']['Ecliptic']['ArcDegreesFormatted30']}}
+                <span *ngIf="horoscope_json['CelestialBodies']['chiron']['isRetrograde']">R</span>
+              </p>
+              <p>Sirius:
+                {{horoscope_json['CelestialBodies']['sirius']['Sign']['label']}}
+                {{horoscope_json['CelestialBodies']['sirius']['ChartPosition']['Ecliptic']['ArcDegreesFormatted30']}}
+              </p>
+              <p>Meio do Céu:
+                {{horoscope_json['Midheaven']['Sign']['label']}}
+                {{horoscope_json['Midheaven']['ChartPosition']['Ecliptic']['ArcDegreesFormatted30']}}
+              </p>
+              <p>Nodo Norte ☊:
+                {{horoscope_json['CelestialPoints']['northnode']['Sign']['label']}}
+                {{horoscope_json['CelestialPoints']['northnode']['ChartPosition']['Ecliptic']['ArcDegreesFormatted30']}}
+              </p>
+              <p>Nodo Sul ☋:
+                {{horoscope_json['CelestialPoints']['southnode']['Sign']['label']}}
+                {{horoscope_json['CelestialPoints']['southnode']['ChartPosition']['Ecliptic']['ArcDegreesFormatted30']}}
+              </p>
+              <p>Lilith ⚸:
+                {{horoscope_json['CelestialPoints']['lilith']['Sign']['label']}}
+                {{horoscope_json['CelestialPoints']['lilith']['ChartPosition']['Ecliptic']['ArcDegreesFormatted30']}}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="wrapper">
+
+          <div id="pillarlayers">
+            <div id="boaz" class="pillars_bj">
+              <p>Boaz</p>
+            </div>
+            <div id="jachin" class="pillars_bj">
+              <p>Jachin</p>
+            </div>
+          </div>
+
+          <!-- PILLAR OF SEVERITY -->
+          <div id="pillar_severity" class="pillar">
+            <h1 class="polarity" style="color:red;">+</h1>
+
+            <!-- SEPHIROTH -->
+            <div id="binah" class="sephira" (click)="openLg(content, angel.binah.angel)">
+              <p class="number">3</p>
+              <div class="hebrew">{{angel.binah.angel.angel}}<br />Binah</div>
+              <div class="planets">Saturn <br />♄</div>
+            </div>
+            <div id="geburah" class="sephira" (click)="openLg(content, angel.geburah.angel)">
+              <p class="number">5</p>
+              <div class="hebrew">{{angel.geburah.angel.angel}}<br />Gevurah</div>
+              <div class="planets">Mars<br />♂</div>
+            </div>
+            <div id="hod" class="sephira" (click)="openLg(content, angel.hod.angel)">
+              <p class="number">8</p>
+              <div class="hebrew">{{angel.hod.angel.angel}}<br />Hod</div>
+              <div class="planets">Mercury<br />☿</div>
+            </div>
+            <!-- / SEPHIROTH -->
+
+            <!-- PATHS -->
+            <div id="path_12" class="path">
+              <p class="kircher_hebrew">ב‎‎</p>
+              <p class="path_numbering">12‎‎</p>
+            </div>
+            <div id="path_18" class="path">
+              <p class="kircher_hebrew">ח‎</p>
+              <p class="path_numbering">18‎‎</p>
+            </div>
+            <div id="path_21" class="path">
+              <p class="kircher_hebrew">ל‎</p>
+              <p class="path_numbering">‎‎21</p>
+            </div>
+            <div id="path_23" class="path">
+              <p class="kircher_hebrew">מ‎‎</p>
+              <p class="path_numbering">‎‎23</p>
+            </div>
+            <div id="path_26" class="path">
+              <p class="kircher_hebrew">ע‎</p>
+              <p class="path_numbering">‎‎26</p>
+            </div>
+            <div id="path_30" class="path">
+              <p class="kircher_hebrew">ר‎‎</p>
+              <p class="path_numbering">‎‎30</p>
+            </div>
+            <div id="path_31" class="path">
+              <p class="kircher_hebrew">ש</p>
+              <p class="path_numbering">‎‎31</p>
+            </div>
+
+          </div>
+          <!-- PILLAR OF SEVERITY -->
+
+          <!-- PILLAR OF MILDNESS -->
+          <div id="pillar_mildness" class="pillar">
+
+            <!-- SEPHIROTH -->
+            <div id="kether" class="sephira" (click)="openLg(content, angel.keter.angel)">
+              <p class="number">1</p>
+              <div class="hebrew">{{angel.keter.angel.angel}}<br />Keter</div>
+              <div class="planets">Source<br />✡</div>
+            </div>
+            <div id="daath" class="sephira" >
+              <div class="hebrew">Da'at</div>
+              <div class="english">Wisdom</div>
+            </div>
+            <div id="tiphareth" class="sephira" (click)="openLg(content, angel.tipheret.angel)">
+              <p class="number">6</p>
+              <div class="hebrew">{{angel.tipheret.angel.angel}}<br />Tif'eret</div>
+              <div class="planets">Sun<br />☉</div>
+            </div>
+            <div id="yesod" class="sephira" (click)="openLg(content, angel.yesod.angel)">
+              <p class="number">9</p>
+              <div class="hebrew">{{angel.yesod.angel.angel}}<br />Yesod</div>
+              <div class="planets">Moon<br />☽</div>
+            </div>
+            <div id="malkuth" class="sephira" (click)="openLg(content, angel.malkut.angel)">
+              <p class="number">10</p>
+              <div class="hebrew">{{angel.malkut.angel.angel}}<br />Malkhut</div>
+              <div class="planets">Earth<br />⊕</div>
+            </div>
+            <!-- / SEPHIROTH -->
+
+            <!-- PATHS -->
+            <div id="path_13" class="path">
+              <p class="kircher_hebrew">ג‎</p>
+              <p class="path_numbering">13</p>
+            </div>
+            <div id="path_14" class="path">
+              <p class="kircher_hebrew">ד‎</p>
+              <p class="path_numbering">14</p>
+            </div>
+            <div id="path_15" class="path">
+              <p class="kircher_hebrew">ה</p>
+              <p class="path_numbering">15</p>
+            </div>
+            <div id="path_17" class="path">
+              <p class="kircher_hebrew">ז‎‎</p>
+              <p class="path_numbering">17</p>
+            </div>
+            <div id="path_19" class="path">
+              <p class="kircher_hebrew">ט</p>
+              <p class="path_numbering">19</p>
+            </div>
+            <div id="path_25" class="path">
+              <p class="kircher_hebrew">ם</p>
+              <p class="path_numbering">25</p>
+            </div>
+            <div id="path_27" class="path">
+              <p class="kircher_hebrew">ח</p>
+              <p class="path_numbering">27</p>
+            </div>
+            <div id="path_32" class="path">
+              <p class="kircher_hebrew">ח</p>
+              <p class="path_numbering">32</p>
+            </div>
+          </div>
+          <!-- PILLAR OF MILDNESS -->
+
+          <!-- PILLAR OF MERCY -->
+          <div id="pillar_mercy" class="pillar">
+            <h1 class="polarity" style="color:blue;left:-215px;">-</h1>
+            <div id="chokmah" class="sephira" (click)="openLg(content, angel.chockmah.angel)">
+              <p class="number">2</p>
+              <div class="hebrew">{{angel.chockmah.angel.angel}}<br />Chokmah</div>
+              <div class="planets">Zodiac<br />⛤</div>
+            </div>
+            <div id="chesed" class="sephira" (click)="openLg(content, angel.chesed.angel)">
+              <p class="number">4</p>
+              <div class="hebrew">{{angel.chesed.angel.angel}}<br />Chesed</div>
+              <div class="planets">Jupiter<br />♃</div>
+            </div>
+            <div id="netzach" class="sephira" (click)="openLg(content, angel.netzach.angel)">
+              <p class="number">7</p>
+              <div class="hebrew">{{angel.netzach.angel.angel}}<br />Netzach</div>
+              <div class="planets">Venus<br />♀</div>
+            </div>
+
+            <!-- PATHS -->
+            <div id="path_11" class="path">
+              <p class="kircher_hebrew">א</p>
+              <p class="path_numbering">11</p>
+            </div>
+            <div id="path_16" class="path">
+              <p class="kircher_hebrew">ו‎</p>
+              <p class="path_numbering">16</p>
+            </div>
+            <div id="path_20" class="path">
+              <p class="kircher_hebrew">י‎</p>
+              <p class="path_numbering">20</p>
+            </div>
+            <div id="path_22" class="path">
+              <p class="kircher_hebrew">ב‎</p>
+              <p class="path_numbering">22</p>
+            </div>
+            <div id="path_24" class="path">
+              <p class="kircher_hebrew">נ‎</p>
+              <p class="path_numbering">24</p>
+            </div>
+            <div id="path_28" class="path">
+              <p class="kircher_hebrew">צ‎</p>
+              <p class="path_numbering">28</p>
+            </div>
+            <div id="path_29" class="path">
+              <p class="kircher_hebrew">ק‎‎</p>
+              <p class="path_numbering">29</p>
+            </div>
+
+          </div>
+          <!-- PILLAR OF MERCY -->
+        </div>
+
+      </ng-container>
+    </div>
+
+  </div>
+  <ng-template #content let-modal>
+    <div class="modal-header">
+      <h3 class="modal-title">{{element.id}} - {{element.angel}} - {{element.caste}}</h3>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <h4>Correspondências</h4>
+      <p>Arcano Maior: {{element.major_arcana}}</p>
+      <p>Arcano Menor: {{element.minor_arcana}}</p>
+      <p>Polaridade: {{element.polarity}}</p>
+      <p>Horario: {{element.hour}}</p>
+      <p>{{element.color}}</p>
+      <p>{{element.hebrew_name}}</p>
+      <p>{{element.deamon}}</p>
+      <p>{{element.versiculo}}</p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+    </div>
+  </ng-template>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
 <router-outlet></router-outlet>
