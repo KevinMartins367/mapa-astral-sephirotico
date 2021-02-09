@@ -1,0 +1,135 @@
+[{
+    "kether": {
+        "angel": "",
+        "planeta": "Netuno",
+        "planeta_img": "assets/images/zodiac/neptune.png",
+        "pages_kabbalah_hermetica": "299",
+        "name": "kether",
+        "link_youtube_mdd": "https://www.youtube.com/watch?v=bTKtBlQCWM0",
+        "link_youtube_yair": "https://www.youtube.com/watch?v=LANlldfBxoU",
+        "link_youtube_cdh": "https://www.youtube.com/watch?v=2lBdOTV25x8",
+        "wiki_mdd": "https://wiki.deldebbio.com.br/index.php?title=Kether",
+        "minor_arcana": ["A♣️", "A♥️", "A♠️", "A♦️"]
+    },
+    "chokmah": {
+        "angel": "",
+        "planeta": "Urano",
+        "planeta_img": "assets/images/zodiac/uranus.png",
+        "pages_kabbalah_hermetica": "281",
+        "name": "chokmah",
+        "link_youtube_mdd": "https://www.youtube.com/watch?v=umKZ0LzAY6M",
+        "link_youtube_yair": "",
+        "link_youtube_cdh": "https://www.youtube.com/watch?v=2lBdOTV25x8",
+        "wiki_mdd": "https://wiki.deldebbio.com.br/index.php?title=Hochma",
+        "minor_arcana": ["2♣️", "2♥️", "2♠️", "2♦️", "Rei♣️", "Rei♥️", "Rei♠️", "Rei♦️"]
+    },
+    "binah": {
+        "angel": "",
+        "planeta": "Saturno",
+        "planeta_img": "assets/images/zodiac/saturn.png",
+        "pages_kabbalah_hermetica": "261",
+        "name": "binah",
+        "link_youtube_mdd": "https://www.youtube.com/watch?v=CpKecFjblmk",
+        "link_youtube_yair": "https://www.youtube.com/watch?v=XHfsNTQMtaw",
+        "link_youtube_cdh": "https://www.youtube.com/watch?v=2lBdOTV25x8",
+        "wiki_mdd": "https://wiki.deldebbio.com.br/index.php?title=Binah",
+        "minor_arcana": ["3♣️", "3♥️", "3♠️", "3♦️", "Rainha♣️", "Rainha♥️", "Rainha♠️", "Rainha♦️"]
+    },
+    "daath": {
+        "angel": "",
+        "planeta": "Plutão",
+        "planeta_img": "assets/images/zodiac/pluto.png",
+        "pages_kabbalah_hermetica": "247",
+        "name": "daath",
+        "link_youtube_mdd": "https://www.youtube.com/watch?v=I42VweOnoYI",
+        "link_youtube_yair": "https://www.youtube.com/watch?v=6SGCZq7EiVU",
+        "link_youtube_cdh": "https://www.youtube.com/watch?v=t4GrhlsZpSw",
+        "wiki_mdd": "",
+        "minor_arcana": [""]
+    },
+    "chesed": {
+        "angel": "",
+        "planeta": "Jupiter",
+        "planeta_img": "assets/images/zodiac/jupiter.png",
+        "pages_kabbalah_hermetica": "229",
+        "name": "chesed",
+        "link_youtube_mdd": "https://www.youtube.com/watch?v=P4rcZhYhxtU",
+        "link_youtube_yair": "",
+        "link_youtube_cdh": "https://www.youtube.com/watch?v=t4GrhlsZpSw",
+        "wiki_mdd": "https://wiki.deldebbio.com.br/index.php?title=Chesed",
+        "minor_arcana": ["4♣️", "4♥️", "4♠️", "4♦️"]
+    },
+    "geburah": {
+        "angel": "",
+        "planeta": "Marte",
+        "planeta_img": "assets/images/zodiac/mars.png",
+        "pages_kabbalah_hermetica": "207",
+        "name": "geburah",
+        "link_youtube_mdd": "https://www.youtube.com/watch?v=8GxnwTxP0-4",
+        "link_youtube_yair": "",
+        "link_youtube_cdh": "https://www.youtube.com/watch?v=IN8LVqHMRgY",
+        "wiki_mdd": "https://wiki.deldebbio.com.br/index.php?title=Geburah",
+        "minor_arcana": ["5♣️", "5♥️", "5♠️", "5♦️"]
+    },
+    "tipheret": {
+        "angel": "",
+        "planeta": "Sol",
+        "planeta_img": "assets/images/zodiac/sol.png",
+        "pages_kabbalah_hermetica": "179",
+        "name": "tipheret",
+        "link_youtube_mdd": "https://www.youtube.com/watch?v=eFK76cTGUy4",
+        "link_youtube_yair": "https://www.youtube.com/watch?v=9wqTlNNdp4k",
+        "link_youtube_cdh": "https://www.youtube.com/watch?v=IN8LVqHMRgY",
+        "wiki_mdd": "",
+        "minor_arcana": ["6♣️", "6♥️", "6♠️", "6♦️", "Principe♣️", "Principe♥️", "Principe♠️", "Principe♦️"]
+    },
+    "netzach": {
+        "angel": "",
+        "planeta": "Venus",
+        "planeta_img": "assets/images/zodiac/venus.png",
+        "pages_kabbalah_hermetica": "159",
+        "name": "netzach",
+        "link_youtube_mdd": "https://www.youtube.com/watch?v=0Gnumm4Le8A",
+        "link_youtube_yair": "https://www.youtube.com/watch?v=Rw3jVedBcHc",
+        "link_youtube_cdh": "https://www.youtube.com/watch?v=ac9AYZHh_WY",
+        "wiki_mdd": "https://wiki.deldebbio.com.br/index.php?title=Netzach",
+        "minor_arcana": ["7♣️", "7♥️", "7♠️", "7♦️"]
+    },
+    "hod": {
+        "angel": "",
+        "planeta": "Mercurio",
+        "planeta_img": "assets/images/zodiac/mercury.png",
+        "pages_kabbalah_hermetica": "135",
+        "name": "hod",
+        "link_youtube_mdd": "https://www.youtube.com/watch?v=pmojbbHWuzo",
+        "link_youtube_yair": "https://www.youtube.com/watch?v=Rw3jVedBcHc",
+        "link_youtube_cdh": "https://www.youtube.com/watch?v=ac9AYZHh_WY",
+        "wiki_mdd": "https://wiki.deldebbio.com.br/index.php?title=Hod",
+        "minor_arcana": ["8♣️", "8♥️", "8♠️", "8♦️"]
+    },
+    "yesod": {
+        "angel": "",
+        "planeta": "Lua",
+        "planeta_img": "assets/images/zodiac/luna.png",
+        "pages_kabbalah_hermetica": "113",
+        "name": "yesod",
+        "link_youtube_mdd": "https://www.youtube.com/watch?v=X47sfkJFf5Q",
+        "link_youtube_yair": "",
+        "link_youtube_cdh": "https://www.youtube.com/watch?v=g-KygWshZl0",
+        "wiki_mdd": "https://wiki.deldebbio.com.br/index.php?title=Yesod",
+        "minor_arcana": ["9♣️", "9♥️", "9♠️", "9♦️"]
+    },
+    "malkuth": {
+        "angel": "",
+        "planeta": "Terra",
+        "planeta_img": "assets/images/zodiac/earth.png",
+        "pages_kabbalah_hermetica": "97",
+        "name": "malkuth",
+        "link_youtube_mdd": "https://www.youtube.com/watch?v=mJUdTS_C5L8",
+        "link_youtube_yair": "",
+        "link_youtube_cdh": "https://www.youtube.com/watch?v=g-KygWshZl0",
+        "wiki_mdd": "https://wiki.deldebbio.com.br/index.php?title=Malkuth",
+        "minor_arcana": ["10♣️", "10♥️", "10♠️", "10♦️", "Princesa♣️", "Princesa♥️", "Princesa♠️", "Princesa♦️"]
+    }
+
+}]
