@@ -675,7 +675,7 @@
                         </li>
                         <li *ngIf="infos.carta.name_angel !=''">Anjos:
                           <ng-container *ngFor="let angel of infos.carta.name_angel">
-                            &nbsp; <a [href]="'/?angel_name='+ angel" target="_blank" rel="noopener noreferrer">{{angel}}</a>
+                            &nbsp; <a [href]="'/mapa-astral-sephirotico/?angel_name='+ angel" target="_blank" rel="noopener noreferrer">{{angel}}</a>
                           </ng-container>
                         </li>
                         <li *ngIf="infos.carta.planeta !=''">Planeta: {{infos.carta.planeta}}
@@ -755,12 +755,12 @@
 
                           <ul>
                             <li *ngIf="infos.sephiroth.angel.major_arcana[0] !=''">Arcano Maior:
-                              <a [href]="'/?major_arcana=' + infos.sephiroth.angel.major_arcana[0]" target="_blank" rel="noopener noreferrer">
+                              <a [href]="'/mapa-astral-sephirotico/?major_arcana=' + infos.sephiroth.angel.major_arcana[0]" target="_blank" rel="noopener noreferrer">
                                 {{infos.sephiroth.angel.major_arcana[0]}}
                               </a>
                             </li>
                             <li *ngIf="infos.sephiroth.angel.minor_arcana[0] !=''">Arcano Menor:
-                              <a [href]="'/?minor_arcana=' + infos.sephiroth.angel.minor_arcana[0]" target="_blank" rel="noopener noreferrer">
+                              <a [href]="'/mapa-astral-sephirotico/?minor_arcana=' + infos.sephiroth.angel.minor_arcana[0]" target="_blank" rel="noopener noreferrer">
                                 {{infos.sephiroth.angel.minor_arcana[0]}}
                               </a>
                             </li>
@@ -812,7 +812,7 @@
 
                                 <li *ngIf="carta.name_angel !=''">Anjos:
                                   <ng-container *ngFor="let angels of card.name_angel">
-                                    &nbsp; <a [href]="'/?angel_name='+ angels" target="_blank" rel="noopener noreferrer">{{angels}}</a>
+                                    &nbsp; <a [href]="'/mapa-astral-sephirotico/?angel_name='+ angels" target="_blank" rel="noopener noreferrer">{{angels}}</a>
                                   </ng-container>
                                 </li>
                                 <li *ngIf="card.astrologica !=''">Correspondente
@@ -897,12 +897,12 @@
 
                       <ul>
                         <li *ngIf="infos.angel.major_arcana[0] !=''">Arcano Maior:
-                          <a [href]="'/?major_arcana=' + infos.angel.major_arcana[0]" target="_blank" rel="noopener noreferrer">
+                          <a [href]="'/mapa-astral-sephirotico/?major_arcana=' + infos.angel.major_arcana[0]" target="_blank" rel="noopener noreferrer">
                             {{infos.angel.major_arcana[0]}}
                           </a>
                         </li>
                         <li *ngIf="infos.angel.minor_arcana[0] !=''">Arcano Menor:
-                          <a [href]="'/?minor_arcana=' + infos.angel.minor_arcana[0]" target="_blank" rel="noopener noreferrer">
+                          <a [href]="'/mapa-astral-sephirotico/?minor_arcana=' + infos.angel.minor_arcana[0]" target="_blank" rel="noopener noreferrer">
                             {{infos.angel.minor_arcana[0]}}
                           </a>
                         </li>
