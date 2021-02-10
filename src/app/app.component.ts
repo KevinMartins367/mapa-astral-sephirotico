@@ -107,7 +107,10 @@ export class AppComponent {
     this.infos.carta = "";
     this.infos.sephiroth = "";
     this.cards_mijor = [];
-    this.sefira[0][name].minor_arcana = this.sefira[0][name].minor_arcana.map((card: any) => this.getMinor_arcana(card, true));
+    if (name != 'daath') {
+      this.sefira[0][name].minor_arcana = this.sefira[0][name].minor_arcana.map((card: any) => this.getMinor_arcana(card, true));
+
+    }
 
     this.infos.sephiroth = this.sefira[0][name];
 
