@@ -1,36 +1,18 @@
-.toolbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    z-index: 100000;
-    display: flex;
-    align-items: center;
-    background-color: #1976d2;
-    color: white;
-    font-weight: 600;
+
+.navbar .name {
+  padding-left: 25px !important;
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 }
 
-.toolbar img {
-    margin: 0 16px;
-}
-
-.toolbar #github-logo {
+.navbar #github-logo {
     height: 40px;
     margin: 0 16px;
 }
 
-.toolbar #github-logo:hover {
+.navbar #github-logo:hover {
     opacity: 0.8;
-}
-
-.spacer {
-    flex: 0.9;
-}
-
-.content-wrapper {
-    padding-top: 80px;
 }
 
 footer {
@@ -51,10 +33,28 @@ svg {
     height: 1110px;
     border-radius: 10px;
     background: linear-gradient(#000080, #b30000);
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 1300px) {
         resize: both;
         overflow: auto;
+        ::-webkit-scrollbar {
+          display: none;
+        }
     }
+}
+
+.paper {
+  @media only screen and (max-width: 1300px) {
+      resize: both;
+      overflow: auto;
+  }
+}
+
+
+.ng-autocomplete {
+  width: 240px;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
 }
 
 .veu-abismo {
@@ -92,7 +92,6 @@ svg {
     box-sizing: content-box !important;
     position: absolute;
     top: 5px;
-    left: 10px;
     width: 475px;
     height: inherit;
 }

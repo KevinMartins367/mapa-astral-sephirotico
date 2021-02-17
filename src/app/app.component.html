@@ -1,960 +1,1034 @@
-<div class="toolbar" role="banner">
-  <img width="40" alt="Kevin Martins" class="rounded-circle img-fluid"
-    src="assets/images/kevin_maritns.jpg" />
-  <span>{{title}}</span>
-  <div class="spacer"></div>
-  <a class="btn btn-link text-white text-center" target="_blank" rel="noopener"
-    href="https://github.com/KevinMartins367" title="github">
-    <i class="bi bi-github" height="36"></i>
-  </a>
-</div>
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+
+  <div class=" justify-content-start m-3">
+    <a class="navbar-brand" href="https://github.com/KevinMartins367/">
+    <img width="40" alt="Kevin Martins" class="rounded-circle img-fluid d-inline-block align-top" src="assets/images/kevin_maritns.jpg" /> <span class="name">  {{title}}</span>
+    </a>
+
+  </div>
+  <button class="navbar-toggler m-3" type="button" data-bs-toggle="collapse" (click)="mobile= !mobile" [attr.aria-expanded]="!mobile" data-target="#navbarSupportedContent" >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-end m-3" [ngbCollapse]="!mobile" id="navbarSupportedContent">
+
+    <form class="form-inline">
+      <div class="input-group">
+        <input class="form-control mr-sm-2" type="search" id="search" placeholder="Arcanos, Anjos, Sephiroth" aria-label="Search">
+        <a class="btn btn-outline-success my-2 my-sm-0" type="button" (href)="">Pesquisar</a>
+      </div>
+    </form>
+    <div class="name">
+      <a class="btn btn-link text-white text-center" target="_blank" rel="noopener" href="https://github.com/KevinMartins367" title="github">
+        <i class="bi bi-github" height="36"></i>
+      </a>
+    </div>
+  </div>
+
+</nav>
+
 <div class="container-fluid">
-  <div class="content-wrapper">
 
-    <div class="row">
-      <div class="col-md-12">
-        <div class="card mb-3">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-md-2 col-sm-12">
-                <div class="input-group mb-3">
-                  <span class="input-group-text" id="basic-addon1">
-                    <img src="assets/images/zodiac/sol.png">
-                  </span>
-                  <select class="form-select" id="select_sol"
-                    aria-label="Default select example">
-                    <option selected>Signo</option>
-                    <option value="aries">Ares</option>
-                    <option value="taurus">Touro</option>
-                    <option value="gemini">Gêmeos</option>
-                    <option value="cancer">Câncer</option>
-                    <option value="leo">Leão</option>
-                    <option value="virgo">Virgem</option>
-                    <option value="libra">Libra</option>
-                    <option value="scorpio">Escorpião</option>
-                    <option value="sagittarius">Sagitário</option>
-                    <option value="capricorn">Capricórnio</option>
-                    <option value="aquarius">Aquário</option>
-                    <option value="pisces">Peixes</option>
-                  </select>
-                  <input type="number" id="graus_sol" placeholder="Graus"
-                    aria-label="Graus" class="form-control">
-                </div>
-              </div>
-              <div class="col-md-2 col-sm-12">
-                <div class="input-group mb-3">
-                  <span class="input-group-text" id="basic-addon1">
-                    <img src="assets/images/zodiac/luna.png">
-                  </span>
+  <div class="row m-3">
+    <div class="col-md-12">
+      <div class="card mb-3">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-2">
+              <label for="date">
+                Data:
+              </label>
+              <br>
+              <input class="form-control" id="date" type="date" #date>
+            </div>
+            <div class="col-md-2">
+              <label for="date">
+                Horário:
+              </label>
+              <br>
+              <input class="form-control" type="time" id="time" name="time" #time >
+            </div>
+            <div class="col-md-2">
+              <label for="state">
+                Estado:
+              </label>
+              <br>
+              <input class="form-control" id="state" type="text" #state>
+            </div>
+            <div class="col-md-2 mb-3">
+              <label for="city">
+                Cidade
+              </label>
+              <br>
+              <div class="ng-autocomplete">
+                <ng-autocomplete
+                  [data]="data"
+                  [searchKeyword]="keyword"
+                  [isLoading]=false
+                  (selected)='selectEvent($event)'
+                  (inputChanged)='onChangeSearch($event, state.value)'
+                  [itemTemplate]="itemTemplate"
+                  [notFoundTemplate]="notFoundTemplate">
+                </ng-autocomplete>
 
-                  <select class="form-select" id="select_luna"
-                    aria-label="Default select example">
-                    <option selected>Signo</option>
-                    <option value="aries">Ares</option>
-                    <option value="taurus">Touro</option>
-                    <option value="gemini">Gêmeos</option>
-                    <option value="cancer">Câncer</option>
-                    <option value="leo">Leão</option>
-                    <option value="virgo">Virgem</option>
-                    <option value="libra">Libra</option>
-                    <option value="scorpio">Escorpião</option>
-                    <option value="sagittarius">Sagitário</option>
-                    <option value="capricorn">Capricórnio</option>
-                    <option value="aquarius">Aquário</option>
-                    <option value="pisces">Peixes</option>
-                  </select>
-                  <input type="number" id="graus_luna" placeholder="Graus"
-                    aria-label="Graus" class="form-control">
-                </div>
-              </div>
-              <div class="col-md-2 col-sm-12">
-                <div class="input-group mb-3">
-                  <span class="input-group-text" id="basic-addon1">
-                    <img src="assets/images/zodiac/mercury.png">
-                  </span>
+                  <ng-template #itemTemplate let-item>
+                  <a [innerHTML]="item.name"></a>
+                  </ng-template>
 
-                  <select class="form-select" id="select_mercury"
-                    aria-label="Default select example">
-                    <option selected>Signo</option>
-                    <option value="aries">Ares</option>
-                    <option value="taurus">Touro</option>
-                    <option value="gemini">Gêmeos</option>
-                    <option value="cancer">Câncer</option>
-                    <option value="leo">Leão</option>
-                    <option value="virgo">Virgem</option>
-                    <option value="libra">Libra</option>
-                    <option value="scorpio">Escorpião</option>
-                    <option value="sagittarius">Sagitário</option>
-                    <option value="capricorn">Capricórnio</option>
-                    <option value="aquarius">Aquário</option>
-                    <option value="pisces">Peixes</option>
-                  </select>
-                  <input type="number" id="graus_mercury" placeholder="Graus"
-                    aria-label="Graus" class="form-control">
-                </div>
+                  <ng-template #notFoundTemplate let-notFound>
+                  <div [innerHTML]="notFound"></div>
+                  </ng-template>
               </div>
-              <div class="col-md-2 col-sm-12">
-                <div class="input-group mb-3">
-                  <span class="input-group-text" id="basic-addon1">
-                    <img src="assets/images/zodiac/venus.png">
-                  </span>
+            </div>
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-2 text-center">
+              <button type="button" class="btn btn-primary mt-3" (click)='getInfo()'>Produzir</button>
+            </div>
+            <!-- <div class="col-md-2 col-sm-12">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <img src="assets/images/zodiac/sol.png">
+                </span>
+                <select class="form-select" id="select_sol"
+                  aria-label="Default select example">
+                  <option selected>Signo</option>
+                  <option value="aries">Ares</option>
+                  <option value="taurus">Touro</option>
+                  <option value="gemini">Gêmeos</option>
+                  <option value="cancer">Câncer</option>
+                  <option value="leo">Leão</option>
+                  <option value="virgo">Virgem</option>
+                  <option value="libra">Libra</option>
+                  <option value="scorpio">Escorpião</option>
+                  <option value="sagittarius">Sagitário</option>
+                  <option value="capricorn">Capricórnio</option>
+                  <option value="aquarius">Aquário</option>
+                  <option value="pisces">Peixes</option>
+                </select>
+                <input type="number" id="graus_sol" placeholder="Graus"
+                  aria-label="Graus" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <img src="assets/images/zodiac/luna.png">
+                </span>
 
-                  <select class="form-select" id="select_venus"
-                    aria-label="Default select example">
-                    <option selected>Signo</option>
-                    <option value="aries">Ares</option>
-                    <option value="taurus">Touro</option>
-                    <option value="gemini">Gêmeos</option>
-                    <option value="cancer">Câncer</option>
-                    <option value="leo">Leão</option>
-                    <option value="virgo">Virgem</option>
-                    <option value="libra">Libra</option>
-                    <option value="scorpio">Escorpião</option>
-                    <option value="sagittarius">Sagitário</option>
-                    <option value="capricorn">Capricórnio</option>
-                    <option value="aquarius">Aquário</option>
-                    <option value="pisces">Peixes</option>
-                  </select>
-                  <input type="number" id="graus_venus" placeholder="Graus"
-                    aria-label="Graus" class="form-control">
-                </div>
+                <select class="form-select" id="select_luna"
+                  aria-label="Default select example">
+                  <option selected>Signo</option>
+                  <option value="aries">Ares</option>
+                  <option value="taurus">Touro</option>
+                  <option value="gemini">Gêmeos</option>
+                  <option value="cancer">Câncer</option>
+                  <option value="leo">Leão</option>
+                  <option value="virgo">Virgem</option>
+                  <option value="libra">Libra</option>
+                  <option value="scorpio">Escorpião</option>
+                  <option value="sagittarius">Sagitário</option>
+                  <option value="capricorn">Capricórnio</option>
+                  <option value="aquarius">Aquário</option>
+                  <option value="pisces">Peixes</option>
+                </select>
+                <input type="number" id="graus_luna" placeholder="Graus"
+                  aria-label="Graus" class="form-control">
               </div>
-              <div class="col-md-2 col-sm-12">
-                <div class="input-group mb-3">
-                  <span class="input-group-text" id="basic-addon1">
-                    <img src="assets/images/zodiac/mars.png">
-                  </span>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <img src="assets/images/zodiac/mercury.png">
+                </span>
 
-                  <select class="form-select" id="select_mars"
-                    aria-label="Default select example">
-                    <option selected>Signo</option>
-                    <option value="aries">Ares</option>
-                    <option value="taurus">Touro</option>
-                    <option value="gemini">Gêmeos</option>
-                    <option value="cancer">Câncer</option>
-                    <option value="leo">Leão</option>
-                    <option value="virgo">Virgem</option>
-                    <option value="libra">Libra</option>
-                    <option value="scorpio">Escorpião</option>
-                    <option value="sagittarius">Sagitário</option>
-                    <option value="capricorn">Capricórnio</option>
-                    <option value="aquarius">Aquário</option>
-                    <option value="pisces">Peixes</option>
-                  </select>
-                  <input type="number" id="graus_mars" placeholder="Graus"
-                    aria-label="Graus" class="form-control">
-                </div>
+                <select class="form-select" id="select_mercury"
+                  aria-label="Default select example">
+                  <option selected>Signo</option>
+                  <option value="aries">Ares</option>
+                  <option value="taurus">Touro</option>
+                  <option value="gemini">Gêmeos</option>
+                  <option value="cancer">Câncer</option>
+                  <option value="leo">Leão</option>
+                  <option value="virgo">Virgem</option>
+                  <option value="libra">Libra</option>
+                  <option value="scorpio">Escorpião</option>
+                  <option value="sagittarius">Sagitário</option>
+                  <option value="capricorn">Capricórnio</option>
+                  <option value="aquarius">Aquário</option>
+                  <option value="pisces">Peixes</option>
+                </select>
+                <input type="number" id="graus_mercury" placeholder="Graus"
+                  aria-label="Graus" class="form-control">
               </div>
-              <div class="col-md-2 col-sm-12">
-                <div class="input-group mb-3">
-                  <span class="input-group-text" id="basic-addon1">
-                    <img src="assets/images/zodiac/jupiter.png">
-                  </span>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <img src="assets/images/zodiac/venus.png">
+                </span>
 
-                  <select class="form-select" id="select_jupiter"
-                    aria-label="Default select example">
-                    <option selected>Signo</option>
-                    <option value="aries">Ares</option>
-                    <option value="taurus">Touro</option>
-                    <option value="gemini">Gêmeos</option>
-                    <option value="cancer">Câncer</option>
-                    <option value="leo">Leão</option>
-                    <option value="virgo">Virgem</option>
-                    <option value="libra">Libra</option>
-                    <option value="scorpio">Escorpião</option>
-                    <option value="sagittarius">Sagitário</option>
-                    <option value="capricorn">Capricórnio</option>
-                    <option value="aquarius">Aquário</option>
-                    <option value="pisces">Peixes</option>
-                  </select>
-                  <input type="number" id="graus_jupiter" placeholder="Graus"
-                    aria-label="Graus" class="form-control">
-                </div>
+                <select class="form-select" id="select_venus"
+                  aria-label="Default select example">
+                  <option selected>Signo</option>
+                  <option value="aries">Ares</option>
+                  <option value="taurus">Touro</option>
+                  <option value="gemini">Gêmeos</option>
+                  <option value="cancer">Câncer</option>
+                  <option value="leo">Leão</option>
+                  <option value="virgo">Virgem</option>
+                  <option value="libra">Libra</option>
+                  <option value="scorpio">Escorpião</option>
+                  <option value="sagittarius">Sagitário</option>
+                  <option value="capricorn">Capricórnio</option>
+                  <option value="aquarius">Aquário</option>
+                  <option value="pisces">Peixes</option>
+                </select>
+                <input type="number" id="graus_venus" placeholder="Graus"
+                  aria-label="Graus" class="form-control">
               </div>
-              <div class="col-md-2 col-sm-12">
-                <div class="input-group mb-3">
-                  <span class="input-group-text" id="basic-addon1">
-                    <img src="assets/images/zodiac/saturn.png">
-                  </span>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <img src="assets/images/zodiac/mars.png">
+                </span>
 
-                  <select class="form-select" id="select_saturn"
-                    aria-label="Default select example">
-                    <option selected>Signo</option>
-                    <option value="aries">Ares</option>
-                    <option value="taurus">Touro</option>
-                    <option value="gemini">Gêmeos</option>
-                    <option value="cancer">Câncer</option>
-                    <option value="leo">Leão</option>
-                    <option value="virgo">Virgem</option>
-                    <option value="libra">Libra</option>
-                    <option value="scorpio">Escorpião</option>
-                    <option value="sagittarius">Sagitário</option>
-                    <option value="capricorn">Capricórnio</option>
-                    <option value="aquarius">Aquário</option>
-                    <option value="pisces">Peixes</option>
-                  </select>
-                  <input type="number" id="graus_saturn" placeholder="Graus"
-                    aria-label="Graus" class="form-control">
-                </div>
+                <select class="form-select" id="select_mars"
+                  aria-label="Default select example">
+                  <option selected>Signo</option>
+                  <option value="aries">Ares</option>
+                  <option value="taurus">Touro</option>
+                  <option value="gemini">Gêmeos</option>
+                  <option value="cancer">Câncer</option>
+                  <option value="leo">Leão</option>
+                  <option value="virgo">Virgem</option>
+                  <option value="libra">Libra</option>
+                  <option value="scorpio">Escorpião</option>
+                  <option value="sagittarius">Sagitário</option>
+                  <option value="capricorn">Capricórnio</option>
+                  <option value="aquarius">Aquário</option>
+                  <option value="pisces">Peixes</option>
+                </select>
+                <input type="number" id="graus_mars" placeholder="Graus"
+                  aria-label="Graus" class="form-control">
               </div>
-              <div class="col-md-2 col-sm-12">
-                <div class="input-group mb-3">
-                  <span class="input-group-text" id="basic-addon1">
-                    <img src="assets/images/zodiac/uranus.png">
-                  </span>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <img src="assets/images/zodiac/jupiter.png">
+                </span>
 
-                  <select class="form-select" id="select_uranus"
-                    aria-label="Default select example">
-                    <option selected>Signo</option>
-                    <option value="aries">Ares</option>
-                    <option value="taurus">Touro</option>
-                    <option value="gemini">Gêmeos</option>
-                    <option value="cancer">Câncer</option>
-                    <option value="leo">Leão</option>
-                    <option value="virgo">Virgem</option>
-                    <option value="libra">Libra</option>
-                    <option value="scorpio">Escorpião</option>
-                    <option value="sagittarius">Sagitário</option>
-                    <option value="capricorn">Capricórnio</option>
-                    <option value="aquarius">Aquário</option>
-                    <option value="pisces">Peixes</option>
-                  </select>
-                  <input type="number" id="graus_uranus" placeholder="Graus"
-                    aria-label="Graus" class="form-control">
-                </div>
+                <select class="form-select" id="select_jupiter"
+                  aria-label="Default select example">
+                  <option selected>Signo</option>
+                  <option value="aries">Ares</option>
+                  <option value="taurus">Touro</option>
+                  <option value="gemini">Gêmeos</option>
+                  <option value="cancer">Câncer</option>
+                  <option value="leo">Leão</option>
+                  <option value="virgo">Virgem</option>
+                  <option value="libra">Libra</option>
+                  <option value="scorpio">Escorpião</option>
+                  <option value="sagittarius">Sagitário</option>
+                  <option value="capricorn">Capricórnio</option>
+                  <option value="aquarius">Aquário</option>
+                  <option value="pisces">Peixes</option>
+                </select>
+                <input type="number" id="graus_jupiter" placeholder="Graus"
+                  aria-label="Graus" class="form-control">
               </div>
-              <div class="col-md-2 col-sm-12">
-                <div class="input-group mb-3">
-                  <span class="input-group-text" id="basic-addon1">
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <img src="assets/images/zodiac/saturn.png">
+                </span>
+
+                <select class="form-select" id="select_saturn"
+                  aria-label="Default select example">
+                  <option selected>Signo</option>
+                  <option value="aries">Ares</option>
+                  <option value="taurus">Touro</option>
+                  <option value="gemini">Gêmeos</option>
+                  <option value="cancer">Câncer</option>
+                  <option value="leo">Leão</option>
+                  <option value="virgo">Virgem</option>
+                  <option value="libra">Libra</option>
+                  <option value="scorpio">Escorpião</option>
+                  <option value="sagittarius">Sagitário</option>
+                  <option value="capricorn">Capricórnio</option>
+                  <option value="aquarius">Aquário</option>
+                  <option value="pisces">Peixes</option>
+                </select>
+                <input type="number" id="graus_saturn" placeholder="Graus"
+                  aria-label="Graus" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <img src="assets/images/zodiac/uranus.png">
+                </span>
+
+                <select class="form-select" id="select_uranus"
+                  aria-label="Default select example">
+                  <option selected>Signo</option>
+                  <option value="aries">Ares</option>
+                  <option value="taurus">Touro</option>
+                  <option value="gemini">Gêmeos</option>
+                  <option value="cancer">Câncer</option>
+                  <option value="leo">Leão</option>
+                  <option value="virgo">Virgem</option>
+                  <option value="libra">Libra</option>
+                  <option value="scorpio">Escorpião</option>
+                  <option value="sagittarius">Sagitário</option>
+                  <option value="capricorn">Capricórnio</option>
+                  <option value="aquarius">Aquário</option>
+                  <option value="pisces">Peixes</option>
+                </select>
+                <input type="number" id="graus_uranus" placeholder="Graus"
+                  aria-label="Graus" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <img src="assets/images/zodiac/neptune.png">
+                </span>
+
+                <select class="form-select" id="select_neptune"
+                  aria-label="Default select example">
+                  <option selected>Signo</option>
+                  <option value="aries">Ares</option>
+                  <option value="taurus">Touro</option>
+                  <option value="gemini">Gêmeos</option>
+                  <option value="cancer">Câncer</option>
+                  <option value="leo">Leão</option>
+                  <option value="virgo">Virgem</option>
+                  <option value="libra">Libra</option>
+                  <option value="scorpio">Escorpião</option>
+                  <option value="sagittarius">Sagitário</option>
+                  <option value="capricorn">Capricórnio</option>
+                  <option value="aquarius">Aquário</option>
+                  <option value="pisces">Peixes</option>
+                </select>
+                <input type="number" id="graus_neptune" placeholder="Graus"
+                  aria-label="Graus" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <img src="assets/images/zodiac/pluto.png">
+                </span>
+
+                <select class="form-select" id="select_pluto"
+                  aria-label="Default select example">
+                  <option selected>Signo</option>
+                  <option value="aries">Ares</option>
+                  <option value="taurus">Touro</option>
+                  <option value="gemini">Gêmeos</option>
+                  <option value="cancer">Câncer</option>
+                  <option value="leo">Leão</option>
+                  <option value="virgo">Virgem</option>
+                  <option value="libra">Libra</option>
+                  <option value="scorpio">Escorpião</option>
+                  <option value="sagittarius">Sagitário</option>
+                  <option value="capricorn">Capricórnio</option>
+                  <option value="aquarius">Aquário</option>
+                  <option value="pisces">Peixes</option>
+                </select>
+                <input type="number" id="graus_pluto" placeholder="Graus"
+                  aria-label="Graus" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <img src="assets/images/zodiac/asc.png">
+                </span>
+
+                <select class="form-select" id="select_ascendant"
+                  aria-label="Default select example">
+                  <option selected>Signo</option>
+                  <option value="aries">Ares</option>
+                  <option value="taurus">Touro</option>
+                  <option value="gemini">Gêmeos</option>
+                  <option value="cancer">Câncer</option>
+                  <option value="leo">Leão</option>
+                  <option value="virgo">Virgem</option>
+                  <option value="libra">Libra</option>
+                  <option value="scorpio">Escorpião</option>
+                  <option value="sagittarius">Sagitário</option>
+                  <option value="capricorn">Capricórnio</option>
+                  <option value="aquarius">Aquário</option>
+                  <option value="pisces">Peixes</option>
+                </select>
+                <input type="number" id="graus_ascendant" placeholder="Graus"
+                  aria-label="Graus" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+
+              <button type="submit" class="btn btn-success" href="#div-info"
+                (click)="getInfo()">Calcular</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="card">
+
+        <div class="card-body">
+          <div class="backbroud-kabbalah">
+            <div class="veu-abismo">
+            </div>
+            <div class="veu-parokhet">
+            </div>
+            <div class="veu-nephesch">
+            </div>
+            <div class="kabbalah">
+
+              <div id="kether">
+                <a href="#div-info" (click)="searchInfo('kether')" class="kether">
+                  <div class="infos">
+                    <br>1<br>Kether<br>
                     <img src="assets/images/zodiac/neptune.png">
-                  </span>
-
-                  <select class="form-select" id="select_neptune"
-                    aria-label="Default select example">
-                    <option selected>Signo</option>
-                    <option value="aries">Ares</option>
-                    <option value="taurus">Touro</option>
-                    <option value="gemini">Gêmeos</option>
-                    <option value="cancer">Câncer</option>
-                    <option value="leo">Leão</option>
-                    <option value="virgo">Virgem</option>
-                    <option value="libra">Libra</option>
-                    <option value="scorpio">Escorpião</option>
-                    <option value="sagittarius">Sagitário</option>
-                    <option value="capricorn">Capricórnio</option>
-                    <option value="aquarius">Aquário</option>
-                    <option value="pisces">Peixes</option>
-                  </select>
-                  <input type="number" id="graus_neptune" placeholder="Graus"
-                    aria-label="Graus" class="form-control">
-                </div>
+                  </div>
+                </a>
               </div>
-              <div class="col-md-2 col-sm-12">
-                <div class="input-group mb-3">
-                  <span class="input-group-text" id="basic-addon1">
+              <div id="path_lean_left" class="caminho-1">
+                <a href="#div-info" (click)="searchPassage('mago')"
+                  class="path12_link">
+                  <br>
+                  <img src="assets/images/zodiac/mercury.png">
+                  <br><br>
+                  <span style="font-size:30px;">ב</span>
+                  <br>
+                  <br>I<br>
+                </a>
+              </div>
+              <div id="path_lean_right" class="caminho-0">
+                <a href="#div-info" (click)="searchPassage('louco')"
+                  class="path11_link">
+                  <br>
+                  <img src="assets/images/zodiac/element_air.png">
+                  <br><br>
+                  <span style="font-size:30px;">א</span>
+                  <br>
+                  <br>0<br>
+                </a>
+              </div>
+              <div id="chokmah">
+                <a href="#div-info" (click)="searchInfo('chokmah')" class="chokmah">
+                  <div class="infos">
+                    <br>2<br>Chokmah<br>
+                    <img src="assets/images/zodiac/uranus.png">
+                  </div>
+                </a>
+              </div>
+              <div id="binah">
+                <a href="#div-info" (click)="searchInfo('binah')" class="binah">
+                  <br>3<br>Binah<br>
+                  <img src="assets/images/zodiac/saturn.png">
+                </a>
+              </div>
+              <div id="vertpath_long" class="caminho-2">
+                <a href="#div-info" (click)="searchPassage('sacerdotisa')"
+                  class="path13_link">
+                  <br><br><br><br><br><br><br><br>
+                  <img src="assets/images/zodiac/luna.png">
+                  <br><br>
+                  <span style="font-size:30px;">ג</span>
+                  <br><br>II<br>
+                </a>
+              </div>
+              <div id="horzpath" class="caminho-3">
+                <a href="#div-info" (click)="searchPassage('imperatriz')"
+                  class="path14_link">
+                  <img src="assets/images/zodiac/venus.png">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span style="font-size:30px;">ד</span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;III
+                </a>
+              </div>
+              <div id="vertpath_short" class="caminho-7">
+                <a href="#div-info" (click)="searchPassage('carro')"
+                  class="path18_link">
+                  <br><br><br>
+                  <img src="assets/images/zodiac/cancer.png">
+                  <br><br>
+                  <span style="font-size:30px;">ח</span>
+                  <br><br>VII<br>
+                </a>
+              </div>
+              <div id="vertpath_short" class="caminho-5">
+                <a href="#div-info" (click)="searchPassage('hierofante')"
+                  class="path16_link">
+                  <br><br><br>
+                  <img src="assets/images/zodiac/taurus.png">
+                  <br><br>
+                  <span style="font-size:30px;">ו</span>
+                  <br><br>V<br>
+                </a>
+              </div>
+              <div id="bigslant" class="caminho-4">
+                <a href="#div-info" (click)="searchPassage('imperador')"
+                  class="path15_link">
+                  <br><br><br><br>
+                  <img src="assets/images/zodiac/aries.png">
+                  <br><br><br>
+                  <span style="font-size:30px;">ה</span>
+                  <br><br><br>IV<br>
+                </a>
+              </div>
+              <div id="bigslant2" class="caminho-6">
+                <a href="#div-info" (click)="searchPassage('enamorados')"
+                  class="path17_link">
+                  <br><br><br><br>
+                  <img src="assets/images/zodiac/gemini.png">
+                  <br><br><br>
+                  <span style="font-size:30px;">ז</span>
+                  <br><br><br>VI<br>
+                </a>
+              </div>
+              <div id="daath">
+                <a href="#div-info" (click)="searchInfo('daath')" class="daath">
+                  <div class="infos">
+                    <br>11<br>Daath<br>
                     <img src="assets/images/zodiac/pluto.png">
-                  </span>
-
-                  <select class="form-select" id="select_pluto"
-                    aria-label="Default select example">
-                    <option selected>Signo</option>
-                    <option value="aries">Ares</option>
-                    <option value="taurus">Touro</option>
-                    <option value="gemini">Gêmeos</option>
-                    <option value="cancer">Câncer</option>
-                    <option value="leo">Leão</option>
-                    <option value="virgo">Virgem</option>
-                    <option value="libra">Libra</option>
-                    <option value="scorpio">Escorpião</option>
-                    <option value="sagittarius">Sagitário</option>
-                    <option value="capricorn">Capricórnio</option>
-                    <option value="aquarius">Aquário</option>
-                    <option value="pisces">Peixes</option>
-                  </select>
-                  <input type="number" id="graus_pluto" placeholder="Graus"
-                    aria-label="Graus" class="form-control">
-                </div>
+                  </div>
+                </a>
               </div>
-              <div class="col-md-2 col-sm-12">
-                <div class="input-group mb-3">
-                  <span class="input-group-text" id="basic-addon1">
-                    <img src="assets/images/zodiac/asc.png">
-                  </span>
-
-                  <select class="form-select" id="select_ascendant"
-                    aria-label="Default select example">
-                    <option selected>Signo</option>
-                    <option value="aries">Ares</option>
-                    <option value="taurus">Touro</option>
-                    <option value="gemini">Gêmeos</option>
-                    <option value="cancer">Câncer</option>
-                    <option value="leo">Leão</option>
-                    <option value="virgo">Virgem</option>
-                    <option value="libra">Libra</option>
-                    <option value="scorpio">Escorpião</option>
-                    <option value="sagittarius">Sagitário</option>
-                    <option value="capricorn">Capricórnio</option>
-                    <option value="aquarius">Aquário</option>
-                    <option value="pisces">Peixes</option>
-                  </select>
-                  <input type="number" id="graus_ascendant" placeholder="Graus"
-                    aria-label="Graus" class="form-control">
-                </div>
+              <div id="path_lean_left" class="caminho-9">
+                <a href="#div-info" (click)="searchPassage('eremita')"
+                  class="path20_link">
+                  <br><br>
+                  <img src="assets/images/zodiac/virgo.png">
+                  <br><br>
+                  <span style="font-size:30px;">י</span>
+                  <br><br>IX<br>
+                </a>
               </div>
-              <div class="col-md-2 col-sm-12">
-
-                <button type="submit" class="btn btn-success" href="#div-info"
-                  (click)="getInfo()">Calcular</button>
+              <div id="path_lean_right" class="caminho-11">
+                <a href="#div-info" (click)="searchPassage('justica')"
+                  class="path22_link">
+                  <br><br>
+                  <img src="assets/images/zodiac/libra.png">
+                  <br><br>
+                  <span style="font-size:30px;">ל</span>
+                  <br><br>XI<br>
+                </a>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-5">
-        <div class="card">
-
-          <div class="card-body">
-            <div class="backbroud-kabbalah">
-              <div class="veu-abismo">
+              <div id="horzpath" class="caminho-8">
+                <a href="#div-info" (click)="searchPassage('forca')"
+                  class="path19_link">
+                  <img src="assets/images/zodiac/leo.png">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span style="font-size:30px;">ט</span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VIII
+                </a>
               </div>
-              <div class="veu-parokhet">
-              </div>
-              <div class="veu-nephesch">
-              </div>
-              <div class="kabbalah">
-
-                <div id="kether">
-                  <a href="#div-info" (click)="searchInfo('kether')" class="kether">
-                    <div class="infos">
-                      <br>1<br>Kether<br>
-                      <img src="assets/images/zodiac/neptune.png">
-                    </div>
-                  </a>
-                </div>
-                <div id="path_lean_left" class="caminho-1">
-                  <a href="#div-info" (click)="searchCaminho('mago')"
-                    class="path12_link">
-                    <br>
-                    <img src="assets/images/zodiac/mercury.png">
-                    <br><br>
-                    <span style="font-size:30px;">ב</span>
-                    <br>
-                    <br>I<br>
-                  </a>
-                </div>
-                <div id="path_lean_right" class="caminho-0">
-                  <a href="#div-info" (click)="searchCaminho('louco')"
-                    class="path11_link">
-                    <br>
-                    <img src="assets/images/zodiac/element_air.png">
-                    <br><br>
-                    <span style="font-size:30px;">א</span>
-                    <br>
-                    <br>0<br>
-                  </a>
-                </div>
-                <div id="chokmah">
-                  <a href="#div-info" (click)="searchInfo('chokmah')" class="chokmah">
-                    <div class="infos">
-                      <br>2<br>Chokmah<br>
-                      <img src="assets/images/zodiac/uranus.png">
-                    </div>
-                  </a>
-                </div>
-                <div id="binah">
-                  <a href="#div-info" (click)="searchInfo('binah')" class="binah">
-                    <br>3<br>Binah<br>
-                    <img src="assets/images/zodiac/saturn.png">
-                  </a>
-                </div>
-                <div id="vertpath_long" class="caminho-2">
-                  <a href="#div-info" (click)="searchCaminho('sacerdotisa')"
-                    class="path13_link">
-                    <br><br><br><br><br><br><br><br>
-                    <img src="assets/images/zodiac/luna.png">
-                    <br><br>
-                    <span style="font-size:30px;">ג</span>
-                    <br><br>II<br>
-                  </a>
-                </div>
-                <div id="horzpath" class="caminho-3">
-                  <a href="#div-info" (click)="searchCaminho('imperatriz')"
-                    class="path14_link">
-                    <img src="assets/images/zodiac/venus.png">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span style="font-size:30px;">ד</span>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;III
-                  </a>
-                </div>
-                <div id="vertpath_short" class="caminho-7">
-                  <a href="#div-info" (click)="searchCaminho('carro')"
-                    class="path18_link">
-                    <br><br><br>
-                    <img src="assets/images/zodiac/cancer.png">
-                    <br><br>
-                    <span style="font-size:30px;">ח</span>
-                    <br><br>VII<br>
-                  </a>
-                </div>
-                <div id="vertpath_short" class="caminho-5">
-                  <a href="#div-info" (click)="searchCaminho('hierofante')"
-                    class="path16_link">
-                    <br><br><br>
-                    <img src="assets/images/zodiac/taurus.png">
-                    <br><br>
-                    <span style="font-size:30px;">ו</span>
-                    <br><br>V<br>
-                  </a>
-                </div>
-                <div id="bigslant" class="caminho-4">
-                  <a href="#div-info" (click)="searchCaminho('imperador')"
-                    class="path15_link">
-                    <br><br><br><br>
-                    <img src="assets/images/zodiac/aries.png">
-                    <br><br><br>
-                    <span style="font-size:30px;">ה</span>
-                    <br><br><br>IV<br>
-                  </a>
-                </div>
-                <div id="bigslant2" class="caminho-6">
-                  <a href="#div-info" (click)="searchCaminho('enamorados')"
-                    class="path17_link">
-                    <br><br><br><br>
-                    <img src="assets/images/zodiac/gemini.png">
-                    <br><br><br>
-                    <span style="font-size:30px;">ז</span>
-                    <br><br><br>VI<br>
-                  </a>
-                </div>
-                <div id="daath">
-                  <a href="#div-info" (click)="searchInfo('daath')" class="daath">
-                    <div class="infos">
-                      <br>11<br>Daath<br>
-                      <img src="assets/images/zodiac/pluto.png">
-                    </div>
-                  </a>
-                </div>
-                <div id="path_lean_left" class="caminho-9">
-                  <a href="#div-info" (click)="searchCaminho('eremita')"
-                    class="path20_link">
-                    <br><br>
-                    <img src="assets/images/zodiac/virgo.png">
-                    <br><br>
-                    <span style="font-size:30px;">י</span>
-                    <br><br>IX<br>
-                  </a>
-                </div>
-                <div id="path_lean_right" class="caminho-11">
-                  <a href="#div-info" (click)="searchCaminho('justica')"
-                    class="path22_link">
-                    <br><br>
-                    <img src="assets/images/zodiac/libra.png">
-                    <br><br>
-                    <span style="font-size:30px;">ל</span>
-                    <br><br>XI<br>
-                  </a>
-                </div>
-                <div id="horzpath" class="caminho-8">
-                  <a href="#div-info" (click)="searchCaminho('forca')"
-                    class="path19_link">
-                    <img src="assets/images/zodiac/leo.png">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span style="font-size:30px;">ט</span>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VIII
-                  </a>
-                </div>
-                <div id="chesed">
-                  <a href="#div-info" (click)="searchInfo('chesed')" class="chesed">
-                    <div class="infos">
-                      <br>4<br>Chesed<br>
-                      <img src="assets/images/zodiac/jupiter.png">
-                    </div>
-                  </a>
-                </div>
-                <div id="geburah">
-                  <a href="#div-info" (click)="searchInfo('geburah')" class="geburah">
-                    <div class="infos">
-                      <br>5<br>Geburah<br>
-                      <img src="assets/images/zodiac/mars.png">
-                    </div>
-                  </a>
-                </div>
-                <div id="vertpath_short" class="caminho-12">
-                  <a href="#div-info" (click)="searchCaminho('pendurado')"
-                    class="path23_link">
-                    <br><br><br><br>
-                    <img src="assets/images/zodiac/element_water.png">
-                    <br><br>
-                    <span style="font-size:30px;">ם</span>
-                    <br><br>XII
-                  </a>
-                </div>
-                <div id="vertpath_short" class="caminho-10">
-                  <a href="#div-info" (click)="searchCaminho('roda')"
-                    class="path21_link">
-                    <br><br><br><br>
+              <div id="chesed">
+                <a href="#div-info" (click)="searchInfo('chesed')" class="chesed">
+                  <div class="infos">
+                    <br>4<br>Chesed<br>
                     <img src="assets/images/zodiac/jupiter.png">
-                    <br><br>
-                    <span style="font-size:30px;">כ</span>
-                    <br><br>X<br>
-                  </a>
-                </div>
-                <div id="tipheret">
-                  <a href="#div-info" (click)="searchInfo('tipheret')" class="tipheret">
-                    <div class="infos">
-                      <br>6<br>Tipheret<br>
-                      <img src="assets/images/zodiac/sol.png">
-                    </div>
-                  </a>
-                </div>
-                <div id="path_lean_right" class="caminho-13">
-                  <a href="#div-info" (click)="searchCaminho('morte')"
-                    class="path24_link">
-                    <br><br>
-                    <img src="assets/images/zodiac/scorpio.png">
-                    <br><br>
-                    <span style="font-size:30px;">נ</span>
-                    <br><br>XIII<br>
-                  </a>
-                </div>
-                <div id="path_lean_left" class="caminho-15">
-                  <a href="#div-info" (click)="searchCaminho('diabo')"
-                    class="path26_link">
-                    <br><br>
-                    <img src="assets/images/zodiac/capricorn.png">
-                    <br><br>
-                    <span style="font-size:30px;">ע</span>
-                    <br><br>XV<br>
-                  </a>
-                </div>
-                <div id="vertpath_short" class="caminho-14">
-                  <a href="#div-info" (click)="searchCaminho('temperanca')"
-                    class="path25_link">
-                    <br><br><br><br>
-                    <img src="assets/images/zodiac/sagittarius.png">
-                    <br><br><br><br><br>
-                    <span style="font-size:30px;">ס</span>
-                    <br>XIV
-                  </a>
-                </div>
-                <div id="netzach">
-                  <a href="#div-info" (click)="searchInfo('netzach')" class="netzach">
-                    <div class="infos">
-                      <br>7<br>Netzach<br>
-                      <img src="assets/images/zodiac/venus.png">
-                    </div>
-                  </a>
-                </div>
-                <div id="hod">
-                  <a href="#div-info" (click)="searchInfo( 'hod')" class="hod">
-                    <div class="infos">
-                      <br>8<br>Hod<br>
-                      <img src="assets/images/zodiac/mercury.png">
-                    </div>
-                  </a>
-                </div>
-                <div id="horzpath" class="caminho-16">
-                  <a href="#div-info" (click)="searchCaminho('torre')"
-                    class="path27_link">
-                    <img src="assets/images/zodiac/mars.png">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span style="font-size:30px;">פ</span>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XVI
-                  </a>
-                </div>
-                <div id="path_lean_right" class="caminho-19">
-                  <a href="#div-info" (click)="searchCaminho('sol')"
-                    class="path30_link">
-                    <br><br>
-                    <img src="assets/images/zodiac/sol.png">
-                    <br><br>
-                    <span style="font-size:30px;">ר</span>
-                    <br><br>XIX<br>
-                  </a>
-                </div>
-                <div id="path_lean_left" class="caminho-17">
-                  <a href="#div-info" (click)="searchCaminho('estrela')"
-                    class="path28_link">
-                    <br><br>
-                    <img src="assets/images/zodiac/aquarius.png">
-                    <br><br>
-                    <span style="font-size:30px;">צ</span>
-                    <br><br>XVII<br>
-                  </a>
-                </div>
-                <div id="bigslant" class="caminho-18">
-                  <a href="#div-info" (click)="searchCaminho('lua')"
-                    class="path29_link">
-                    <br><br><br><br><br><br><br>
-                    <img src="assets/images/zodiac/pisces.png">
-                    <br><br><br>
-                    <span style="font-size:30px;">ק</span>
-                    <br><br><br>XVIII<br>
-                  </a>
-                </div>
-                <div id="bigslant2" class="caminho-20">
-                  <a href="#div-info" (click)="searchCaminho('julgamento')"
-                    class="path31_link">
-                    <br><br><br><br><br><br><br>
-                    <img src="assets/images/zodiac/element_fire.png">
-                    <br><br><br>
-                    <img src="assets/images/zodiac/zodiac.png">
-                    <br><br><br>
-                    <span style="font-size:30px;">ש</span>
-                    <br><br><br>XX<br>
-                  </a>
-                </div>
-                <div id="yesod">
-                  <a href="#div-info" (click)="searchInfo( 'yesod')" class="yesod">
-                    <div class="infos">
-                      <br>9<br>Yesod<br>
-                      <img src="assets/images/zodiac/luna.png">
-                    </div>
-                  </a>
-                </div>
-                <div id="vertpath_short" class="caminho-21">
-                  <a href="#div-info" (click)="searchCaminho('mundo')"
-                    class="path32_link">
-                    <br><img src="assets/images/zodiac/saturn.png">
-                    <img src="assets/images/zodiac/element_earth.png">
-                    <br><span style="font-size:30px;">ת</span>
-                    <br><br>XXI<br>
-                  </a>
-                </div>
-                <div id="malkuth">
-                  <a href="#div-info" (click)="searchInfo( 'malkuth')" class="malkuth">
-                    <div class="infos">
-                      <br>10<br>Malkuth<br>
-                      <img src="assets/images/zodiac/earth.png">
-                    </div>
-                  </a>
-                  <div id="malkuthbg" style="position: relative; top:-127px;
-                    z-index:4;">
-                    <div class="quarter top-left"></div>
-                    <div class="quarter top-right"></div>
-                    <div class="quarter bottom-left"></div>
-                    <div class="quarter bottom-right"></div>
                   </div>
+                </a>
+              </div>
+              <div id="geburah">
+                <a href="#div-info" (click)="searchInfo('geburah')" class="geburah">
+                  <div class="infos">
+                    <br>5<br>Geburah<br>
+                    <img src="assets/images/zodiac/mars.png">
+                  </div>
+                </a>
+              </div>
+              <div id="vertpath_short" class="caminho-12">
+                <a href="#div-info" (click)="searchPassage('pendurado')"
+                  class="path23_link">
+                  <br><br><br><br>
+                  <img src="assets/images/zodiac/element_water.png">
+                  <br><br>
+                  <span style="font-size:30px;">ם</span>
+                  <br><br>XII
+                </a>
+              </div>
+              <div id="vertpath_short" class="caminho-10">
+                <a href="#div-info" (click)="searchPassage('roda')"
+                  class="path21_link">
+                  <br><br><br><br>
+                  <img src="assets/images/zodiac/jupiter.png">
+                  <br><br>
+                  <span style="font-size:30px;">כ</span>
+                  <br><br>X<br>
+                </a>
+              </div>
+              <div id="tipheret">
+                <a href="#div-info" (click)="searchInfo('tipheret')" class="tipheret">
+                  <div class="infos">
+                    <br>6<br>Tipheret<br>
+                    <img src="assets/images/zodiac/sol.png">
+                  </div>
+                </a>
+              </div>
+              <div id="path_lean_right" class="caminho-13">
+                <a href="#div-info" (click)="searchPassage('morte')"
+                  class="path24_link">
+                  <br><br>
+                  <img src="assets/images/zodiac/scorpio.png">
+                  <br><br>
+                  <span style="font-size:30px;">נ</span>
+                  <br><br>XIII<br>
+                </a>
+              </div>
+              <div id="path_lean_left" class="caminho-15">
+                <a href="#div-info" (click)="searchPassage('diabo')"
+                  class="path26_link">
+                  <br><br>
+                  <img src="assets/images/zodiac/capricorn.png">
+                  <br><br>
+                  <span style="font-size:30px;">ע</span>
+                  <br><br>XV<br>
+                </a>
+              </div>
+              <div id="vertpath_short" class="caminho-14">
+                <a href="#div-info" (click)="searchPassage('temperanca')"
+                  class="path25_link">
+                  <br><br><br><br>
+                  <img src="assets/images/zodiac/sagittarius.png">
+                  <br><br><br><br><br>
+                  <span style="font-size:30px;">ס</span>
+                  <br>XIV
+                </a>
+              </div>
+              <div id="netzach">
+                <a href="#div-info" (click)="searchInfo('netzach')" class="netzach">
+                  <div class="infos">
+                    <br>7<br>Netzach<br>
+                    <img src="assets/images/zodiac/venus.png">
+                  </div>
+                </a>
+              </div>
+              <div id="hod">
+                <a href="#div-info" (click)="searchInfo( 'hod')" class="hod">
+                  <div class="infos">
+                    <br>8<br>Hod<br>
+                    <img src="assets/images/zodiac/mercury.png">
+                  </div>
+                </a>
+              </div>
+              <div id="horzpath" class="caminho-16">
+                <a href="#div-info" (click)="searchPassage('torre')"
+                  class="path27_link">
+                  <img src="assets/images/zodiac/mars.png">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span style="font-size:30px;">פ</span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XVI
+                </a>
+              </div>
+              <div id="path_lean_right" class="caminho-19">
+                <a href="#div-info" (click)="searchPassage('sol')"
+                  class="path30_link">
+                  <br><br>
+                  <img src="assets/images/zodiac/sol.png">
+                  <br><br>
+                  <span style="font-size:30px;">ר</span>
+                  <br><br>XIX<br>
+                </a>
+              </div>
+              <div id="path_lean_left" class="caminho-17">
+                <a href="#div-info" (click)="searchPassage('estrela')"
+                  class="path28_link">
+                  <br><br>
+                  <img src="assets/images/zodiac/aquarius.png">
+                  <br><br>
+                  <span style="font-size:30px;">צ</span>
+                  <br><br>XVII<br>
+                </a>
+              </div>
+              <div id="bigslant" class="caminho-18">
+                <a href="#div-info" (click)="searchPassage('lua')"
+                  class="path29_link">
+                  <br><br><br><br><br><br><br>
+                  <img src="assets/images/zodiac/pisces.png">
+                  <br><br><br>
+                  <span style="font-size:30px;">ק</span>
+                  <br><br><br>XVIII<br>
+                </a>
+              </div>
+              <div id="bigslant2" class="caminho-20">
+                <a href="#div-info" (click)="searchPassage('julgamento')"
+                  class="path31_link">
+                  <br><br><br><br><br><br><br>
+                  <img src="assets/images/zodiac/element_fire.png">
+                  <br><br><br>
+                  <img src="assets/images/zodiac/zodiac.png">
+                  <br><br><br>
+                  <span style="font-size:30px;">ש</span>
+                  <br><br><br>XX<br>
+                </a>
+              </div>
+              <div id="yesod">
+                <a href="#div-info" (click)="searchInfo( 'yesod')" class="yesod">
+                  <div class="infos">
+                    <br>9<br>Yesod<br>
+                    <img src="assets/images/zodiac/luna.png">
+                  </div>
+                </a>
+              </div>
+              <div id="vertpath_short" class="caminho-21">
+                <a href="#div-info" (click)="searchPassage('mundo')"
+                  class="path32_link">
+                  <br><img src="assets/images/zodiac/saturn.png">
+                  <img src="assets/images/zodiac/element_earth.png">
+                  <br><span style="font-size:30px;">ת</span>
+                  <br><br>XXI<br>
+                </a>
+              </div>
+              <div id="malkuth">
+                <a href="#div-info" (click)="searchInfo( 'malkuth')" class="malkuth">
+                  <div class="infos">
+                    <br>10<br>Malkuth<br>
+                    <img src="assets/images/zodiac/earth.png">
+                  </div>
+                </a>
+                <div id="malkuthbg" style="position: relative; top:-127px;
+                  z-index:4;">
+                  <div class="quarter top-left"></div>
+                  <div class="quarter top-right"></div>
+                  <div class="quarter bottom-left"></div>
+                  <div class="quarter bottom-right"></div>
                 </div>
+              </div>
 
-              </div>
-            </div>
-          </div>
-          <div class="card-footer">
-            <div class="row">
-              <div class="col-sm">
-                <img height="90"
-                  src="https://images-na.ssl-images-amazon.com/images/I/41E6VknaHJL.jpg"
-                  alt="" srcset="">
-              </div>
-              <div class="col-sm"></div>
-              <div class="col-sm"></div>
             </div>
           </div>
         </div>
+        <div class="card-footer">
+          <div class="row">
+            <div class="col-sm">
+              <img height="90"
+                src="https://images-na.ssl-images-amazon.com/images/I/41E6VknaHJL.jpg"
+                alt="" srcset="">
+            </div>
+            <div class="col-sm"></div>
+            <div class="col-sm"></div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-7">
-        <div class="card">
-          <div class="card-body" id="div-info">
-            <ng-container *ngIf="infos.carta !='' || infos.sephiroth !='' || infos.angel != '' ;else
-              other_content">
+    </div>
+    <div class="col-md-7">
+      <div class="card">
+        <div class="card-body" id="div-info">
 
-              <ng-container *ngIf="infos.carta !=''">
-                <div class="mb-3">
-                  <h1>{{infos.carta.name}}</h1>
-                  <div class="row">
-                    <div class="col-6">
-                      <ul>
-                        <li *ngIf="infos.carta.caractere_hebraico !=''">letra  Hebraica:  <span class="hebraic">{{infos.carta.caractere_hebraico}}</span>
-                        </li>
-                        <li *ngIf="infos.carta.runa !=''">Runa: <span class="hebraic">{{infos.carta.runa}}</span>
-                        </li>
-                        <li *ngIf="infos.carta.dados !=''">Dados:
-                          <ng-container *ngFor="let dados of infos.carta.dados">&nbsp;<i
-                              class='bi bi-dice-{{dados}}'></i></ng-container>
-                        </li>
-                        <li *ngIf="infos.carta.name_angel !=''">Anjos:
-                          <ng-container *ngFor="let angel of infos.carta.name_angel">
-                            &nbsp; <a [href]="'/?angel_name='+ angel" target="_blank" rel="noopener noreferrer">{{angel}}</a>
-                          </ng-container>
-                        </li>
-                        <li *ngIf="infos.carta.planeta !=''">Planeta: {{infos.carta.planeta}}
-                        </li>
-                        <li *ngIf="infos.carta.signo !=''">Signo: {{infos.carta.signo}}</li>
-                        <li *ngIf="infos.carta.elemento !=''">Elemento: {{infos.carta.elemento}}
-                        </li>
-                        <li *ngIf="infos.carta.color !=''">cor:
-                          <div style="background-color: {{infos.carta.color}}">&nbsp;</div>
-                        </li>
-                        <li *ngIf="infos.carta.arquetipo_MBTI !=''">Arquétipo MBTI: {{infos.carta.arquetipo_MBTI}}</li>
-                        <li *ngIf="infos.carta.astrologica !=''">Correspondente Astrológico: {{infos.carta.astrologica}}</li>
-                        <li *ngIf="infos.carta.word_key !=''">Palavra Chave: {{infos.carta.word_key}}</li>
-                        <li *ngIf="infos.carta.sephiroth !=''">Correspondente sephirotico: {{infos.carta.sephiroth}}</li>
-                        <li *ngIf="infos.carta.reino !=''">Correspondente do Reino: {{infos.carta.reino}}</li>
-                      </ul>
-                    </div>
-                    <div class="col-6">
-                      <h3>Referencias</h3>
-                      <ul>
-                        <li *ngIf="infos.carta.link_wiki_mdd !=''"><a
-                            href="{{infos.carta.link_wiki_mdd}}" target="_blank"
-                            rel="noopener noreferrer">Wiki Projeto Mayhem</a></li>
-                        <li *ngIf="infos.carta.link_youtube_cdh !=''"><a
-                            href="{{infos.carta.link_youtube_cdh}}"
-                            target="_blank" rel="noopener noreferrer">Video CdH</a></li>
-                        <li *ngIf="infos.carta.link_youtube_lupus !=''"><a
-                            href="{{infos.carta.link_youtube_lupus}}"
-                            target="_blank" rel="noopener noreferrer">Video
-                            Lupus In Fabula</a></li>
-                        <li *ngIf="infos.carta.link_youtube_jornada_do_ser
-                          !=''"><a
-                            href="{{infos.carta.link_youtube_jornada_do_ser}}"
-                            target="_blank" rel="noopener noreferrer">Video Tarô
-                            Virtual</a>
-                        </li>
-                        <li>Tarot Hermetico:
-                          {{infos.carta.pages_tarot_hermetico}} pg</li>
-                      </ul>
-                    </div>
-                    <div class="col-12">
-                      <div class="row">
-                        <div *ngIf="infos.carta.image_cdh !=''" class="col-3">
-                          <img class="img-fluid" src="{{infos.carta.image_cdh}}" alt="" srcset="">
-                        </div>
-                        <div *ngIf="infos.carta.image_rider_waite !=''" class="col-3">
-                          <img class="img-fluid"
-                            src="{{infos.carta.image_rider_waite}}" alt="" srcset="">
-                        </div>
-                        <div *ngIf="infos.carta.image_crowley !=''" class="col-3">
-                          <img class="img-fluid" src="{{infos.carta.image_crowley}}" alt="" srcset="">
-                        </div>
-                        <div *ngIf="infos.carta.image_marseille !=''" class="col-3">
-                          <img class="img-fluid" src="{{infos.carta.image_marseille}}" alt="" srcset="">
-                        </div>
+
+          <ng-container *ngIf="infos.carta !='' || infos.sephiroth !='' || infos.angel != '' ;else
+            other_content">
+
+            <ng-container *ngIf="infos.carta !=''">
+              <div class="mb-3">
+                <h1>{{infos.carta.name}}</h1>
+                <div class="row">
+                  <div class="col-6">
+                    <ul>
+                      <li *ngIf="infos.carta.caractere_hebraico !=''">letra  Hebraica:  <span class="hebraic">{{infos.carta.caractere_hebraico}}</span>
+                      </li>
+                      <li *ngIf="infos.carta.runa !=''">Runa: <span class="hebraic">{{infos.carta.runa}}</span>
+                      </li>
+                      <li *ngIf="infos.carta.dados !=''">Dados:
+                        <ng-container *ngFor="let dados of infos.carta.dados">&nbsp;<i
+                            class='bi bi-dice-{{dados}}'></i></ng-container>
+                      </li>
+                      <li *ngIf="infos.carta.name_angel !=''">Anjos:
+                        <ng-container *ngFor="let angel of infos.carta.name_angel">
+                          &nbsp; <a [href]="'/?angel_name='+ angel" target="_blank" rel="noopener noreferrer">{{angel}}</a>
+                        </ng-container>
+                      </li>
+                      <li *ngIf="infos.carta.planeta !=''">Planeta: {{infos.carta.planeta}}
+                      </li>
+                      <li *ngIf="infos.carta.signo !=''">Signo: {{infos.carta.signo}}</li>
+                      <li *ngIf="infos.carta.elemento !=''">Elemento: {{infos.carta.elemento}}
+                      </li>
+                      <li *ngIf="infos.carta.color !=''">cor:
+                        <div style="background-color: {{infos.carta.color}}">&nbsp;</div>
+                      </li>
+                      <li *ngIf="infos.carta.arquetipo_MBTI !=''">Arquétipo MBTI: {{infos.carta.arquetipo_MBTI}}</li>
+                      <li *ngIf="infos.carta.astrologica !=''">Correspondente Astrológico: {{infos.carta.astrologica}}</li>
+                      <li *ngIf="infos.carta.word_key !=''">Palavra Chave: {{infos.carta.word_key}}</li>
+                      <li *ngIf="infos.carta.sephiroth !=''">Correspondente sephirotico: {{infos.carta.sephiroth}}</li>
+                      <li *ngIf="infos.carta.reino !=''">Correspondente do Reino: {{infos.carta.reino}}</li>
+                    </ul>
+                  </div>
+                  <div class="col-6">
+                    <h3>Referencias</h3>
+                    <ul>
+                      <li *ngIf="infos.carta.link_wiki_mdd !=''"><a
+                          href="{{infos.carta.link_wiki_mdd}}" target="_blank"
+                          rel="noopener noreferrer">Wiki Projeto Mayhem</a></li>
+                      <li *ngIf="infos.carta.link_youtube_cdh !=''"><a
+                          href="{{infos.carta.link_youtube_cdh}}"
+                          target="_blank" rel="noopener noreferrer">Video CdH</a></li>
+                      <li *ngIf="infos.carta.link_youtube_lupus !=''"><a
+                          href="{{infos.carta.link_youtube_lupus}}"
+                          target="_blank" rel="noopener noreferrer">Video
+                          Lupus In Fabula</a></li>
+                      <li *ngIf="infos.carta.link_youtube_jornada_do_ser
+                        !=''"><a
+                          href="{{infos.carta.link_youtube_jornada_do_ser}}"
+                          target="_blank" rel="noopener noreferrer">Video Tarô
+                          Virtual</a>
+                      </li>
+                      <li>Tarot Hermetico:
+                        {{infos.carta.pages_tarot_hermetico}} pg</li>
+                    </ul>
+                  </div>
+                  <div class="col-12">
+                    <div class="row">
+                      <div *ngIf="infos.carta.image_cdh !=''" class="col-3">
+                        <img class="img-fluid" src="{{infos.carta.image_cdh}}" alt="" srcset="">
+                      </div>
+                      <div *ngIf="infos.carta.image_rider_waite !=''" class="col-3">
+                        <img class="img-fluid"
+                          src="{{infos.carta.image_rider_waite}}" alt="" srcset="">
+                      </div>
+                      <div *ngIf="infos.carta.image_crowley !=''" class="col-3">
+                        <img class="img-fluid" src="{{infos.carta.image_crowley}}" alt="" srcset="">
+                      </div>
+                      <div *ngIf="infos.carta.image_marseille !=''" class="col-3">
+                        <img class="img-fluid" src="{{infos.carta.image_marseille}}" alt="" srcset="">
                       </div>
                     </div>
                   </div>
                 </div>
-              </ng-container>
-              <ng-container *ngIf="infos.sephiroth !=''">
-                <h1>{{infos.sephiroth.name}}</h1>
-                <div class="row">
-                  <div class="col-12">
-                    <ul>
-                      <li *ngIf="infos.sephiroth.planeta !=''">planeta: {{infos.sephiroth.planeta}}
-                        <img src="{{infos.sephiroth.planeta_img}}">
-                      </li>
-                      <li *ngIf="infos.sephiroth.pages_kabbalah_hermetica !=''">Pagina do Kabbalah Hermetica:
-                        {{infos.sephiroth.pages_kabbalah_hermetica}} pg</li>
-                    </ul>
+              </div>
+            </ng-container>
+            <ng-container *ngIf="infos.sephiroth !=''">
 
-                    <div *ngIf="infos.sephiroth.angel !=''" class="mb-3">
-                      <h1>{{infos.sephiroth.angel.angel}}</h1>
-                      <div class="row">
-                        <div class="col-12">
+              <h1>{{infos.sephiroth.name}}</h1>
+              <div class="row">
+                <div class="col-12">
 
-                          <ul>
-                            <li *ngIf="infos.sephiroth.angel.major_arcana[0] !=''">Arcano Maior:
-                              <a [href]="'/?major_arcana=' + infos.sephiroth.angel.major_arcana[0]" target="_blank" rel="noopener noreferrer">
-                                {{infos.sephiroth.angel.major_arcana[0]}}
-                              </a>
-                            </li>
-                            <li *ngIf="infos.sephiroth.angel.minor_arcana[0] !=''">Arcano Menor:
-                              <a [href]="'/?minor_arcana=' + infos.sephiroth.angel.minor_arcana[0]" target="_blank" rel="noopener noreferrer">
-                                {{infos.sephiroth.angel.minor_arcana[0]}}
-                              </a>
-                            </li>
-                            <li *ngIf="infos.sephiroth.angel.polarity !=''">Polaridade: {{infos.sephiroth.angel.polarity}}</li>
-                            <li *ngIf="infos.sephiroth.angel.hour !=''">Horario do dia: {{infos.sephiroth.angel.hour}}</li>
-                            <li *ngIf="infos.sephiroth.angel.caste !=''">Reino: {{infos.sephiroth.angel.caste}}</li>
-                            <li *ngIf="infos.sephiroth.angel.color !=''">Cor:
-                              <div style="background-color: {{infos.sephiroth.angel.color}}">&nbsp;</div>
-                            </li>
-                            <li *ngIf="infos.sephiroth.angel.hebrew_name !=''">Letra Hebraica: {{infos.sephiroth.angel.hebrew_name}}</li>
-                            <li *ngIf="infos.sephiroth.angel.link_wiki_mdd !=''">
-                              <a href="{{infos.sephiroth.angel.link_wiki_mdd}}" target="_blank" rel="noopener noreferrer">Wiki Projeto Mayhem
-                              </a>
-                            </li>
-                            <li *ngIf="infos.sephiroth.angel.versiculo !=''">versiculo: {{infos.sephiroth.angel.versiculo}}</li>
-                            <li *ngIf="infos.sephiroth.angel.salmo !=''">Salmo: {{infos.sephiroth.angel.salmo}}</li>
-                            <li *ngIf="infos.sephiroth.angel.deamon !=''">Demonio oposto: {{infos.sephiroth.angel.deamon}}</li>
-                          </ul>
-                        </div>
+                  <ul>
+                    <li *ngIf="infos.sephiroth.planeta !=''">planeta: {{infos.sephiroth.planeta}}
+                      <img src="{{infos.sephiroth.planeta_img}}">
+                    </li>
+                    <li *ngIf="infos.sephiroth.pages_kabbalah_hermetica !=''">Pagina do Kabbalah Hermetica:
+                      {{infos.sephiroth.pages_kabbalah_hermetica}} pg</li>
+                  </ul>
+
+                  <div *ngIf="infos.sephiroth.angel !=''" class="mb-3">
+                    <h1>{{infos.sephiroth.angel.angel}}</h1>
+                    <div class="row">
+                      <div class="col-12">
+
+                        <ul>
+                          <li *ngIf="infos.sephiroth.angel.major_arcana[0] !=''">Arcano Maior:
+                            <a [href]="'/?major_arcana=' + infos.sephiroth.angel.major_arcana[0]" target="_blank" rel="noopener noreferrer">
+                              {{infos.sephiroth.angel.major_arcana[0]}}
+                            </a>
+                          </li>
+                          <li *ngIf="infos.sephiroth.angel.minor_arcana[0] !=''">Arcano Menor:
+                            <a [href]="'/?minor_arcana=' + infos.sephiroth.angel.minor_arcana[0]" target="_blank" rel="noopener noreferrer">
+                              {{infos.sephiroth.angel.minor_arcana[0]}}
+                            </a>
+                          </li>
+                          <li *ngIf="infos.sephiroth.angel.polarity !=''">Polaridade: {{infos.sephiroth.angel.polarity}}</li>
+                          <li *ngIf="infos.sephiroth.angel.hour !=''">Horario do dia: {{infos.sephiroth.angel.hour}}</li>
+                          <li *ngIf="infos.sephiroth.angel.caste !=''">Reino: {{infos.sephiroth.angel.caste}}</li>
+                          <li *ngIf="infos.sephiroth.angel.color !=''">Cor:
+                            <div style="background-color: {{infos.sephiroth.angel.color}}">&nbsp;</div>
+                          </li>
+                          <li *ngIf="infos.sephiroth.angel.hebrew_name !=''">Letra Hebraica: {{infos.sephiroth.angel.hebrew_name}}</li>
+                          <li *ngIf="infos.sephiroth.angel.link_wiki_mdd !=''">
+                            <a href="{{infos.sephiroth.angel.link_wiki_mdd}}" target="_blank" rel="noopener noreferrer">Wiki Projeto Mayhem
+                            </a>
+                          </li>
+                          <li *ngIf="infos.sephiroth.angel.versiculo !=''">versiculo: {{infos.sephiroth.angel.versiculo}}</li>
+                          <li *ngIf="infos.sephiroth.angel.salmo !=''">Salmo: {{infos.sephiroth.angel.salmo}}</li>
+                          <li *ngIf="infos.sephiroth.angel.deamon !=''">Demonio oposto: {{infos.sephiroth.angel.deamon}}</li>
+                        </ul>
                       </div>
                     </div>
-                    <p>
-                      <ng-container *ngFor="let card of
-                        infos.sephiroth.minor_arcana">
-                        <button class="btn btn-primary" type="button"
-                          data-bs-toggle="collapse"
-                          (click)="cards_mijor[card.id]= !cards_mijor[card.id]"
-                          [attr.aria-expanded]="!cards_mijor[card.id]">{{card.name}}</button>
-                      </ng-container>
-                    </p>
-                    <div class="row">
-                      <div class="col">
-                        <ng-container *ngFor="let card of infos.sephiroth.minor_arcana">
-                          <div class="collapse" [ngbCollapse]="!cards_mijor[card.id]"  id="demo{{card.id}}">
-                            <div class="card card-body">
-                              <h3 *ngIf="card.name !=''">Nome: {{card.name}}</h3>
-                              <ul>
-                                <li *ngIf="card.caractere_hebraico !=''">Letra Hebraica:
-                                  <span class="hebraic">{{card.caractere_hebraico}}</span>
-                                </li>
-                                <li *ngIf="card.runa !=''">Runa: <span class="hebraic">{{card.runa}}</span>
-                                </li>
+                  </div>
+                  <p>
+                    <ng-container *ngFor="let card of
+                      infos.sephiroth.minor_arcana">
+                      <button class="btn btn-primary" type="button"
+                        data-bs-toggle="collapse"
+                        (click)="cards_mijor[card.id]= !cards_mijor[card.id]"
+                        [attr.aria-expanded]="!cards_mijor[card.id]">{{card.name}}</button>
+                    </ng-container>
+                  </p>
+                  <div class="row">
+                    <div class="col">
+                      <ng-container *ngFor="let card of infos.sephiroth.minor_arcana">
+                        <div class="collapse" [ngbCollapse]="!cards_mijor[card.id]"  id="demo{{card.id}}">
+                          <div class="card card-body">
+                            <h3 *ngIf="card.name !=''">Nome: {{card.name}}</h3>
+                            <ul>
+                              <li *ngIf="card.caractere_hebraico !=''">Letra Hebraica:
+                                <span class="hebraic">{{card.caractere_hebraico}}</span>
+                              </li>
+                              <li *ngIf="card.runa !=''">Runa: <span class="hebraic">{{card.runa}}</span>
+                              </li>
 
-                                <li *ngIf="card.dados !=''">Dados:
-                                  <ng-container *ngFor="let dados of card.dados">
-                                    &nbsp;<i class='bi bi-dice-{{dados}}'></i>
-                                  </ng-container>
-                                </li>
+                              <li *ngIf="card.dados !=''">Dados:
+                                <ng-container *ngFor="let dados of card.dados">
+                                  &nbsp;<i class='bi bi-dice-{{dados}}'></i>
+                                </ng-container>
+                              </li>
 
-                                <li *ngIf="carta.name_angel !=''">Anjos:
-                                  <ng-container *ngFor="let angels of card.name_angel">
-                                    &nbsp; <a [href]="'/?angel_name='+ angels" target="_blank" rel="noopener noreferrer">{{angels}}</a>
-                                  </ng-container>
-                                </li>
-                                <li *ngIf="card.astrologica !=''">Correspondente
-                                  Astrológico: {{card.astrologica}}</li>
-                                <li *ngIf="card.sephiroth !=''">Correspondente
-                                  sephirotico: {{card.sephiroth}}</li>
-                                <li *ngIf="card.arquetipo_MBTI !=''">Arquétipo
-                                  MBTI: {{card.arquetipo_MBTI}}
-                                </li>
-                                <li *ngIf="card.word_key !=''">Palavra chave:
-                                  {{card.word_key}}
-                                </li>
-                                <li *ngIf="card.reino !=''">Correspondente de
-                                  reino: {{card.reino}}
-                                </li>
-                                <li *ngIf="card.pages_tarot_hermetico !=''">Pagina
-                                  do Tarot Hermético:
-                                  {{card.pages_tarot_hermetico}} pg
-                                </li>
+                              <li *ngIf="carta.name_angel !=''">Anjos:
+                                <ng-container *ngFor="let angels of card.name_angel">
+                                  &nbsp; <a [href]="'/?angel_name='+ angels" target="_blank" rel="noopener noreferrer">{{angels}}</a>
+                                </ng-container>
+                              </li>
+                              <li *ngIf="card.astrologica !=''">Correspondente
+                                Astrológico: {{card.astrologica}}</li>
+                              <li *ngIf="card.sephiroth !=''">Correspondente
+                                sephirotico: {{card.sephiroth}}</li>
+                              <li *ngIf="card.arquetipo_MBTI !=''">Arquétipo
+                                MBTI: {{card.arquetipo_MBTI}}
+                              </li>
+                              <li *ngIf="card.word_key !=''">Palavra chave:
+                                {{card.word_key}}
+                              </li>
+                              <li *ngIf="card.reino !=''">Correspondente de
+                                reino: {{card.reino}}
+                              </li>
+                              <li *ngIf="card.pages_tarot_hermetico !=''">Pagina
+                                do Tarot Hermético:
+                                {{card.pages_tarot_hermetico}} pg
+                              </li>
 
-                                <li *ngIf="card.link_wiki_mdd !=''"><a
-                                    href="{{card.link_wiki_mdd}}"
-                                    target="_blank" rel="noopener noreferrer">Wiki
-                                    Projeto
-                                    Mayhem</a></li>
-                                <li *ngIf="card.link_youtube_cdh !=''"><a
-                                    href="{{card.link_youtube_cdh}}"
-                                    target="_blank" rel="noopener noreferrer">Video
-                                    CdH</a></li>
-                                <li *ngIf="card.link_youtube_lupus !=''"><a
-                                    href="{{card.link_youtube_lupus}}"
-                                    target="_blank" rel="noopener noreferrer">Video
-                                    Lupus</a></li>
-                                <li *ngIf="card.link_youtube_jornada_do_ser
-                                  !=''"><a
-                                    href="{{card.link_youtube_jornada_do_ser}}"
-                                    target="_blank" rel="noopener noreferrer">Video
-                                    Taro Virtual</a></li>
-                              </ul>
+                              <li *ngIf="card.link_wiki_mdd !=''"><a
+                                  href="{{card.link_wiki_mdd}}"
+                                  target="_blank" rel="noopener noreferrer">Wiki
+                                  Projeto
+                                  Mayhem</a></li>
+                              <li *ngIf="card.link_youtube_cdh !=''"><a
+                                  href="{{card.link_youtube_cdh}}"
+                                  target="_blank" rel="noopener noreferrer">Video
+                                  CdH</a></li>
+                              <li *ngIf="card.link_youtube_lupus !=''"><a
+                                  href="{{card.link_youtube_lupus}}"
+                                  target="_blank" rel="noopener noreferrer">Video
+                                  Lupus</a></li>
+                              <li *ngIf="card.link_youtube_jornada_do_ser
+                                !=''"><a
+                                  href="{{card.link_youtube_jornada_do_ser}}"
+                                  target="_blank" rel="noopener noreferrer">Video
+                                  Taro Virtual</a></li>
+                            </ul>
 
-                              <div class="row">
-                                <div *ngIf="card.image_rider_waite !=''" class="col-6">
-                                  <img class="img-fluid" src="{{card.image_rider_waite}}" alt="" rcset="">
-                                </div>
-                                <div *ngIf="card.image_crowley !=''" class="col-6">
-                                  <img class="img-fluid" src="{{card.image_crowley}}" alt="" srcset="">
-                                </div>
-                                <div *ngIf="card.image_cdh !=''" class="col-6">
-                                  <img class="img-fluid"  src="{{card.image_cdh}}" alt="" srcset="">
-                                </div>
-                                <div *ngIf="card.image_marseille !=''" class="col-6">
-                                  <img class="img-fluid" src="{{card.image_marseille}}" alt="" srcset="">
-                                </div>
+                            <div class="row">
+                              <div *ngIf="card.image_rider_waite !=''" class="col-6">
+                                <img class="img-fluid" src="{{card.image_rider_waite}}" alt="" rcset="">
+                              </div>
+                              <div *ngIf="card.image_crowley !=''" class="col-6">
+                                <img class="img-fluid" src="{{card.image_crowley}}" alt="" srcset="">
+                              </div>
+                              <div *ngIf="card.image_cdh !=''" class="col-6">
+                                <img class="img-fluid"  src="{{card.image_cdh}}" alt="" srcset="">
+                              </div>
+                              <div *ngIf="card.image_marseille !=''" class="col-6">
+                                <img class="img-fluid" src="{{card.image_marseille}}" alt="" srcset="">
                               </div>
                             </div>
                           </div>
-                        </ng-container>
-                      </div>
+                        </div>
+                      </ng-container>
                     </div>
-                    <h3>Referencias</h3>
+                  </div>
+                  <h3>Referencias</h3>
+                  <ul>
+                    <li *ngIf="infos.sephiroth.wiki_mdd !=''"><a
+                        href="{{infos.sephiroth.wiki_mdd}}" target="_blank"
+                        rel="noopener noreferrer">Wiki Projeto Mayhem</a></li>
+                    <li *ngIf="infos.sephiroth.link_youtube_cdh !=''"><a
+                        href="{{infos.sephiroth.link_youtube_cdh}}"
+                        target="_blank" rel="noopener noreferrer">Video CdH</a></li>
+                    <li *ngIf="infos.sephiroth.link_youtube_yair !=''"><a
+                        href="{{infos.sephiroth.link_youtube_yair}}"
+                        target="_blank" rel="noopener noreferrer">Video Yair
+                        Alon</a></li>
+                  </ul>
+                </div>
+              </div>
+            </ng-container>
+            <ng-container *ngIf="infos.angel !=''">
+
+              <div class="mb-3">
+                <h1>{{infos.angel.angel}}</h1>
+                <div class="row">
+                  <div class="col-12">
+
                     <ul>
-                      <li *ngIf="infos.sephiroth.wiki_mdd !=''"><a
-                          href="{{infos.sephiroth.wiki_mdd}}" target="_blank"
-                          rel="noopener noreferrer">Wiki Projeto Mayhem</a></li>
-                      <li *ngIf="infos.sephiroth.link_youtube_cdh !=''"><a
-                          href="{{infos.sephiroth.link_youtube_cdh}}"
-                          target="_blank" rel="noopener noreferrer">Video CdH</a></li>
-                      <li *ngIf="infos.sephiroth.link_youtube_yair !=''"><a
-                          href="{{infos.sephiroth.link_youtube_yair}}"
-                          target="_blank" rel="noopener noreferrer">Video Yair
-                          Alon</a></li>
+                      <li *ngIf="infos.angel.major_arcana[0] !=''">Arcano Maior:
+                        <a [href]="'/?major_arcana=' + infos.angel.major_arcana[0]" target="_blank" rel="noopener noreferrer">
+                          {{infos.angel.major_arcana[0]}}
+                        </a>
+                      </li>
+                      <li *ngIf="infos.angel.minor_arcana[0] !=''">Arcano Menor:
+                        <a [href]="'/?minor_arcana=' + infos.angel.minor_arcana[0]" target="_blank" rel="noopener noreferrer">
+                          {{infos.angel.minor_arcana[0]}}
+                        </a>
+                      </li>
+                      <li *ngIf="infos.angel.polarity !=''">Polaridade: {{infos.angel.polarity}}</li>
+                      <li *ngIf="infos.angel.hour !=''">Horario do dia: {{infos.angel.hour}}</li>
+                      <li *ngIf="infos.angel.caste !=''">Reino: {{infos.angel.caste}}</li>
+                      <li *ngIf="infos.angel.color !=''">Cor:
+                        <div style="background-color: {{infos.angel.color}}">&nbsp;</div>
+                      </li>
+                      <li *ngIf="infos.angel.hebrew_name !=''">Letra Hebraica: {{infos.angel.hebrew_name}}</li>
+                      <li *ngIf="infos.angel.link_wiki_mdd !=''">
+                        <a href="{{infos.angel.link_wiki_mdd}}" target="_blank" rel="noopener noreferrer">
+                          Wiki Projeto Mayhem
+                        </a>
+                      </li>
+                      <li *ngIf="infos.angel.versiculo !=''">versiculo: {{infos.angel.versiculo}}</li>
+                      <li *ngIf="infos.angel.salmo !=''">Salmo: {{infos.angel.salmo}}</li>
+                      <li *ngIf="infos.angel.deamon !=''">Demonio oposto: {{infos.angel.deamon}}</li>
                     </ul>
                   </div>
                 </div>
-              </ng-container>
-              <ng-container *ngIf="infos.angel !=''">
-
-                <div class="mb-3">
-                  <h1>{{infos.angel.angel}}</h1>
-                  <div class="row">
-                    <div class="col-12">
-
-                      <ul>
-                        <li *ngIf="infos.angel.major_arcana[0] !=''">Arcano Maior:
-                          <a [href]="'/?major_arcana=' + infos.angel.major_arcana[0]" target="_blank" rel="noopener noreferrer">
-                            {{infos.angel.major_arcana[0]}}
-                          </a>
-                        </li>
-                        <li *ngIf="infos.angel.minor_arcana[0] !=''">Arcano Menor:
-                          <a [href]="'/?minor_arcana=' + infos.angel.minor_arcana[0]" target="_blank" rel="noopener noreferrer">
-                            {{infos.angel.minor_arcana[0]}}
-                          </a>
-                        </li>
-                        <li *ngIf="infos.angel.polarity !=''">Polaridade: {{infos.angel.polarity}}</li>
-                        <li *ngIf="infos.angel.hour !=''">Horario do dia: {{infos.angel.hour}}</li>
-                        <li *ngIf="infos.angel.caste !=''">Reino: {{infos.angel.caste}}</li>
-                        <li *ngIf="infos.angel.color !=''">Cor:
-                          <div style="background-color: {{infos.angel.color}}">&nbsp;</div>
-                        </li>
-                        <li *ngIf="infos.angel.hebrew_name !=''">Letra Hebraica: {{infos.angel.hebrew_name}}</li>
-                        <li *ngIf="infos.angel.link_wiki_mdd !=''">
-                          <a href="{{infos.angel.link_wiki_mdd}}" target="_blank" rel="noopener noreferrer">
-                            Wiki Projeto Mayhem
-                          </a>
-                        </li>
-                        <li *ngIf="infos.angel.versiculo !=''">versiculo: {{infos.angel.versiculo}}</li>
-                        <li *ngIf="infos.angel.salmo !=''">Salmo: {{infos.angel.salmo}}</li>
-                        <li *ngIf="infos.angel.deamon !=''">Demonio oposto: {{infos.angel.deamon}}</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </ng-container>
-            </ng-container>
-            <ng-template #other_content>
-              <div class="mb-3">
-                <p>
-                  Kabbalah (também Cabala, Qabbala, cabbala, cabbalah, kabala,
-                  kabalah, kabbala) é uma sabedoria que investiga a natureza
-                  divina. Kabbalah (קבלה QBLH) é uma palavra de origem hebraica
-                  que significa recepção. A Kabbalah — corpo de sabedoria
-                  espiritual mais
-                  antigo — contém as chaves, que permaneceram ocultas durante um
-                  longo tempo, para os segredos do universo, bem como as chaves
-                  para os mistérios do coração e da alma humana. Os ensinamentos
-                  cabalísticos explicam as complexidades
-                  do universo material e imaterial, bem como a natureza física e
-                  metafísica de toda a humanidade. A Kabbalah mostra em detalhes
-                  como navegar por este vasto campo, a fim de eliminar toda
-                  forma de caos, dor e sofrimento.
-                  Durante milhares de anos, os grandes sábios cabalistas têm nos
-                  ensinado que cada ser humano nasce com o potencial para ser
-                  grande. A Kabbalah é o meio para ativar este potencial. A
-                  Kabbalah sempre teve a intenção de
-                  ser usada, e não somente estudada. Seu propósito é trazer
-                  clareza, compreensão e liberdade para nossas vidas.
-                </p>
               </div>
-            </ng-template>
-          </div>
-          <div class="card-footer">
-          </div>
+            </ng-container>
+          </ng-container>
+          <ng-template #other_content>
+            <div class="mb-3">
+              <p>
+                Kabbalah (também Cabala, Qabbala, cabbala, cabbalah, kabala,
+                kabalah, kabbala) é uma sabedoria que investiga a natureza
+                divina. Kabbalah (קבלה QBLH) é uma palavra de origem hebraica
+                que significa recepção. A Kabbalah — corpo de sabedoria
+                espiritual mais
+                antigo — contém as chaves, que permaneceram ocultas durante um
+                longo tempo, para os segredos do universo, bem como as chaves
+                para os mistérios do coração e da alma humana. Os ensinamentos
+                cabalísticos explicam as complexidades
+                do universo material e imaterial, bem como a natureza física e
+                metafísica de toda a humanidade. A Kabbalah mostra em detalhes
+                como navegar por este vasto campo, a fim de eliminar toda
+                forma de caos, dor e sofrimento.
+                Durante milhares de anos, os grandes sábios cabalistas têm nos
+                ensinado que cada ser humano nasce com o potencial para ser
+                grande. A Kabbalah é o meio para ativar este potencial. A
+                Kabbalah sempre teve a intenção de
+                ser usada, e não somente estudada. Seu propósito é trazer
+                clareza, compreensão e liberdade para nossas vidas.
+              </p>
+            </div>
+          </ng-template>
+
+          <div class="paper" id="paper"></div>
+        </div>
+        <div class="card-footer">
         </div>
       </div>
     </div>
@@ -963,8 +1037,7 @@
   <!-- Footer -->
   <footer>
     feito por <a
-      href="https://api.whatsapp.com/send?phone=5511957713498&text=Ol%C3%A1%20Kevin%20acabei%20de%20testar%20sei%20app..."
-      target="_blank"> Kevin Martins</a>
+      href="https://api.whatsapp.com/send?phone=5511957713498&text=Ol%C3%A1%20Kevin%20acabei%20de%20testar%20sei%20app..." target="_blank"> Kevin Martins</a>
   </footer>
 </div>
 <!-- <router-outlet></router-outlet> -->
