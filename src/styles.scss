@@ -2,3 +2,23 @@
 
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+
+
+.ng-autocomplete {
+  width: 240px;
+  .input {
+    input{
+      background-color: #171925 !important;
+      color:rgb(255, 255, 255) !important;
+
+    }
+  }
+  .suggestions-container .item a{
+    background-color: #171925 !important;
+    color:rgb(255, 255, 255) !important;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
+}

@@ -1,13 +1,13 @@
 import { Component, enableProdMode, Inject  } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { DOCUMENT } from '@angular/common';
-import { Observable, throwError } from 'rxjs';
-import { retry, catchError } from 'rxjs/operators';
 
 import { Chart } from "astrochart-modified";
 import { Origin, Horoscope } from "circular-natal-horoscope-js";
 import * as CryptoJS from 'crypto-js';
+
+import { DataService } from './services/data.service';
+import { GeocodeService } from './services/geocode.service';
 
 
 enableProdMode();
@@ -36,10 +36,13 @@ export class AppComponent {
   keyword = 'name';
   public infos: any = { "sephiroth": "", "carta": "", "angel": ""};
 
-  constructor(@Inject(DOCUMENT) document: any, private activatedRoute: ActivatedRoute,
-  private httpClient: HttpClient) {
+  constructor(
+    @Inject(DOCUMENT) document: any,
+    private activatedRoute: ActivatedRoute,
+    private dataapi: DataService,
+    private geocode: GeocodeService
+    ) {
     this.dom = document;
-
 
     this.activatedRoute.queryParams.subscribe(params => {
         let major_arcana = (params['major_arcana'] != '') ? params['major_arcana'] : null ;
@@ -49,7 +52,7 @@ export class AppComponent {
 
         if (major_arcana) {
 
-          this.getJsonTarot().subscribe(result =>{
+          this.dataapi['getJsonTarot']().then(result =>{
             this.carta = result;
             this.infos.carta = this.getMajor_arcana(major_arcana);
           });
@@ -57,7 +60,7 @@ export class AppComponent {
 
         if (minor_arcana) {
 
-          this.getJsonTarot().subscribe(result =>{
+          this.dataapi.getJsonTarot().then(result =>{
             this.carta = result;
             this.infos.carta = this.getMinor_arcana(minor_arcana, false);
           });
@@ -66,7 +69,7 @@ export class AppComponent {
 
         if (angel_name) {
 
-          this.getJsonAngel().subscribe(result =>{
+          this.dataapi.getJsonAngel().subscribe(result =>{
             this.angel = result;
             this.infos.angel =  this.AngelInfo(this.angel, angel_name);
 
@@ -75,9 +78,9 @@ export class AppComponent {
 
         if (astrology_chart) {
 
-          this.getJsonAngel().subscribe(result =>{
+          this.dataapi.getJsonAngel().subscribe(result =>{
             this.angel = result;
-            this.getJsonTarot().subscribe(result2 =>{
+            this.dataapi.getJsonTarot().then(result2 =>{
               this.carta = result2;
               this.structureInfo(decodeURI(astrology_chart.replace(/ /g, "+")));
             });
@@ -90,18 +93,18 @@ export class AppComponent {
 
   ngOnInit() {
 
-    this.getJsonAngel().subscribe(result =>{
+    this.dataapi.getJsonAngel().subscribe(result =>{
       this.angel = result;
 
     });
-    this.getJsonSephiroth().subscribe(result =>{
+    this.dataapi.getJsonSephiroth().subscribe(result =>{
       this.sefira = result;
 
     });
-    this.getJsonTarot().subscribe(result =>{
+    this.dataapi.getJsonTarot().then(result =>{
       this.carta = result;
 
-    });
+    }).catch((e) => console.error(e));
 
   }
 
@@ -131,7 +134,7 @@ export class AppComponent {
   }
 
   search(name: string){
-    
+
   }
 
   structureInfo(ciphertext){
@@ -211,19 +214,62 @@ export class AppComponent {
 
     this.infos.carta = "";
     this.infos.sephiroth = "";
+    // this.dataapi.getJsonTarot().then((result: any) => {
+    //   // console.log(Object.keys(result[0]));
+
+
+    //   let test: any = Object.values(result)
+    //   .filter((key: any) =>{
+
+    //     return Object.values(key);
+
+    //   });
+    //   let teste3 = Object.values(test[0]).concat(Object.values(test[1]));
+
+    //   let test2 = teste3.filter((key2: any) => {
+    //     return key2.name.indexOf('Cop') != -1;
+    //   });
+
+    //   console.log(test2);
+
+    // })
+    // .catch((e) => console.error(e));
 
     this.infos.carta = this.getMajor_arcana(name);
+
+  }
+
+  teste(value: any){
+    this.dataapi.getJsonTarot().then((result: any) => {
+      // console.log(Object.keys(result[0]));
+
+
+      let test: any = Object.values(result)
+      .filter((key: any) =>{
+
+        return Object.values(key);
+
+      });
+      let teste3 = Object.values(test[0]).concat(Object.values(test[1]));
+
+      let test2 = teste3.filter((key2: any) => {
+        return key2.name.includes('co');
+      });
+
+      console.log(test2);
+
+    })
+    .catch((e) => console.error(e));
   }
 
   getMajor_arcana(name: string){
-
-    let card = this.carta[0].major_arcana[name];
+    let card = this.carta.major_arcana[name];
     return card;
   }
 
   getMinor_arcana(name: string, array: boolean){
     if (typeof name === 'string') {
-      let card = this.carta[0].minor_arcana[name];
+      let card = this.carta.minor_arcana[name];
 
       if(array === true){
         let id = card['id'];
@@ -445,7 +491,7 @@ export class AppComponent {
     let end = encodeURIComponent(state +" "+val);
     this.data =  [];
 
-    this.getLatLong(end)
+    this.geocode.getLatLong(end)
     .subscribe(data => {
       let format_data: Array<any> = [];
       let response: Array<any> = data['results'];
@@ -468,58 +514,14 @@ export class AppComponent {
     this.long = item.geometry.lng;
   }
 
-  getLatLong(end: any){
-     return this.httpClient.get('https://api.opencagedata.com/geocode/v1/json?key=1bae3473c72846aa98a8fcc666fa5b65&q='+end);
+
+  getTarot(){
+
+    this.dataapi.getJsonTarot().then(result =>{
+      console.log(result);
+
+      this.carta = result;
+
+    }).catch((e) => console.error(e));
   }
-
-  getJsonAngel(): Observable<any[]>{
-    const httpOptions = {
-      headers: new HttpHeaders({
-        'Access-Control-Allow-Origin':'*'
-      })
-    };
-    return this.httpClient.get<any[]>('../assets/angels.json', httpOptions)
-    .pipe(
-      retry(2),
-      catchError(this.handleError));
-  }
-
-  getJsonTarot(): Observable<any[]>{
-    const httpOptions = {
-      headers: new HttpHeaders({
-        'Access-Control-Allow-Origin':'*'
-      })
-    };
-    return this.httpClient.get<any[]>('../assets/tarot.json', httpOptions)
-    .pipe(
-      retry(2),
-      catchError(this.handleError));
-  }
-
-  getJsonSephiroth(): Observable<any[]>{
-    const httpOptions = {
-      headers: new HttpHeaders({
-        'Access-Control-Allow-Origin':'*'
-      })
-    };
-    return this.httpClient.get<any[]>('../assets/sephiroth.json', httpOptions)
-    .pipe(
-      retry(2),
-      catchError(this.handleError));
-
-  }
-
-  // Manipulação de erros
-  handleError(error: HttpErrorResponse) {
-    let errorMessage = '';
-    if (error.error instanceof ErrorEvent) {
-      // Erro ocorreu no lado do client
-      errorMessage = error.error.message;
-    } else {
-      // Erro ocorreu no lado do servidor
-      errorMessage = `Código do erro: ${error.status}, ` + `menssagem: ${error.message}`;
-    }
-    console.log(errorMessage);
-    return throwError(errorMessage);
-  };
 }

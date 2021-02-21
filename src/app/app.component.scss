@@ -1,4 +1,21 @@
 
+
+.backgroud{
+  background-color: #171616 !important;
+}
+
+#div-info{
+  a{
+    color:#ff0000 !important;
+  }
+
+}
+
+input{
+  background-color: #171925 !important;
+  color:rgb(255, 255, 255) !important;
+}
+
 .navbar .name {
   padding-left: 25px !important;
   @media only screen and (max-width: 600px) {
@@ -27,6 +44,7 @@ svg {
     vertical-align: baseline;
 }
 
+
 .backbroud-kabbalah {
     box-sizing: content-box !important;
     position: relative;
@@ -52,6 +70,14 @@ svg {
 
 .ng-autocomplete {
   width: 240px;
+  .input {
+    input{
+      background-color: #171925 !important;
+      color:rgb(255, 255, 255) !important;
+
+    }
+  }
+
   @media only screen and (max-width: 600px) {
     width: 100%;
   }
