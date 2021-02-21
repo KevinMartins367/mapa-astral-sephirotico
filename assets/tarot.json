@@ -608,7 +608,7 @@
         "image_marseille": "assets/images/tarot/tarot-de-marseille/medium/ATU20.jpg"
       },
       "mundo": {
-        "name": "20 - O Julgamento",
+        "name": "21 - O Mundo",
         "caractere_hebraico": "ת",
         "pages_kabbalah_hermetica": "",
         "runa": "ᚠ Fehu",
@@ -813,7 +813,7 @@
           "1",
           "6"
         ],
-        "astrologica": "Jupiter em Leão",
+        "astrologica": "Júpiter em Leão",
         "caractere_hebraico": "י",
         "sephiroth": "Tipheret em Fogo",
         "reino": "Água em Fogo regido por Tipheret",
