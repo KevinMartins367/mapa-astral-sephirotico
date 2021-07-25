@@ -740,7 +740,18 @@
                   <div class="row">
                     <div class="col-6">
                       <ul>
-                        <li *ngIf="infos.carta.caractere_hebraico !=''">letra  Hebraica:  <span class="hebraic">{{infos.carta.caractere_hebraico}}</span>
+                        <li *ngIf="infos.carta.caractere_hebraico !=''">letra  Hebraica:  <span class="hebraic">{{infos.carta.caractere_hebraico.caractere_hebraico}} {{infos.carta.caractere_hebraico.name}}</span>
+                          <ul>
+                            <li *ngIf="infos.carta.caractere_hebraico.significance !=''" >Significado: {{infos.carta.caractere_hebraico.significance}}</li>
+                            <li *ngIf="infos.carta.caractere_hebraico.value !=''" >Valor: {{infos.carta.caractere_hebraico.value}}</li>
+                            <li *ngIf="infos.carta.caractere_hebraico.caractere_romane !=''" >Letra equivalente: {{infos.carta.caractere_hebraico.caractere_romane}}</li>
+                            <li *ngIf="infos.carta.caractere_hebraico.planeta !=''" >Planeta: {{infos.carta.caractere_hebraico.planeta}}</li>
+                            <li *ngIf="infos.carta.caractere_hebraico.correspondence !=''" >Correspondencia: {{infos.carta.caractere_hebraico.correspondence}}</li>
+                            <li *ngIf="infos.carta.caractere_hebraico.positive_polarity !=''" >Qualidade Positiva: {{infos.carta.caractere_hebraico.positive_polarity}}</li>
+                            <li *ngIf="infos.carta.caractere_hebraico.negative_polarity !=''" >Qualidade Negativa: {{infos.carta.caractere_hebraico.negative_polarity}}</li>
+                            <li *ngIf="infos.carta.caractere_hebraico.kabbalah_hermetica !=''" >Pagina do Kabbalah Hermetica: {{infos.carta.caractere_hebraico.kabbalah_hermetica}} pg</li>
+                            <li *ngIf="infos.carta.caractere_hebraico.exercise !=''" >Ritual: {{infos.carta.caractere_hebraico.exercise}}</li>
+                          </ul>
                         </li>
                         <li *ngIf="infos.carta.runa !=''">Runa: <span class="hebraic">{{infos.carta.runa}}</span>
                         </li>
@@ -764,6 +775,7 @@
                         <li *ngIf="infos.carta.arquetipo_MBTI !=''">Arquétipo MBTI: {{infos.carta.arquetipo_MBTI}}</li>
                         <li *ngIf="infos.carta.astrologica !=''">Correspondente Astrológico: {{infos.carta.astrologica}}</li>
                         <li *ngIf="infos.carta.word_key !=''">Palavra Chave: {{infos.carta.word_key}}</li>
+                        <li *ngIf="infos.tarot_crowley_goya_sign !=''">Significado Goya: {{infos.carta.tarot_crowley_goya_sign}}</li>
                         <li *ngIf="infos.carta.sephiroth !=''">Correspondente sephirotico: {{infos.carta.sephiroth}}</li>
                         <li *ngIf="infos.carta.reino !=''">Correspondente do Reino: {{infos.carta.reino}}</li>
                       </ul>
@@ -789,6 +801,10 @@
                         </li>
                         <li>Tarot Hermetico:
                           {{infos.carta.pages_tarot_hermetico}} pg</li>
+                        <li *ngIf="infos.carta.pages_tarot_crowley_goya !=''">Pagina
+                          do Tarot O Templo Vivente Frater Goya: {{infos.carta.pages_tarot_crowley_goya}} pg</li>
+                        <li *ngIf="infos.carta.pages_tarot_crowley_word_key !=''">Pagina
+                          do TARÔ DE CROWLEY - PALAVRAS-CHAVE: {{infos.carta.pages_tarot_crowley_word_key}} pg</li>
                       </ul>
                     </div>
                     <div class="col-12">
@@ -875,8 +891,18 @@
                             <div class="card bg-dark card-body">
                               <h3 *ngIf="card.name !=''">Nome: {{card.name}}</h3>
                               <ul>
-                                <li *ngIf="card.caractere_hebraico !=''">Letra Hebraica:
-                                  <span class="hebraic">{{card.caractere_hebraico}}</span>
+                                <li *ngIf="card.caractere_hebraico !=''">letra  Hebraica:  <span class="hebraic">{{card.caractere_hebraico.caractere_hebraico}} {{card.caractere_hebraico.name}}</span>
+                                  <ul>
+                                    <li *ngIf="card.caractere_hebraico.significance !=''" >Significado: {{card.caractere_hebraico.significance}}</li>
+                                    <li *ngIf="card.caractere_hebraico.value !=''" >Valor: {{card.caractere_hebraico.value}}</li>
+                                    <li *ngIf="card.caractere_hebraico.caractere_romane !=''" >Letra equivalente: {{card.caractere_hebraico.caractere_romane}}</li>
+                                    <li *ngIf="card.caractere_hebraico.planeta !=''" >Planeta: {{card.caractere_hebraico.planeta}}</li>
+                                    <li *ngIf="card.caractere_hebraico.correspondence !=''" >Correspondencia: {{card.caractere_hebraico.correspondence}}</li>
+                                    <li *ngIf="card.caractere_hebraico.positive_polarity !=''" >Qualidade Positiva: {{card.caractere_hebraico.positive_polarity}}</li>
+                                    <li *ngIf="card.caractere_hebraico.negative_polarity !=''" >Qualidade Negativa: {{card.caractere_hebraico.negative_polarity}}</li>
+                                    <li *ngIf="card.caractere_hebraico.kabbalah_hermetica !=''" >Pagina do Kabbalah Hermetica: {{card.caractere_hebraico.kabbalah_hermetica}} pg</li>
+                                    <li *ngIf="card.caractere_hebraico.exercise !=''" >Ritual: {{card.caractere_hebraico.exercise}}</li>
+                                  </ul>
                                 </li>
                                 <li *ngIf="card.runa !=''">Runa: <span class="hebraic">{{card.runa}}</span>
                                 </li>
@@ -902,12 +928,23 @@
                                 <li *ngIf="card.word_key !=''">Palavra chave:
                                   {{card.word_key}}
                                 </li>
+                                <li *ngIf="card.tarot_crowley_goya_sign !=''">Significado Goya:
+                                  {{card.tarot_crowley_goya_sign}}
+                                </li>
                                 <li *ngIf="card.reino !=''">Correspondente de
                                   reino: {{card.reino}}
                                 </li>
                                 <li *ngIf="card.pages_tarot_hermetico !=''">Pagina
                                   do Tarot Hermético:
                                   {{card.pages_tarot_hermetico}} pg
+                                </li>
+                                <li *ngIf="card.pages_tarot_crowley_goya !=''">Pagina
+                                  do Tarot O Templo Vivente Frater Goya:
+                                  {{card.pages_tarot_crowley_goya}} pg
+                                </li>
+                                <li *ngIf="card.pages_tarot_crowley_word_key !=''">Pagina
+                                  do TARÔ DE CROWLEY - PALAVRAS-CHAVE:
+                                  {{card.pages_tarot_crowley_word_key}} pg
                                 </li>
 
                                 <li *ngIf="card.link_wiki_mdd !=''"><a

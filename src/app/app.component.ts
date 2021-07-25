@@ -24,6 +24,7 @@ export class AppComponent {
   public angel: any = '';
   public carta: any = '';
   public sefira: any = '';
+  public caractere_hebraico: any = '';
   public horoscope_info: any = '';
   public dom: any = '';
   public mobile: any = false;
@@ -34,7 +35,7 @@ export class AppComponent {
   public lat:any = "";
   public long:any = "";
   keyword = 'name';
-  public infos: any = { "sephiroth": "", "carta": "", "angel": ""};
+  public infos: any = { "sephiroth": "", "carta": "", "angel": "", "caractere_hebraico": ""};
 
   constructor(
     @Inject(DOCUMENT) document: any,
@@ -101,6 +102,10 @@ export class AppComponent {
       this.sefira = result;
 
     });
+    this.dataapi.getJsonCaractere_hebraico().subscribe(result =>{
+      this.caractere_hebraico = result;
+
+    });
     this.dataapi.getJsonTarot().then(result =>{
       this.carta = result;
 
@@ -154,6 +159,7 @@ export class AppComponent {
 
   factoryInfo(data_user) {
     this.infos.carta = "";
+    this.infos.caractere_hebraico = "";
     this.dom.getElementById('paper').innerHTML ="";
 
 
@@ -200,6 +206,7 @@ export class AppComponent {
   searchInfo(name : any){
     this.infos.carta = "";
     this.infos.sephiroth = "";
+    this.infos.caractere_hebraico = "";
     this.cards_mijor = [];
     if (name != 'daath') {
       this.sefira[0][name].minor_arcana = this.sefira[0][name].minor_arcana.map((card: any) => this.getMinor_arcana(card, true));
@@ -214,26 +221,7 @@ export class AppComponent {
 
     this.infos.carta = "";
     this.infos.sephiroth = "";
-    // this.dataapi.getJsonTarot().then((result: any) => {
-    //   // console.log(Object.keys(result[0]));
-
-
-    //   let test: any = Object.values(result)
-    //   .filter((key: any) =>{
-
-    //     return Object.values(key);
-
-    //   });
-    //   let teste3 = Object.values(test[0]).concat(Object.values(test[1]));
-
-    //   let test2 = teste3.filter((key2: any) => {
-    //     return key2.name.indexOf('Cop') != -1;
-    //   });
-
-    //   console.log(test2);
-
-    // })
-    // .catch((e) => console.error(e));
+    this.infos.caractere_hebraico = "";
 
     this.infos.carta = this.getMajor_arcana(name);
 
@@ -264,12 +252,18 @@ export class AppComponent {
 
   getMajor_arcana(name: string){
     let card = this.carta.major_arcana[name];
+    console.log(card);
+    card.caractere_hebraico = this.caractere_hebraico[card['caractere_hebraico_link']];
+
     return card;
   }
 
   getMinor_arcana(name: string, array: boolean){
     if (typeof name === 'string') {
       let card = this.carta.minor_arcana[name];
+      card.caractere_hebraico = this.caractere_hebraico[card['caractere_hebraico_link']];
+
+      console.log(card);
 
       if(array === true){
         let id = card['id'];
@@ -283,6 +277,11 @@ export class AppComponent {
 
       return name;
     }
+  }
+
+  getCaractere_hebraico(name: string){
+    this.infos.caractere_hebraico = this.caractere_hebraico[name];
+
   }
 
   angel_sign(sign: any, graus: any) {
@@ -341,7 +340,6 @@ export class AppComponent {
       return this.angel[indice][sign][5];
     }
   }
-
 
   AngelInfo(angel: any, name: string){
 

@@ -58,6 +58,19 @@ export class DataService {
 
   }
 
+  public getJsonCaractere_hebraico(): Observable<any[]> {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Access-Control-Allow-Origin': '*'
+      })
+    };
+    return this.httpClient.get<any[]>('../assets/caractere_hebraico.json', httpOptions)
+      .pipe(
+        retry(2),
+        catchError(this.handleError));
+
+  }
+
   // Manipulação de erros
   private handleError(error: HttpErrorResponse) {
     let errorMessage = '';

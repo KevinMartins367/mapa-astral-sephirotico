@@ -32,9 +32,6 @@
             ],
             "styles": [
               "src/styles.scss"
-            ],
-            "scripts": [
-              "../node_modules/crypto-js/crypto-js.js"
             ]
           },
           "configurations": {
