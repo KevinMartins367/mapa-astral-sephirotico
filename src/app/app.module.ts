@@ -11,10 +11,14 @@ import {AutocompleteLibModule} from 'angular-ng-autocomplete';
 
 import { DataService } from './services/data.service';
 import { GeocodeService } from './services/geocode.service';
+import { HomeComponent } from './home/home.component';
+import { InfosComponent } from './infos/infos.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    InfosComponent
   ],
   imports: [
     BrowserModule,

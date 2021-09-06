@@ -71,6 +71,19 @@ export class DataService {
 
   }
 
+  public getJsonOdus(): Observable<any[]> {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Access-Control-Allow-Origin': '*'
+      })
+    };
+    return this.httpClient.get<any[]>('../assets/odus.json', httpOptions)
+      .pipe(
+        retry(2),
+        catchError(this.handleError));
+
+  }
+
   // Manipulação de erros
   private handleError(error: HttpErrorResponse) {
     let errorMessage = '';
