@@ -1,0 +1,1393 @@
+[
+    {
+        "aries": [
+            {
+                "id": "1",
+                "angel": "VEHUIAH",
+                "major_arcana": [
+                    "imperador"
+                ],
+                "minor_arcana": [
+                    "2♣️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "00:00/00:20",
+                "caste": "Serafins",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": ""
+            },
+            {
+                "id": "2",
+                "angel": "JELIEL",
+                "major_arcana": [
+                    "imperador"
+                ],
+                "minor_arcana": [
+                    "2♣️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "00:20/00:40",
+                "caste": "Serafins",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": ""
+            },
+            {
+                "id": "3",
+                "angel": "SITAEL",
+                "major_arcana": [
+                    "imperador"
+                ],
+                "minor_arcana": [
+                    "3♣️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "00:40/01:00",
+                "caste": "Serafins",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": ""
+            },
+            {
+                "id": "4",
+                "angel": "ELEMIAH",
+                "major_arcana": [
+                    "imperador"
+                ],
+                "minor_arcana": [
+                    "3♣️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "01:00/01:20",
+                "caste": "Serafins",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": ""
+            },
+            {
+                "id": "5",
+                "angel": "MAHASIAH",
+                "major_arcana": [
+                    "imperador"
+                ],
+                "minor_arcana": [
+                    "4♣️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "01:20/01:40",
+                "caste": "Serafins",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": ""
+            },
+            {
+                "id": "6",
+                "angel": "LELAHEL",
+                "major_arcana": [
+                    "imperador"
+                ],
+                "minor_arcana": [
+                    "4♣️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "01:40/02:00",
+                "caste": "Serafins",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": ""
+            }
+        ]
+    },
+    {
+        "taurus": [
+            {
+                "id": "7",
+                "angel": "ACHAIAH",
+                "major_arcana": [
+                    "hierofante"
+                ],
+                "minor_arcana": [
+                    "5♦️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "02:00/02:20",
+                "caste": "Serafins",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": ""
+            },
+            {
+                "id": "8",
+                "angel": "CAHETEL",
+                "major_arcana": [
+                    "hierofante"
+                ],
+                "minor_arcana": [
+                    "5♦️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "02:20/02:40",
+                "caste": "Serafins",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": ""
+            },
+            {
+                "id": "9",
+                "angel": "HAZIEL",
+                "major_arcana": [
+                    "hierofante"
+                ],
+                "minor_arcana": [
+                    "6♦️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "02:40/03:00",
+                "caste": "Querubins",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": ""
+            },
+            {
+                "id": "10",
+                "angel": "ALADIAH",
+                "major_arcana": [
+                    "hierofante"
+                ],
+                "minor_arcana": [
+                    "6♦️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "03:00/03:20",
+                "caste": "Querubins",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": ""
+            },
+            {
+                "id": "11",
+                "angel": "LAUVIAH",
+                "major_arcana": [
+                    "hierofante"
+                ],
+                "minor_arcana": [
+                    "7♦️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "03:20/03:40",
+                "caste": "Querubins",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": ""
+            },
+            {
+                "id": "12",
+                "angel": "HAHAIAH",
+                "major_arcana": [
+                    "hierofante"
+                ],
+                "minor_arcana": [
+                    "7♦️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "03:40/04:00",
+                "caste": "Querubins",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": ""
+            }
+        ]
+    },
+    {
+        "gemini": [
+            {
+                "id": "13",
+                "angel": "YEZALEL",
+                "major_arcana": [
+                    "enamorados"
+                ],
+                "minor_arcana": [
+                    "8♠️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "04:00/04:20",
+                "caste": "Querubins",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": ""
+            },
+            {
+                "id": "14",
+                "angel": "MEBAHEL",
+                "major_arcana": [
+                    "enamorados"
+                ],
+                "minor_arcana": [
+                    "8♠️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "04:20/04:40",
+                "caste": "Querubins",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": ""
+            },
+            {
+                "id": "15",
+                "angel": "HARIEL",
+                "major_arcana": [
+                    "enamorados"
+                ],
+                "minor_arcana": [
+                    "9♠️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "04:40/05:00",
+                "caste": "Querubins",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": ""
+            },
+            {
+                "id": "16",
+                "angel": "HEKAMIAH",
+                "major_arcana": [
+                    "enamorados"
+                ],
+                "minor_arcana": [
+                    "9♠️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "05:00/05:20",
+                "caste": "Querubins",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": ""
+            },
+            {
+                "id": "17",
+                "angel": "LAUVIAH",
+                "major_arcana": [
+                    "enamorados"
+                ],
+                "minor_arcana": [
+                    "10♠️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "05:20/05:40",
+                "caste": "Tronos",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": ""
+            },
+            {
+                "id": "18",
+                "angel": "CALIEL",
+                "major_arcana": [
+                    "enamorados"
+                ],
+                "minor_arcana": [
+                    "10♠️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "05:40/06:00",
+                "caste": "Tronos",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": ""
+            }
+        ]
+    },
+    {
+        "cancer": [
+            {
+                "id": "19",
+                "angel": "LEUVIAH",
+                "major_arcana": [
+                    "carro"
+                ],
+                "minor_arcana": [
+                    "2♥️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "06:00/06:20",
+                "caste": "Tronos",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": ""
+            },
+            {
+                "id": "20",
+                "angel": "PAHALIAH",
+                "major_arcana": [
+                    "carro"
+                ],
+                "minor_arcana": [
+                    "2♥️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "06:20/06:40",
+                "caste": "Tronos",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "21",
+                "angel": "NELCHAEL",
+                "major_arcana": [
+                    "carro"
+                ],
+                "minor_arcana": [
+                    "3♥️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "06:40/07:00",
+                "caste": "Tronos",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "22",
+                "angel": "IEIAIEL",
+                "major_arcana": [
+                    "carro"
+                ],
+                "minor_arcana": [
+                    "3♥️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "07:00/07:20",
+                "caste": "Tronos",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "23",
+                "angel": "MELAHEL",
+                "major_arcana": [
+                    "carro"
+                ],
+                "minor_arcana": [
+                    "4♥️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "07:20/07:40",
+                "caste": "Tronos",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "24",
+                "angel": "HAHEUIAH",
+                "major_arcana": [
+                    "carro"
+                ],
+                "minor_arcana": [
+                    "4♥️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "07:40/08:00",
+                "caste": "Tronos",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            }
+        ]
+    },
+    {
+        "leo": [
+            {
+                "id": "25",
+                "angel": "NITH-HAIAH",
+                "major_arcana": [
+                    "forca"
+                ],
+                "minor_arcana": [
+                    "5♣️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "08:00/08:20",
+                "caste": "Dominações",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "26",
+                "angel": "HAAIAH",
+                "major_arcana": [
+                    "forca"
+                ],
+                "minor_arcana": [
+                    "5♣️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "08:20/08:40",
+                "caste": "Dominações",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "27",
+                "angel": "IERATHEL",
+                "major_arcana": [
+                    "forca"
+                ],
+                "minor_arcana": [
+                    "6♣️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "08:40/09:00",
+                "caste": "Dominações",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "28",
+                "angel": "SEHEIAH",
+                "major_arcana": [
+                    "forca"
+                ],
+                "minor_arcana": [
+                    "6♣️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "09:00/09:20",
+                "caste": "Dominações",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "29",
+                "angel": "REYEL",
+                "major_arcana": [
+                    "forca"
+                ],
+                "minor_arcana": [
+                    "7♣️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "09:20/09:40",
+                "caste": "Dominações",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "30",
+                "angel": "OMAEL",
+                "major_arcana": [
+                    "forca"
+                ],
+                "minor_arcana": [
+                    "7♣️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "09:40/10:00",
+                "caste": "Dominações",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            }
+        ]
+    },
+    {
+        "virgo": [
+            {
+                "id": "31",
+                "angel": "LECABEL",
+                "major_arcana": [
+                    "eremita"
+                ],
+                "minor_arcana": [
+                    "8♦️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "10:00/10:20",
+                "caste": "Dominações",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "32",
+                "angel": "VASARIAH",
+                "major_arcana": [
+                    "eremita"
+                ],
+                "minor_arcana": [
+                    "8♦️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "10:20/10:40",
+                "caste": "Dominações",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "33",
+                "angel": "YEHUIAH",
+                "major_arcana": [
+                    "eremita"
+                ],
+                "minor_arcana": [
+                    "9♦️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "10:40/11:00",
+                "caste": "Potências",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "34",
+                "angel": "LEHAHIAH",
+                "major_arcana": [
+                    "eremita"
+                ],
+                "minor_arcana": [
+                    "9♦️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "11:00/11:20",
+                "caste": "Potências",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "35",
+                "angel": "CHAVAKIAH",
+                "major_arcana": [
+                    "eremita"
+                ],
+                "minor_arcana": [
+                    "10♦️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "11:20/11:40",
+                "caste": "Potências",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "36",
+                "angel": "MENADEL",
+                "major_arcana": [
+                    "eremita"
+                ],
+                "minor_arcana": [
+                    "10♦️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "11:40/12:00",
+                "caste": "Potências",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            }
+        ]
+    },
+    {
+        "libra": [
+            {
+                "id": "37",
+                "angel": "ANIEL",
+                "major_arcana": [
+                    "justica"
+                ],
+                "minor_arcana": [
+                    "2♠️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "12:00/12:20",
+                "caste": "Potências",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "38",
+                "angel": "HAAMIAH",
+                "major_arcana": [
+                    "justica"
+                ],
+                "minor_arcana": [
+                    "2♠️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "12:20/12:40",
+                "caste": "Potências",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "39",
+                "angel": "REHAEL",
+                "major_arcana": [
+                    "justica"
+                ],
+                "minor_arcana": [
+                    "3♠️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "12:40/13:00",
+                "caste": "Potências",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "40",
+                "angel": "IEIAZEL",
+                "major_arcana": [
+                    "justica"
+                ],
+                "minor_arcana": [
+                    "3♠️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "13:00/13:20",
+                "caste": "Potências",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "41",
+                "angel": "HAHAHEL",
+                "major_arcana": [
+                    "justica"
+                ],
+                "minor_arcana": [
+                    "4♠️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "13:20/13:40",
+                "caste": "Virtudes",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "42",
+                "angel": "MIKAEL",
+                "major_arcana": [
+                    "justica"
+                ],
+                "minor_arcana": [
+                    "4♠️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "13:40/14:00",
+                "caste": "Virtudes",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            }
+        ]
+    },
+    {
+        "scorpio": [
+            {
+                "id": "43",
+                "angel": "VEUALIAH",
+                "major_arcana": [
+                    "morte"
+                ],
+                "minor_arcana": [
+                    "5♥️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "14:00/14:20",
+                "caste": "Virtudes",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "44",
+                "angel": "YELAIAH",
+                "major_arcana": [
+                    "morte"
+                ],
+                "minor_arcana": [
+                    "5♥️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "14:20/14:40",
+                "caste": "Virtudes",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "45",
+                "angel": "SEALIAH",
+                "major_arcana": [
+                    "morte"
+                ],
+                "minor_arcana": [
+                    "6♥️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "14:40/15:00",
+                "caste": "Virtudes",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "46",
+                "angel": "ARIEL",
+                "major_arcana": [
+                    "morte"
+                ],
+                "minor_arcana": [
+                    "6♥️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "15:00/15:20",
+                "caste": "Virtudes",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "47",
+                "angel": "ASALIAH",
+                "major_arcana": [
+                    "morte"
+                ],
+                "minor_arcana": [
+                    "7♥️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "15:20/15:40",
+                "caste": "Virtudes",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "48",
+                "angel": "MIHAEL",
+                "major_arcana": [
+                    "morte"
+                ],
+                "minor_arcana": [
+                    "7♥️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "15:40/16:00",
+                "caste": "Virtudes",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            }
+        ]
+    },
+    {
+        "sagittarius": [
+            {
+                "id": "49",
+                "angel": "VEHUEL",
+                "major_arcana": [
+                    "temperanca"
+                ],
+                "minor_arcana": [
+                    "8♣️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "16:00/16:20",
+                "caste": "Principados",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "50",
+                "angel": "DANIEL",
+                "major_arcana": [
+                    "temperanca"
+                ],
+                "minor_arcana": [
+                    "8♣️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "16:20/16:40",
+                "caste": "Principados",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "51",
+                "angel": "HAHASIAH",
+                "major_arcana": [
+                    "temperanca"
+                ],
+                "minor_arcana": [
+                    "9♣️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "16:40/17:00",
+                "caste": "Principados",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "52",
+                "angel": "IMAMIAH",
+                "major_arcana": [
+                    "temperanca"
+                ],
+                "minor_arcana": [
+                    "9♣️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "17:00/17:20",
+                "caste": "Principados",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "53",
+                "angel": "NANAEL",
+                "major_arcana": [
+                    "temperanca"
+                ],
+                "minor_arcana": [
+                    "10♣️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "17:20/17:40",
+                "caste": "Principados",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "54",
+                "angel": "NITHAEL",
+                "major_arcana": [
+                    "temperanca"
+                ],
+                "minor_arcana": [
+                    "10♣️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "17:40/18:00",
+                "caste": "Principados",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            }
+        ]
+    },
+    {
+        "capricorn": [
+            {
+                "id": "55",
+                "angel": "MEBAHIAH",
+                "major_arcana": [
+                    "diabo"
+                ],
+                "minor_arcana": [
+                    "2♦️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "18:00/18:20",
+                "caste": "Principados",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "56",
+                "angel": "POYEL",
+                "major_arcana": [
+                    "diabo"
+                ],
+                "minor_arcana": [
+                    "2♦️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "18:20/18:40",
+                "caste": "Principados",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "57",
+                "angel": "NEMEMIAH",
+                "major_arcana": [
+                    "diabo"
+                ],
+                "minor_arcana": [
+                    "3♦️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "18:40/19:00",
+                "caste": "Arcanjos",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "58",
+                "angel": "IEIALEL",
+                "major_arcana": [
+                    "diabo"
+                ],
+                "minor_arcana": [
+                    "3♦️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "19:00/19:20",
+                "caste": "Arcanjos",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "59",
+                "angel": "HARAHEL",
+                "major_arcana": [
+                    "diabo"
+                ],
+                "minor_arcana": [
+                    "4♦️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "19:20/19:40",
+                "caste": "Arcanjos",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "60",
+                "angel": "MITZRAEL",
+                "major_arcana": [
+                    "diabo"
+                ],
+                "minor_arcana": [
+                    "4♦️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "19:40/20:00",
+                "caste": "Arcanjos",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            }
+        ]
+    },
+    {
+        "aquarius": [
+            {
+                "id": "61",
+                "angel": "UMABEL",
+                "major_arcana": [
+                    "estrela"
+                ],
+                "minor_arcana": [
+                    "5♠️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "20:00/20:20",
+                "caste": "Arcanjos",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "62",
+                "angel": "IAH-HEL",
+                "major_arcana": [
+                    "estrela"
+                ],
+                "minor_arcana": [
+                    "5♠️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "20:20/20:40",
+                "caste": "Arcanjos",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "63",
+                "angel": "ANAUEL",
+                "major_arcana": [
+                    "estrela"
+                ],
+                "minor_arcana": [
+                    "6♠️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "20:40/21:00",
+                "caste": "Arcanjos",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "64",
+                "angel": "MEHIEL",
+                "major_arcana": [
+                    "estrela"
+                ],
+                "minor_arcana": [
+                    "6♠️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "21:00/21:20",
+                "caste": "Arcanjos",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "65",
+                "angel": "DAMABIAH",
+                "major_arcana": [
+                    "estrela"
+                ],
+                "minor_arcana": [
+                    "7♠️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "21:20/21:40",
+                "caste": "Anjos",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "66",
+                "angel": "MANAKEL",
+                "major_arcana": [
+                    "estrela"
+                ],
+                "minor_arcana": [
+                    "7♠️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "21:40/22:00",
+                "caste": "Anjos",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            }
+        ]
+    },
+    {
+        "pisces": [
+            {
+                "id": "67",
+                "angel": "AYEL",
+                "major_arcana": [
+                    "lua"
+                ],
+                "minor_arcana": [
+                    "8♥️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "22:00/22:20",
+                "caste": "Anjos",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "68",
+                "angel": "HABUHIAH",
+                "major_arcana": [
+                    "lua"
+                ],
+                "minor_arcana": [
+                    "8♥️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "22:20/22:40",
+                "caste": "Anjos",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "69",
+                "angel": "ROCHEL",
+                "major_arcana": [
+                    "lua"
+                ],
+                "minor_arcana": [
+                    "9♥️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "22:40/23:00",
+                "caste": "Anjos",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "70",
+                "angel": "IABAMIAH",
+                "major_arcana": [
+                    "lua"
+                ],
+                "minor_arcana": [
+                    "9♥️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "23:00/23:20",
+                "caste": "Anjos",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "71",
+                "angel": "HAIAIEL",
+                "major_arcana": [
+                    "lua"
+                ],
+                "minor_arcana": [
+                    "10♥️"
+                ],
+                "polarity": "Yang ○",
+                "hour": "23:20/23:40",
+                "caste": "Anjos",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            },
+            {
+                "id": "72",
+                "angel": "MUMIAH",
+                "major_arcana": [
+                    "lua"
+                ],
+                "minor_arcana": [
+                    "10♥️"
+                ],
+                "polarity": "Yin ●",
+                "hour": "23:40/00:00",
+                "caste": "Anjos",
+                "color": "",
+                "hebrew_name": "",
+                "link_wiki_mdd": "",
+                "versiculo": "",
+                "salmo": "",
+                "deamon": ""
+            }
+        ]
+    }
+]
