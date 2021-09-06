@@ -17,7 +17,7 @@ export class DataService {
         'Access-Control-Allow-Origin': '*'
       })
     };
-    return this.httpClient.get<any[]>('../assets/angels.json', httpOptions)
+    return this.httpClient.get<any[]>('https://kevinmartins367.github.io/mapa-astral-sephirotico/assets/angels.json', httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError));
@@ -31,7 +31,7 @@ export class DataService {
     };
 
     const promise = new Promise((resolve, reject) => {
-     this.httpClient.get('../assets/tarot.json', httpOptions)
+     this.httpClient.get('https://kevinmartins367.github.io/mapa-astral-sephirotico/assets/tarot.json', httpOptions)
       .toPromise()
       .then((data: any) => {
           resolve(data[0]);
@@ -51,7 +51,7 @@ export class DataService {
         'Access-Control-Allow-Origin': '*'
       })
     };
-    return this.httpClient.get<any[]>('../assets/sephiroth.json', httpOptions)
+    return this.httpClient.get<any[]>('https://kevinmartins367.github.io/mapa-astral-sephirotico/assets/sephiroth.json', httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError));
@@ -64,7 +64,7 @@ export class DataService {
         'Access-Control-Allow-Origin': '*'
       })
     };
-    return this.httpClient.get<any[]>('../assets/caractere_hebraico.json', httpOptions)
+    return this.httpClient.get<any[]>('https://kevinmartins367.github.io/mapa-astral-sephirotico/assets/caractere_hebraico.json', httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError));
@@ -77,7 +77,7 @@ export class DataService {
         'Access-Control-Allow-Origin': '*'
       })
     };
-    return this.httpClient.get<any[]>('../assets/odus.json', httpOptions)
+    return this.httpClient.get<any[]>('https://kevinmartins367.github.io/mapa-astral-sephirotico/assets/odus.json', httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError));

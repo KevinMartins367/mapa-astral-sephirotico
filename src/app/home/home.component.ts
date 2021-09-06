@@ -332,15 +332,15 @@ export class HomeComponent {
         break;
     }
     let test = Number(graus);
-    if (test < 6) {
+    if (test < 5) {
       return this.angel[indice][sign][0];
-    } else if (test < 11) {
+    } else if (test < 10) {
       return this.angel[indice][sign][1];
-    } else if (test < 16) {
+    } else if (test < 15) {
       return this.angel[indice][sign][2];
-    } else if (test < 21) {
+    } else if (test < 20) {
       return this.angel[indice][sign][3];
-    } else if (test < 26) {
+    } else if (test < 25) {
       return this.angel[indice][sign][4];
     } else if (test <= 30) {
       return this.angel[indice][sign][5];
