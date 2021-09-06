@@ -340,15 +340,15 @@ export class InfosComponent implements OnInit {
     }
 
     let test = Number(graus);
-    if (test < 6) {
+    if (test <= 5) {
       return this.angel[indice][sign][0];
-    } else if (test < 11) {
+    } else if (test <= 10) {
       return this.angel[indice][sign][1];
-    } else if (test < 16) {
+    } else if (test <= 15) {
       return this.angel[indice][sign][2];
-    } else if (test < 21) {
+    } else if (test <= 20) {
       return this.angel[indice][sign][3];
-    } else if (test < 26) {
+    } else if (test <= 25) {
       return this.angel[indice][sign][4];
     } else if (test <= 30) {
       return this.angel[indice][sign][5];
@@ -496,7 +496,12 @@ export class InfosComponent implements OnInit {
 
   explode(string: string){
     let grau = string.split("°");
-    return grau[0];
+    let grau2 = grau[1].split("'");
+    console.log(grau2);
+
+    console.log(`${grau[0]}.${grau2[0].replace(/ /g, "")}`);
+
+    return `${grau[0]}.${grau2[0].replace(/ /g, "")}`;
   }
 
   onChangeSearch (val: string, state) {
