@@ -11,13 +11,16 @@ export class DataService {
   constructor(private httpClient: HttpClient) { }
 
 
+  // private url_server = 'https://kevinmartins367.github.io/mapa-astral-sephirotico';
+  private url_server = '';
+
   public getJsonAngel(): Observable<any[]> {
     const httpOptions = {
       headers: new HttpHeaders({
         'Access-Control-Allow-Origin': '*'
       })
     };
-    return this.httpClient.get<any[]>('https://kevinmartins367.github.io/mapa-astral-sephirotico/assets/angels.json', httpOptions)
+    return this.httpClient.get<any[]>(`${this.url_server}/assets/angels.json`, httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError));
@@ -31,7 +34,7 @@ export class DataService {
     };
 
     const promise = new Promise((resolve, reject) => {
-     this.httpClient.get('https://kevinmartins367.github.io/mapa-astral-sephirotico/assets/tarot.json', httpOptions)
+     this.httpClient.get(`${this.url_server}/assets/tarot.json`, httpOptions)
       .toPromise()
       .then((data: any) => {
           resolve(data[0]);
@@ -51,7 +54,7 @@ export class DataService {
         'Access-Control-Allow-Origin': '*'
       })
     };
-    return this.httpClient.get<any[]>('https://kevinmartins367.github.io/mapa-astral-sephirotico/assets/sephiroth.json', httpOptions)
+    return this.httpClient.get<any[]>(`${this.url_server}/assets/sephiroth.json`, httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError));
@@ -64,7 +67,7 @@ export class DataService {
         'Access-Control-Allow-Origin': '*'
       })
     };
-    return this.httpClient.get<any[]>('https://kevinmartins367.github.io/mapa-astral-sephirotico/assets/caractere_hebraico.json', httpOptions)
+    return this.httpClient.get<any[]>(`${this.url_server}/assets/caractere_hebraico.json`, httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError));
@@ -77,7 +80,7 @@ export class DataService {
         'Access-Control-Allow-Origin': '*'
       })
     };
-    return this.httpClient.get<any[]>('https://kevinmartins367.github.io/mapa-astral-sephirotico/assets/odus.json', httpOptions)
+    return this.httpClient.get<any[]>(`${this.url_server}/assets/odus.json`, httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError));
