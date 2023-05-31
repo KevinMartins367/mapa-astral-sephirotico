@@ -5,6 +5,8 @@ import { Minor_arcanas } from './styles';
 
 import data from '../../services/data';
 
+import Caractere_hebraico from '../caractere_hebraico'
+
 export default function Minor_arcana(props: any){
 
    const [ arcana, setArcana ]: any = useState('');
@@ -41,7 +43,16 @@ export default function Minor_arcana(props: any){
                <Row>
                   <Col sm={12} md={6} lg={6}>
                      <ul>
-                        <li>letra Hebraica: { arcana.caractere_hebraico_link }</li>
+                        { (( arcana.caractere_hebraico_link != `` ) && ( arcana.caractere_hebraico_link != undefined)) ? 
+                           
+                           <li>letra Hebraica:
+                              <div>
+                                 {}
+                                 <Caractere_hebraico caractere={arcana.caractere_hebraico_link} />
+                              </div>
+                           </li>
+                           : ``
+                        }
                         <li>elemento: { arcana.elemento }</li>
                         <li>Palavras chaves: { arcana.word_key }</li>
                         

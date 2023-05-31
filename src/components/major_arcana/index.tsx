@@ -27,7 +27,6 @@ export default function Major_arcana(props: any) {
          })
       }
       Get_arcanas();
-      console.log("🚀 ~ file: index.tsx:35 ~ .then ~ arcana:", arcana)
    }, []);
 
 
