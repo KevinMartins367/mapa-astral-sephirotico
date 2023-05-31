@@ -64,7 +64,7 @@ export default function Minor_arcana(props: any){
                            }) }</li> : ``
                         }
                         { (arcana.astrologica != '') ? 
-                        <li>Face Planetaria: { arcana.astrologica }</li> : ``
+                        <li>{ ( arcana.arquetipo_MBTI != `` ) ? 'Intervalo Astral: ' : 'Face Planetaria: '}  { arcana.astrologica }</li> : ``
                         }
                         
                         <li>Correspondente sephirotico: { ` `+ arcana.sephiroth } </li>
