@@ -7,6 +7,6 @@ color: #fff !important;
 }
 
 .container-md{
-   max-width: 100rem !important;
+   max-width: 150rem !important;
 }
 `;
