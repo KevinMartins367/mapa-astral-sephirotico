@@ -12,7 +12,8 @@ declare module 'styled-components' {
          secondary:  string;
          text_color_primary: string;
          text_color_secondary: string;
-         background_color: string;
+         background_color_primary: string;
+         background_color_secondary: string;
       }
    }
 }

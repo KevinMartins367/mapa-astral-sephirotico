@@ -4,7 +4,6 @@ import { Outlet } from 'react-router-dom';
 
 import Helmets from '../components/helmets';
 
-
 import { ThemeProvider } from 'styled-components';
 import primary from '../styles/themes/primary'
 import GlobalStyle from '../styles/global';
@@ -12,7 +11,6 @@ import GlobalStyle from '../styles/global';
 interface MainLayoutProps {
   children?: ReactNode;
 }
-
 
 const MainLayout: FC<MainLayoutProps> = ({ children }) => {
   return( 
