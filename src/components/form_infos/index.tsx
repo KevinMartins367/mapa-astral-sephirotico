@@ -16,18 +16,12 @@ export default function Form_infos() {
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                            <Form.Label>Data:</Form.Label>
                            <Form.Control type="date" placeholder="01/12/2000" />
-                           <Form.Text className="text-muted">
-                              informe da sua data de nascimento
-                           </Form.Text>
                         </Form.Group>
                      </Col>
                      <Col sm={12} md={2} lg={2}>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                            <Form.Label>Horário:</Form.Label>
                            <Form.Control type="time" placeholder="16:40" />
-                           <Form.Text className="text-muted">
-                              informe o horário de nascimento
-                           </Form.Text>
                         </Form.Group>
                      </Col>
                      <Col sm={12} md={2} lg={2}>
@@ -67,10 +61,7 @@ export default function Form_infos() {
                      <Col sm={12} md={2} lg={2}>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                            <Form.Label>Cidade:</Form.Label>
-                           <Form.Control type="text" placeholder="Enter email" />
-                           <Form.Text className="text-muted">
-                              Selecione a Cidade onde nasceu
-                           </Form.Text>
+                           <Form.Control type="text" placeholder="São Paulo" />
                         </Form.Group>
                      </Col>
                      <Col className='text-end pt-3' sm={12} md={4} lg={4}>

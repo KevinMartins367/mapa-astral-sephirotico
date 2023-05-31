@@ -5,6 +5,7 @@ import { Divs } from './styles';
 
 import  Header  from '../header';
 import Form_infos from  '../../components/form_infos'
+import Infos from  '../../components/infos'
 
 export default function Home() {
 
@@ -23,7 +24,6 @@ export default function Home() {
                         <Card>
                            <Card.Body>
                               desenho da Kabbalah
-                              
                            </Card.Body>
                         </Card>
                      </aside>
@@ -31,12 +31,7 @@ export default function Home() {
 
                   <Col sm={12} md={7} lg={7}>
                      <section>
-                        <Card>
-                           <Card.Body>
-                              infos
-                           </Card.Body>
-                        </Card>
-
+                        <Infos />
                      </section>
                   </Col>
                </Row>
