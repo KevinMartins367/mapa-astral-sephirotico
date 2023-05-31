@@ -13,7 +13,8 @@ export default function Infos(props: any) {
 
    return(
       <Divs>
-         <Caractere_hebraico caractere={'tav'} />
+         <Major_arcana arcana={'louco'} />
+         {/* <Caractere_hebraico caractere={'tav'} /> */}
       </Divs>
    )
 }

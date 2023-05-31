@@ -18,6 +18,6 @@ body {
 }
 .hebraic {
    font-family: SBL Hebrew;
-   font-size: 26px;
+   font-size: 42px;
 }
 `;

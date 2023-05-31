@@ -3,6 +3,8 @@ import { Card, Row, Col, Image } from 'react-bootstrap';
 
 import { Major_arcanas } from './styles';
 
+import Caractere_hebraico from '../caractere_hebraico'
+
 import data from '../../services/data';
 
 export default function Major_arcana(props: any) {
@@ -41,7 +43,16 @@ export default function Major_arcana(props: any) {
                <Row>
                   <Col sm={12} md={6} lg={6}>
                      <ul>
-                        <li>letra Hebraica: { arcana.caractere_hebraico_link }</li>
+                        { (( arcana.caractere_hebraico_link != `` ) && ( arcana.caractere_hebraico_link != undefined)) ? 
+                           
+                           <li>letra Hebraica:
+                              <div>
+                                 {}
+                                 <Caractere_hebraico caractere={arcana.caractere_hebraico_link} />
+                              </div>
+                           </li>
+                           : ``
+                        }
                         <li>Runa: { arcana.runa }</li>
                         <li>Elemento: { arcana.elemento }</li>
                         <li>Cor (segundo GD):  <div style={{...props.style, backgroundColor: arcana.color, width: `40px`, height: `10px`, display: `inline-block`}}>   </div> <span>{ arcana.color }</span> </li>

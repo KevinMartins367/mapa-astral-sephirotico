@@ -33,11 +33,11 @@ export default function Caractere_hebraico(props: any){
       <Caractere_hebraicos>
          <Card>
             <Card.Header>
-               <h2>{ caractere.name ?? 'titulo de informações'}</h2>
+               <h2><span className='hebraic'>{ caractere.caractere_hebraico }</span> { caractere.name ?? 'titulo de informações'}</h2>
             </Card.Header>
             <Card.Body>
                <ul>
-                  <li>Significado: <span className='hebraic'>{ caractere.caractere_hebraico }</span> {  caractere.significance } </li>
+                  <li>Significado: {  caractere.significance } </li>
                   <li>Valor: { caractere.value } </li>
                   <li>Letra equivalente: { caractere.caractere_romane } </li>
                   <li>Planeta:  { caractere.planeta } </li>
