@@ -50,15 +50,15 @@ export default function Major_arcana(props: any) {
 
                   </Col>
                   <Col sm={12} md={6} lg={6}>
-                     <h2>referencias</h2>
+                     <h2>Referencias</h2>
                      <ul>
                         <li><a href={ arcana.link_wiki_mdd +`` } target="_blank"> Wiki Projeto Mayhem</a></li>
                         <li><a href={ arcana.link_youtube_cdh +`` } target="_blank">Video CdH</a></li>
                         <li><a href={ arcana.link_youtube_lupus +`` } target="_blank">Video Lupus In Fabula</a></li>
                         <li><a href={ arcana.link_youtube_jornada_do_ser +`` } target="_blank">Video Tarô Virtual</a></li>
                         <li>Tarot Hermetico: { arcana.pages_tarot_hermetico } pg</li>
-                        <li>Pagina do Tarot O Templo Vivente Frater Goya: { arcana.pages_tarot_crowley_goya } = pg</li>
-                        <li>Pagina do TARÔ DE CROWLEY - PALAVRAS-CHAVE: { arcana.pages_tarot_crowley_word_key } pg</li>
+                        <li>Pagina do Tarot O Templo Vivente Frater Goya: { arcana.pages_tarot_crowley_goya }pg</li>
+                        <li>Pagina do TARÔ DE CROWLEY - PALAVRAS-CHAVE: { arcana.pages_tarot_crowley_word_key }pg</li>
                      </ul>
                      
                   </Col>
