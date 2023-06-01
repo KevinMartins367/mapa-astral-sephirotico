@@ -14,7 +14,7 @@ export default function Infos(props: any) {
 
    return(
       <Divs>
-         {/* <Sephiroth sephira={`kether`} /> */}
+         <Sephiroth sephira={`kether`} />
          {/* <Minor_arcana arcana={`A♣️`} /> */}
          {/* <Major_arcana arcana={'louco'} /> */}
          {/* <Caractere_hebraico caractere={'tav'} /> */}
