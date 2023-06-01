@@ -46,7 +46,7 @@ export default function Sephiroth(props: any){
                   <li>Casta (visão judaica): { sephira.casta_hebraica }</li>
                   <li>Anjo (visão judaica): { sephira.angel_hebraica }</li>
                   <li>Vogal hebraico: <span className='simbolo hebraic'> { sephira.vogal_hebraico } </span></li>
-                  <li>tetragrama com vogal para meditação: <span className='simbolo hebraic'> { sephira.tetragrama_vogais} </span> </li>
+                  <li>tetragrama com vogal (para meditação): <span className='simbolo hebraic'> { sephira.tetragrama_vogais} </span> </li>
                   <li>Energia: { sephira.energia }</li>
                   <li>dedos correspondentes: { sephira.dedos }</li>
                </ul>
