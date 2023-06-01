@@ -40,9 +40,11 @@ export default function Sephiroth(props: any){
             <Card.Body>
                <ul>
                   <li>Planeta: { sephira.planeta } <span className='simbolo'>  {'   ' + sephira.simbolo }</span> </li>
-                  <li>
-                  Pagina do Kabbalah Hermetica: { sephira.pages_kabbalah_hermetica } pg
-                  </li>
+                  <li>Pagina do Kabbalah Hermetica: { sephira.pages_kabbalah_hermetica } pg</li>
+                  <li>Carruagem de acesso (persona na bíblia que tem uma conexão): { sephira.carruagem }</li>
+                  <li>Mundo: { sephira.mundo } ( tradução:  { sephira.mundo_traducao } )</li>
+                  <li>Casta (visão judaica): { sephira.casta_hebraica }</li>
+                  <li>Anjo (visão judaica): { sephira.angel_hebraica }</li>
                </ul>
                <h2>Referencias</h2>
                <ul>
