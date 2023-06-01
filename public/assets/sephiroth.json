@@ -1,6 +1,6 @@
-[{
+{
     "kether": {
-        "angel": "",
+        "simbolo": "♆",
         "planeta": "Netuno",
         "planeta_img": "assets/images/zodiac/neptune.png",
         "pages_kabbalah_hermetica": "299",
@@ -12,11 +12,11 @@
         "minor_arcana": ["A♣️", "A♥️", "A♠️", "A♦️"]
     },
     "chokmah": {
-        "angel": "",
+        "simbolo": "♅",
         "planeta": "Urano",
         "planeta_img": "assets/images/zodiac/uranus.png",
         "pages_kabbalah_hermetica": "281",
-        "name": "chokmah",
+        "name": "Chokmah ou Hochma",
         "link_youtube_mdd": "https://www.youtube.com/watch?v=umKZ0LzAY6M",
         "link_youtube_yair": "",
         "link_youtube_cdh": "https://www.youtube.com/watch?v=2lBdOTV25x8",
@@ -24,11 +24,11 @@
         "minor_arcana": ["2♣️", "2♥️", "2♠️", "2♦️", "Rei♣️", "Rei♥️", "Rei♠️", "Rei♦️"]
     },
     "binah": {
-        "angel": "",
+        "simbolo": "♄",
         "planeta": "Saturno",
         "planeta_img": "assets/images/zodiac/saturn.png",
         "pages_kabbalah_hermetica": "261",
-        "name": "binah",
+        "name": "Binah ou Bina",
         "link_youtube_mdd": "https://www.youtube.com/watch?v=CpKecFjblmk",
         "link_youtube_yair": "https://www.youtube.com/watch?v=XHfsNTQMtaw",
         "link_youtube_cdh": "https://www.youtube.com/watch?v=2lBdOTV25x8",
@@ -36,7 +36,7 @@
         "minor_arcana": ["3♣️", "3♥️", "3♠️", "3♦️", "Rainha♣️", "Rainha♥️", "Rainha♠️", "Rainha♦️"]
     },
     "daath": {
-        "angel": "",
+        "simbolo": "♇",
         "planeta": "Plutão",
         "planeta_img": "assets/images/zodiac/pluto.png",
         "pages_kabbalah_hermetica": "247",
@@ -48,7 +48,7 @@
         "minor_arcana": [""]
     },
     "chesed": {
-        "angel": "",
+        "simbolo": "♃",
         "planeta": "Jupiter",
         "planeta_img": "assets/images/zodiac/jupiter.png",
         "pages_kabbalah_hermetica": "229",
@@ -60,7 +60,7 @@
         "minor_arcana": ["4♣️", "4♥️", "4♠️", "4♦️"]
     },
     "geburah": {
-        "angel": "",
+        "simbolo": "♂",
         "planeta": "Marte",
         "planeta_img": "assets/images/zodiac/mars.png",
         "pages_kabbalah_hermetica": "207",
@@ -72,7 +72,7 @@
         "minor_arcana": ["5♣️", "5♥️", "5♠️", "5♦️"]
     },
     "tipheret": {
-        "angel": "",
+        "simbolo": "",
         "planeta": "Sol",
         "planeta_img": "assets/images/zodiac/sol.png",
         "pages_kabbalah_hermetica": "179",
@@ -84,7 +84,7 @@
         "minor_arcana": ["6♣️", "6♥️", "6♠️", "6♦️", "Principe♣️", "Principe♥️", "Principe♠️", "Principe♦️"]
     },
     "netzach": {
-        "angel": "",
+        "simbolo": "",
         "planeta": "Venus",
         "planeta_img": "assets/images/zodiac/venus.png",
         "pages_kabbalah_hermetica": "159",
@@ -96,7 +96,7 @@
         "minor_arcana": ["7♣️", "7♥️", "7♠️", "7♦️"]
     },
     "hod": {
-        "angel": "",
+        "simbolo": "",
         "planeta": "Mercurio",
         "planeta_img": "assets/images/zodiac/mercury.png",
         "pages_kabbalah_hermetica": "135",
@@ -108,7 +108,7 @@
         "minor_arcana": ["8♣️", "8♥️", "8♠️", "8♦️"]
     },
     "yesod": {
-        "angel": "",
+        "simbolo": "",
         "planeta": "Lua",
         "planeta_img": "assets/images/zodiac/luna.png",
         "pages_kabbalah_hermetica": "113",
@@ -120,7 +120,7 @@
         "minor_arcana": ["9♣️", "9♥️", "9♠️", "9♦️"]
     },
     "malkuth": {
-        "angel": "",
+        "simbolo": "",
         "planeta": "Terra",
         "planeta_img": "assets/images/zodiac/earth.png",
         "pages_kabbalah_hermetica": "97",
@@ -132,4 +132,4 @@
         "minor_arcana": ["10♣️", "10♥️", "10♠️", "10♦️", "Princesa♣️", "Princesa♥️", "Princesa♠️", "Princesa♦️"]
     }
 
-}]
+}

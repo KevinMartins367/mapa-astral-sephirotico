@@ -44,7 +44,7 @@ export default function Caractere_hebraico(props: any){
                   <li>Correspondencia:  { caractere.correspondence } </li>
                   <li>Qualidade Positiva: { caractere.positive_polarity } </li>
                   <li>Qualidade Negativa: { caractere.negative_polarity } </li>
-                  <li>Pagina do Kabbalah Hermetica: { caractere.kabbalah_hermetica }. pg </li>
+                  <li>Pagina do Kabbalah Hermetica: { caractere.kabbalah_hermetica } pg </li>
                   <li>Ritual: { caractere.exercise } </li>
                </ul>
             </Card.Body>
