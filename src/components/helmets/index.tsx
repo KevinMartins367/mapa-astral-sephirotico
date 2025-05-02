@@ -5,7 +5,7 @@ import { ThemeContext } from 'styled-components';
 
 export default function Helmets() {
 
-   const theme = useContext(ThemeContext);
+   const theme = useContext(ThemeContext)!;
 
    return(
       <Helmet>

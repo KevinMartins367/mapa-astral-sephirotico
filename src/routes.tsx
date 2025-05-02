@@ -5,7 +5,7 @@ import MainLayout from './layout/MainLayout';
 
 
 
-const Loadable = (Component: any) => (props: JSX.IntrinsicAttributes) =>
+const Loadable = <T extends {}>(Component: React.ComponentType<T>) => (props: T) =>
   (
     <Suspense fallback={<LoadingScreen />}>
       <Component {...props} />
