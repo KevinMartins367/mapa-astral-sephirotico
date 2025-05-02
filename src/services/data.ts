@@ -3,7 +3,7 @@ import axios from 'axios';
 export default function data(){
 
    
-   const base_url = process.env.REACT_APP_BASE_URL ?? `http://localhost:3000/assets/`;
+const base_url = process.env.REACT_APP_BASE_URL ?? `${window.location.origin}/assets/`;
 
    const data = {
 

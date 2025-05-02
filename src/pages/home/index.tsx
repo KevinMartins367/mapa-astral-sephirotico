@@ -1,42 +1,52 @@
 import React from 'react';
-import { Container, Row, Col, Card  } from 'react-bootstrap';
+import { Card, Col, Container, Row } from 'react-bootstrap';
 
 import { Divs } from './styles';
 
-import  Header  from '../header';
-import Form_infos from  '../../components/form_infos'
-import Infos from  '../../components/infos'
+import Infos from '../../components/infos';
+import Kabbalah from '../../components/kabbalah';
+import Header from '../header';
 
 export default function Home() {
+    const [sephira, setSephira] = React.useState('');
+    const [path, setPath] = React.useState('');
 
-   return(
-      <Divs>
-         <Header />
-         <main>
-            <Container fluid="md" className='p-5'>
-               <Row>
-                  <Col className='pb-3' sm={12} md={12} lg={12}>
+    const handleSephiraChange = (newSephira: string) => {
+        setSephira(newSephira);
+    };
+
+    const handlePathChange = (newPath: string) => {
+        setPath(newPath);
+    };
+
+    return (
+        <Divs>
+            <Header />
+            <main>
+                <Container fluid="md" className='pt-5'>
+                    <Row>
+                        {/* <Col className='pb-3' sm={12} md={12} lg={12}>
                      <Form_infos />
-                  </Col>
+                  </Col> */}
 
-                  <Col sm={12} md={5} lg={5}>
-                     <aside>
-                        <Card>
-                           <Card.Body>
-                              desenho da Kabbalah
-                           </Card.Body>
-                        </Card>
-                     </aside>
-                  </Col>
+                        <Col sm={12} md={12} lg={5} className='pb-3'>
+                            <aside>
+                                <Card>
+                                    <Card.Body>
+                                        <Kabbalah onSephiraChange={handleSephiraChange} handlePathChange={handlePathChange} />
+                                    </Card.Body>
+                                </Card>
+                            </aside>
+                        </Col>
 
-                  <Col sm={12} md={7} lg={7}>
-                     <section>
-                        <Infos />
-                     </section>
-                  </Col>
-               </Row>
-            </Container>
-         </main>
-      </Divs>
-   );
+                        <Col sm={12} md={12} lg={7} className='pb-3'>
+                            <section>
+                                <Infos sephira={sephira} path={path} />
+                            </section>
+                        </Col>
+                    </Row>
+                </Container>
+            </main>
+        </Divs>
+    );
 }

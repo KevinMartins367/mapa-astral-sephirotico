@@ -1,0 +1,1614 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="189.79416mm"
+   height="377.11438mm"
+   viewBox="0 0 189.79416 377.11438"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+   <defs>
+      <pattern id="malkutPattern" x="80" y="5" width="40" height="40" patternUnits="userSpaceOnUse">
+        <rect width="20" height="20" fill="#000000"/>
+        <rect x="20" width="20" height="20" fill="#811d22"/>
+        <rect y="20" width="20" height="20" fill="#556b2f"/>
+        <rect x="20" y="20" width="20" height="20" fill="#eeee00"/>
+      </pattern>
+      <radialGradient id="gradient_malkut" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+        <stop offset="0%" style="stop-color:#fafafa;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#fafafa;stop-opacity:1" />
+      </radialGradient>
+    </defs>
+  <g
+     id="kabbalah"
+     transform="matrix(1.0470919,0,0,1.009485,-9.7117449,-4.7950539)"
+     style="display:inline">
+    <g
+       id="caminhos"
+       style="display:inline">
+      <g
+         id="caminho_0"
+         transform="matrix(0.57425113,-0.82011561,0.78014372,0.54626251,104.43912,58.070972)"
+        onmouseover="setColorPath('caminho_0', '#fffb00');"
+        onmouseout="setColorPath('caminho_0', '#ffffff');">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.410792;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           d="m 36.144051,-18.916352 h -9.999998 v 74.250074 h 9.999998 z"
+           id="caminho_caminho_0">
+          <title
+             id="title68-0">caminho</title>
+        </path>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="30.867022"
+           y="9.4781208"
+           id="symbol_caminho_0"><title
+             id="title67-2">symbol</title><tspan
+             id="tspan60_caminho_0"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5"
+             x="30.867022"
+             y="9.4781208">🜁</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Noto Serif Hebrew';-inkscape-font-specification:'Noto Serif Hebrew';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="30.801437"
+           y="22.060259"
+           id="letra_hebrew_caminho_0"><title
+             id="title66-5">letra_hebrew</title><tspan
+             id="tspan61_caminho_0"
+             style="stroke-width:0.5"
+             x="30.801437"
+             y="22.060259">א</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.78044px;font-family:sans-serif;-inkscape-font-specification:sans-serif;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="31.677076"
+           y="35.530296"
+           id="number_roman_caminho_0"><title
+             id="title65-3">number_roman</title><tspan
+             id="tspan62_caminho_0"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.5"
+             x="31.677076"
+             y="35.530296">0</tspan></text>
+      </g>
+      <g
+         id="caminho_1"
+         transform="matrix(0.57425113,0.82011561,-0.78014372,0.54626251,62.971778,6.184592)"
+        onmouseover="setColorPath('caminho_1', '#fdfb00');"
+        onmouseout="setColorPath('caminho_1', '#ffffff');">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.394766;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           d="M 35.473341,-11.394374 H 25.395379 v 68.039226 h 10.077962 v -6.665079 z"
+           id="caminho_caminho_1">
+          <title
+             id="title69">caminho</title>
+        </path>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.03194px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="30.864643"
+           y="11.730624"
+           id="symbol_caminho_1"><title
+             id="title70">symbol</title><tspan
+             id="tspan70_caminho_1"
+             style="font-size:9.03194px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5"
+             x="30.864643"
+             y="11.730624">☿</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Noto Serif Hebrew';-inkscape-font-specification:'Noto Serif Hebrew';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="30.686247"
+           y="23.174742"
+           id="letra_hebrew_caminho_1"><title
+             id="title71">letra_hebrew</title><tspan
+             id="tspan71_caminho_1"
+             style="stroke-width:0.5"
+             x="30.686247"
+             y="23.174742">ב</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.78044px;font-family:sans-serif;-inkscape-font-specification:sans-serif;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="30.697874"
+           y="35.367882"
+           id="number_roman_caminho_1"><title
+             id="title72">number_roman</title><tspan
+             id="tspan72_caminho_1"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.5"
+             x="30.697874"
+             y="35.367882">I</tspan></text>
+      </g>
+      <g
+         id="caminho_2"
+         transform="matrix(1.0011763,0,0,0.95237964,68.722822,46.672347)"
+        onmouseover="setColorPath('caminho_2', '#0433ff');"
+        onmouseout="setColorPath('caminho_2', '#ffffff');">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.550151;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           d="m 36.035657,-2.3101132 h -9.78321 V 133.81374 h 9.78321 z"
+           id="caminho_caminho_2">
+          <title
+             id="title68-8">caminho</title>
+        </path>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="31.334732"
+           y="50.275753"
+           id="symbol_caminho_2"><title
+             id="title67-92_caminho_2">symbol</title><tspan
+             id="tspan60-14_caminho_2"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5"
+             x="31.334732"
+             y="50.275753">☾</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Noto Serif Hebrew';-inkscape-font-specification:'Noto Serif Hebrew';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="31.177921"
+           y="68.452682"
+           id="letra_hebrew_caminho_2"><title
+             id="title66-2_caminho_2">letra_hebrew</title><tspan
+             id="tspan61-0_caminho_2"
+             style="stroke-width:0.5"
+             x="31.177921"
+             y="68.452682">ג</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.78044px;font-family:sans-serif;-inkscape-font-specification:sans-serif;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="31.144703"
+           y="87.623711"
+           id="number_roman_caminho_2"><title
+             id="title65-9_caminho_2">number_roman</title><tspan
+             id="tspan62-9_caminho_2"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.5"
+             x="31.144703"
+             y="87.623711">II</tspan></text>
+      </g>
+      <g
+         id="caminho_3"
+         transform="matrix(0,1.0011763,-0.95237964,0,134.8304,35.418549)"
+        onmouseover="setColorPath('caminho_3', '#22d023');"
+        onmouseout="setColorPath('caminho_3', '#ffffff');">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           d="M 36.144051,-18.916352 H 26.144053 V 91.083652 h 9.999998 z"
+           id="caminho_caminho_3">
+          <title
+             id="title68-2-4">caminho</title>
+        </path>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.22555px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="-60.898315"
+           y="34.653408"
+           id="symbol_caminho_3"
+           transform="matrix(0,-1.0512366,0.95126064,0,0,0)"><title
+             id="title67-9-5_caminho_3">symbol</title><tspan
+             id="tspan60-1-8_caminho_3"
+             style="font-size:7.22555px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5"
+             x="-60.898315"
+             y="34.653408">♀</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Noto Serif Hebrew';-inkscape-font-specification:'Noto Serif Hebrew';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="-34.278393"
+           y="35.478737"
+           id="letra_hebrew_caminho_3"
+           transform="matrix(0,-1.0512366,0.95126064,0,0,0)"><title
+             id="title66-6-5_caminho_3">letra_hebrew</title><tspan
+             id="tspan61-4-7_caminho_3"
+             style="stroke-width:0.5"
+             x="-34.278393"
+             y="35.478737">ד</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.78044px;font-family:sans-serif;-inkscape-font-specification:sans-serif;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="-8.2833805"
+           y="35.827953"
+           id="number_roman_caminho_3"
+           transform="matrix(0,-1.0512366,0.95126064,0,0,0)"><title
+             id="title65-0-8_caminho_3">number_roman</title><tspan
+             id="tspan62-1-3_caminho_3"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.5"
+             x="-8.2833805"
+             y="35.827953">III</tspan></text>
+      </g>
+      <g
+         id="caminho_4"
+         transform="matrix(0.90737388,0.42311539,-0.40249302,0.86314907,123.76853,80.459181)"
+        onmouseover="setColorPath('caminho_4', '#ff2600');"
+        onmouseout="setColorPath('caminho_4', '#ffffff');">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.578266;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           d="M 36.26403,-18.515781 24.176073,-17.893349 17.98046,104.144 30.068417,103.52156 Z"
+           id="caminho_caminho_4">
+          <title
+             id="title73">caminho</title>
+        </path>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="28.894922"
+           y="2.9178627"
+           id="symbol_caminho_4"><title
+             id="title74_caminho_4">symbol</title><tspan
+             id="tspan74_caminho_4"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5"
+             x="28.894922"
+             y="2.9178627">♈︎</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Noto Serif Hebrew';-inkscape-font-specification:'Noto Serif Hebrew';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="28.248945"
+           y="23.441113"
+           id="letra_hebrew_caminho_4"><title
+             id="title75_caminho_4">letra_hebrew</title><tspan
+             id="tspan75_caminho_4"
+             style="stroke-width:0.5"
+             x="28.248945"
+             y="23.441113">ה</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.78044px;font-family:sans-serif;-inkscape-font-specification:sans-serif;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="27.161221"
+           y="48.212631"
+           id="number_roman_caminho_4"><title
+             id="title76_caminho_4">number_roman</title><tspan
+             id="tspan76_caminho_4"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.5"
+             x="27.161221"
+             y="48.212631">IV</tspan></text>
+      </g>
+      <g
+         id="caminho_5"
+         transform="matrix(1.0011763,0,0,0.95237964,138.72936,93.39647)"
+        onmouseover="setColorPath('caminho_5', '#ff6100');"
+        onmouseout="setColorPath('caminho_5', '#ffffff');">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.37618;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           d="M 36.112114,-10.337484 H 26.333351 V 53.33591 h 9.778763 z"
+           id="caminho_caminho_5">
+          <title
+             id="title68-01">caminho</title>
+        </path>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="31.13818"
+           y="1.2198213"
+           id="symbol_caminho_5"><title
+             id="title67-7">symbol</title><tspan
+             id="tspan60-7"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5"
+             x="31.13818"
+             y="1.2198213">♉︎</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Noto Serif Hebrew';-inkscape-font-specification:'Noto Serif Hebrew';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="31.286348"
+           y="19.062424"
+           id="letra_hebrew_caminho_5"><title
+             id="title66-0_caminho_5">letra_hebrew</title><tspan
+             id="tspan61-6_caminho_5"
+             style="stroke-width:0.5"
+             x="31.286348"
+             y="19.062424">ו</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.78044px;font-family:sans-serif;-inkscape-font-specification:sans-serif;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="31.13818"
+           y="38.087891"
+           id="number_roman_caminho_5"><title
+             id="title65-6_caminho_5">number_roman</title><tspan
+             id="tspan62-8_caminho_5"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.5"
+             x="31.13818"
+             y="38.087891">V</tspan></text>
+      </g>
+      <g
+         id="caminho_6"
+         transform="matrix(1.0786607,-0.45405683,0.47847247,0.92626915,23.67314,109.14425)"
+        onmouseover="setColorPath('caminho_6', '#ff9c00');"
+        onmouseout="setColorPath('caminho_6', '#ffffff');">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.50094;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           d="M 32.378862,-21.669025 22.372143,-21.653875 22.22133,88.68612 32.228049,88.67097 Z"
+           id="caminho_caminho_6">
+          <title
+             id="title68-5">caminho</title>
+        </path>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="27.594097"
+           y="-1.8376539"
+           id="symbol_caminho_6"><title
+             id="title67-99_caminho_6">symbol</title><tspan
+             id="tspan60-0_caminho_6"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5"
+             x="27.594097"
+             y="-1.8376539">♊︎</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Noto Serif Hebrew';-inkscape-font-specification:'Noto Serif Hebrew';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="27.463076"
+           y="16.35734"
+           id="letra_hebrew_caminho_6"><title
+             id="title66-50_caminho_6">letra_hebrew</title><tspan
+             id="tspan61-46_caminho_6"
+             style="stroke-width:0.5"
+             x="27.463076"
+             y="16.35734">ז</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.11783px;font-family:sans-serif;-inkscape-font-specification:sans-serif;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="27.197872"
+           y="39.487644"
+           id="number_roman_caminho_6"><title
+             id="title65-1_caminho_6">number_roman</title><tspan
+             id="tspan62-97_caminho_6"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.5"
+             x="27.197872"
+             y="39.487644">VI</tspan></text>
+      </g>
+      <g
+         id="caminho_7"
+         transform="matrix(1.0011763,0,0,0.95237964,-2.3143814,94.41682)"
+        onmouseover="setColorPath('caminho_7', '#ffc200');"
+        onmouseout="setColorPath('caminho_7', '#ffffff');">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.364756;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           d="M 37.017005,-10.342585 H 27.22711 v 59.796978 h 9.789895 z"
+           id="caminho_caminho_7">
+          <title
+             id="title68-01-0">caminho</title>
+        </path>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="32.311546"
+           y="-0.041900903"
+           id="symbol_caminho_7"><title
+             id="title67-7-4_caminho_7">symbol</title><tspan
+             id="tspan60-7-9_caminho_7"
+             style="font-size:8.46667px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5"
+             x="32.311546"
+             y="-0.041900903">♋︎</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Noto Serif Hebrew';-inkscape-font-specification:'Noto Serif Hebrew';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="32.162746"
+           y="17.760427"
+           id="letra_hebrew_caminho_7"><title
+             id="title66-0-8_caminho_7">letra_hebrew</title><tspan
+             id="tspan61-6-2_caminho_7"
+             style="stroke-width:0.5"
+             x="32.162746"
+             y="17.760427">ח</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.78044px;font-family:sans-serif;-inkscape-font-specification:sans-serif;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="32.278706"
+           y="36.940575"
+           id="number_roman_caminho_7"><title
+             id="title65-6-7_caminho_7">number_roman</title><tspan
+             id="tspan62-8-9_caminho_7"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.5"
+             x="32.278706"
+             y="36.940575">VII</tspan></text>
+      </g>
+      <g
+         id="caminho_8"
+         transform="matrix(0,1.0011763,-0.95237964,0,133.90947,128.21712)"
+         style="display:inline"
+        onmouseover="setColorPath('caminho_8', '#fffb00');"
+        onmouseout="setColorPath('caminho_8', '#ffffff');">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           d="M 36.144051,-18.916352 H 26.144053 V 91.083652 h 9.999998 z"
+           id="caminho_caminho_8">
+          <title
+             id="title68-2-4-2">caminho</title>
+        </path>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.22555px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="-60.898315"
+           y="34.653408"
+           id="symbol_caminho_8"
+           transform="matrix(0,-1.0512366,0.95126064,0,0,0)"><title
+             id="title67-9-5-5_caminho_8">symbol</title><tspan
+             id="tspan60-1-8-4_caminho_8"
+             style="font-size:7.22555px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5"
+             x="-60.898315"
+             y="34.653408">♌︎</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Noto Serif Hebrew';-inkscape-font-specification:'Noto Serif Hebrew';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="-34.278393"
+           y="35.478737"
+           id="letra_hebrew_caminho_8"
+           transform="matrix(0,-1.0512366,0.95126064,0,0,0)"><title
+             id="title66-6-5-2_caminho_8">letra_hebrew</title><tspan
+             id="tspan61-4-7-0_caminho_8"
+             style="stroke-width:0.5"
+             x="-34.278393"
+             y="35.478737">ט</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.78044px;font-family:sans-serif;-inkscape-font-specification:sans-serif;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="-6.1692009"
+           y="34.716702"
+           id="number_roman_caminho_8"
+           transform="matrix(0,-1.0512366,0.95126064,0,0,0)"><title
+             id="title65-0-8-8_caminho_8">number_roman</title><tspan
+             id="tspan62-1-3-3_caminho_8"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.5"
+             x="-6.1692009"
+             y="34.716702">VIII</tspan></text>
+      </g>
+      <g
+         id="caminho_9"
+         transform="matrix(0.44761212,1.0842602,-0.87541835,0.46373012,142.1841,135.1805)"
+         style="display:inline"
+        onmouseover="setColorPath('caminho_9', '#b5ce1c');"
+        onmouseout="setColorPath('caminho_9', '#ffffff');">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.397098;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           d="m 37.73215,-15.212614 -9.583252,0.874679 -4.801123,72.838067 9.58325,-0.87468 0.470313,-7.135169 z"
+           id="caminho_caminho_9">
+          <title
+             id="title69-5-8">caminho</title>
+        </path>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.78044px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="30.790745"
+           y="11.314312"
+           id="symbol_caminho_9"><title
+             id="title70-1-5_caminho_9">symbol</title><tspan
+             id="tspan70-8-0_caminho_9"
+             style="font-size:5.78044px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5"
+             x="30.790745"
+             y="11.314312">♍︎</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Noto Serif Hebrew';-inkscape-font-specification:'Noto Serif Hebrew';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="30.779686"
+           y="25.034563"
+           id="letra_hebrew_caminho_9"><title
+             id="title71-1-3_caminho_9">letra_hebrew</title><tspan
+             id="tspan71-6-4_caminho_9"
+             style="stroke-width:0.5"
+             x="30.779686"
+             y="25.034563">י</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.78044px;font-family:sans-serif;-inkscape-font-specification:sans-serif;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="29.581015"
+           y="34.658195"
+           id="number_roman_caminho_9"><title
+             id="title72-9-9_caminho_9">number_roman</title><tspan
+             id="tspan72-0-4_caminho_9"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#000000;fill-opacity:1;stroke-width:0.5"
+             x="29.581015"
+             y="34.658195">IX</tspan></text>
+      </g>
+      <g
+         id="caminho_10"
+         transform="matrix(1.0011763,0,0,0.95237963,138.64271,176.27284)"
+         style="display:inline"
+        onmouseover="setColorPath('caminho_10', '#9a2dcf');"
+        onmouseout="setColorPath('caminho_10', '#ffffff');">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.285912;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           d="m 36.159972,1.6793548 h -9.92937 V 37.903177 h 9.92937 z"
+           id="caminho_caminho_10">
+          <title
+             id="title68-4">caminho</title>
+        </path>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="31.122887"
+           y="11.536489"
+           id="symbol_caminho_10"><title
+             id="title67-6_caminho_10">symbol</title><tspan
+             id="tspan60-4_caminho_10"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5"
+             x="31.122887"
+             y="11.536489">♃</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Noto Serif Hebrew';-inkscape-font-specification:'Noto Serif Hebrew';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="31.190617"
+           y="21.794073"
+           id="letra_hebrew_caminho_10"><title
+             id="title66-4_caminho_10">letra_hebrew</title><tspan
+             id="tspan61-05_caminho_10"
+             style="stroke-width:0.5"
+             x="31.190617"
+             y="21.794073">כ</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.78044px;font-family:sans-serif;-inkscape-font-specification:sans-serif;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="31.193876"
+           y="31.707479"
+           id="number_roman_caminho_10"><title
+             id="title65-19_caminho_10">number_roman</title><tspan
+             id="tspan62-48_caminho_10"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.5"
+             x="31.193876"
+             y="31.707479">X</tspan></text>
+      </g>
+      <g
+         id="caminho_11"
+         transform="matrix(0.50058815,-0.86704411,0.82478494,0.47618983,35.079552,199.2558)"
+         style="display:inline"
+        onmouseover="setColorPath('caminho_11', '#22cd21');"
+        onmouseout="setColorPath('caminho_11', '#ffffff');">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.42362;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           d="m 34.045149,-14.670603 -11.538802,-1.612464 7.618356,69.494341 11.538801,1.612463 z"
+           id="caminho_caminho_11">
+          <title
+             id="title68-3-3">caminho</title>
+        </path>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="29.549946"
+           y="7.0517564"
+           id="symbol_caminho_11"
+           transform="matrix(0.9961947,-0.0916213,0.08290783,0.9961947,0,0)"><tspan
+             id="tspan14_caminho_11"
+             x="29.549946"
+             y="7.0517564">♎︎</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Noto Serif Hebrew';-inkscape-font-specification:'Noto Serif Hebrew, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="30.562092"
+           y="20.197752"
+           id="letra_hebrew_caminho_11"
+           transform="matrix(0.9961947,-0.0916213,0.08290783,0.9961947,0,0)"><tspan
+             id="tspan13_caminho_11"
+             x="30.562092"
+             y="20.197752">ל</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.69661px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="30.706142"
+           y="33.0769"
+           id="number_roman_caminho_11"
+           transform="matrix(0.9961947,-0.0916213,0.08290783,0.9961947,0,0)"><tspan
+             id="tspan12_caminho_11"
+             x="30.706142"
+             y="33.0769">XI</tspan></text>
+      </g>
+      <g
+         id="caminho_12"
+         transform="matrix(1.0011763,0,0,0.95237964,-1.35729,175.97242)"
+         style="display:inline"
+        onmouseover="setColorPath('caminho_12', '#0433ff');"
+        onmouseout="setColorPath('caminho_12', '#ffffff');">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.285912;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           d="m 36.159972,1.6793548 h -9.92937 V 37.903177 h 9.92937 z"
+           id="caminho_caminho_12">
+          <title
+             id="title68-4-5">caminho</title>
+        </path>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="31.122887"
+           y="11.536489"
+           id="symbol_caminho_12"><tspan
+             id="tspan35_caminho_12"
+             x="31.122887"
+             y="11.536489">🜄</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Noto Serif Hebrew';-inkscape-font-specification:'Noto Serif Hebrew, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="31.190617"
+           y="21.794073"
+           id="letra_hebrew_caminho_12"><tspan
+             id="tspan34_caminho_12"
+             x="31.190617"
+             y="21.794073">ם</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.78044px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="31.193876"
+           y="31.707479"
+           id="number_roman_caminho_12"><tspan
+             id="tspan33_caminho_12"
+             x="31.193876"
+             y="31.707479">XII</tspan></text>
+      </g>
+      <g
+         id="caminho_13"
+         transform="matrix(0.50058815,-0.86704411,0.82478495,0.47618983,105.93624,229.49519)"
+         style="display:inline"
+        onmouseover="setColorPath('caminho_13', '#249688');"
+        onmouseout="setColorPath('caminho_13', '#ffffff');">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.42362;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           d="m 34.045149,-14.670603 -11.538802,-1.612464 7.618356,69.494341 11.538801,1.612463 z"
+           id="caminho_caminho_13">
+          <title
+             id="title68-3">caminho</title>
+        </path>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="29.549946"
+           y="7.0517564"
+           id="symbol_caminho_13"
+           transform="matrix(0.9961947,-0.0916213,0.08290783,0.9961947,0,0)"><title
+             id="title67-98">symbol</title><tspan
+             id="tspan60-13_caminho_13"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5"
+             x="29.549946"
+             y="7.0517564">♏︎</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Noto Serif Hebrew';-inkscape-font-specification:'Noto Serif Hebrew';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="30.562092"
+           y="20.197752"
+           id="letra_hebrew_caminho_13"
+           transform="matrix(0.9961947,-0.0916213,0.08290783,0.9961947,0,0)"><title
+             id="title66-509_caminho_13">letra_hebrew</title><tspan
+             id="tspan61-43_caminho_13"
+             style="stroke-width:0.5"
+             x="30.562092"
+             y="20.197752">נ</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.69661px;font-family:sans-serif;-inkscape-font-specification:sans-serif;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="30.706142"
+           y="33.0769"
+           id="number_roman_caminho_13"
+           transform="matrix(0.9961947,-0.0916213,0.08290783,0.9961947,0,0)"><title
+             id="title65-7_caminho_13">number_roman</title><tspan
+             id="tspan62-5_caminho_13"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.69661px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.5"
+             x="30.706142"
+             y="33.0769">XIII</tspan></text>
+      </g>
+      <g
+         id="caminho_14"
+         transform="matrix(1.0011763,0,0,0.95237964,68.64271,216.98525)"
+         style="display:inline"
+        onmouseover="setColorPath('caminho_14', '#0433ff');"
+        onmouseout="setColorPath('caminho_14', '#ffffff');">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.285912;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           d="M 36.218853,-7.9949172 26.05739,-7.7013221 26.230601,49.755161 h 9.988252 z"
+           id="caminho_caminho_14">
+          <title
+             id="title68-4-9">caminho</title>
+        </path>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="31.122887"
+           y="4.8689775"
+           id="symbol_caminho_14"><tspan
+             id="tspan44_caminho_14"
+             x="31.122887"
+             y="4.8689775">♐︎</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Noto Serif Hebrew';-inkscape-font-specification:'Noto Serif Hebrew, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="31.190617"
+           y="29.572836"
+           id="letra_hebrew_caminho_14"><tspan
+             id="tspan42_caminho_14"
+             x="31.190617"
+             y="29.572836">ס</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.78044px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="31.193876"
+           y="40.041866"
+           id="number_roman_caminho_14"><tspan
+             id="tspan41_caminho_14"
+             x="31.193876"
+             y="40.041866">XIV</tspan></text>
+      </g>
+      <g
+         id="caminho_15"
+         transform="matrix(0.44761211,1.0842602,-0.87541836,0.46373013,69.282652,166.50054)"
+         style="display:inline"
+        onmouseover="setColorPath('caminho_15', '#6c2fe6');"
+        onmouseout="setColorPath('caminho_15', '#ffffff');">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.397098;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           d="m 37.73215,-15.212614 -9.583252,0.874679 -4.801123,72.838067 9.58325,-0.87468 0.470313,-7.135169 z"
+           id="caminho_caminho_15">
+          <title
+             id="title69-5-8-2">caminho</title>
+        </path>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.78044px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="30.790745"
+           y="11.314312"
+           id="symbol_caminho_15"><tspan
+             id="tspan2_caminho_15"
+             x="30.790745"
+             y="11.314312">♑︎</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Noto Serif Hebrew';-inkscape-font-specification:'Noto Serif Hebrew, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="30.779686"
+           y="25.034563"
+           id="letra_hebrew_caminho_15"><tspan
+             id="tspan1_caminho_15"
+             x="30.779686"
+             y="25.034563">ע</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.78044px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="29.581015"
+           y="34.658195"
+           id="number_roman_caminho_15"><tspan
+             id="tspan4_caminho_15"
+             x="29.581015"
+             y="34.658195">XV</tspan></text>
+      </g>
+      <g
+         id="caminho_16"
+         transform="matrix(0,1.0011763,-0.95237964,0,133.90947,198.98376)"
+         style="display:inline"
+        onmouseover="setColorPath('caminho_16', '#ff2600');"
+        onmouseout="setColorPath('caminho_16', '#ffffff');">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           d="M 36.144051,-18.916352 H 26.144053 V 91.083652 h 9.999998 z"
+           id="caminho_caminho_16">
+          <title
+             id="title68-2-4-2-4">caminho</title>
+        </path>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.22555px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="-60.898315"
+           y="34.653408"
+           id="symbol_caminho_16"
+           transform="matrix(0,-1.0512366,0.95126064,0,0,0)"><tspan
+             id="tspan38_caminho_16"
+             x="-60.898315"
+             y="34.653408">♂</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Noto Serif Hebrew';-inkscape-font-specification:'Noto Serif Hebrew, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="-34.278393"
+           y="35.478737"
+           id="letra_hebrew_caminho_16"
+           transform="matrix(0,-1.0512366,0.95126064,0,0,0)"><tspan
+             id="tspan36_caminho_16"
+             x="-34.278393"
+             y="35.478737">פ</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.78044px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="-6.1692009"
+           y="34.716702"
+           id="number_roman_caminho_16"
+           transform="matrix(0,-1.0512366,0.95126064,0,0,0)"><tspan
+             id="tspan37_caminho_16"
+             x="-6.1692009"
+             y="34.716702">XVI</tspan></text>
+      </g>
+      <g
+         id="caminho_17"
+         transform="matrix(0.57425114,0.8201156,-0.78014372,0.54626251,134.47973,220.58542)"
+         style="display:inline"
+        onmouseover="setColorPath('caminho_17', '#9a2dcf');"
+        onmouseout="setColorPath('caminho_17', '#ffffff');">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.394766;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           d="M 35.473341,-11.394374 H 25.395379 v 68.039226 h 10.077962 v -6.665079 z"
+           id="caminho_caminho_17">
+          <title
+             id="title69-5-82">caminho</title>
+        </path>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="30.864643"
+           y="11.730624"
+           id="symbol_caminho_17"><tspan
+             id="tspan47_caminho_17"
+             x="30.864643"
+             y="11.730624">♒︎</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Noto Serif Hebrew';-inkscape-font-specification:'Noto Serif Hebrew, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="29.792519"
+           y="22.864058"
+           id="letra_hebrew_caminho_17"><tspan
+             id="tspan46_caminho_17"
+             x="29.792519"
+             y="22.864058">צ</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.33533px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="30.697874"
+           y="35.367882"
+           id="number_roman_caminho_17"><tspan
+             id="tspan45_caminho_17"
+             x="30.697874"
+             y="35.367882">XVII</tspan></text>
+      </g>
+      <g
+         id="caminho_18"
+         transform="matrix(0.90737388,0.4231154,-0.40249303,0.86314907,131.2039,246.26203)"
+         style="display:inline"
+        onmouseover="setColorPath('caminho_18', '#9b1a66');"
+        onmouseout="setColorPath('caminho_18', '#ffffff');">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.578266;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           d="M 36.26403,-18.515781 24.176073,-17.893349 17.98046,104.144 30.068417,103.52156 Z"
+           id="caminho_caminho_18">
+          <title
+             id="title73-8">caminho</title>
+        </path>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="28.246117"
+           y="19.242985"
+           id="symbol_caminho_18"><tspan
+             id="tspan53_caminho_18"
+             x="28.246117"
+             y="19.242985">♓︎</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Noto Serif Hebrew';-inkscape-font-specification:'Noto Serif Hebrew, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="27.029791"
+           y="46.59417"
+           id="letra_hebrew_caminho_18"><tspan
+             id="tspan52_caminho_18"
+             x="27.029791"
+             y="46.59417">ק</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.33533px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="25.70698"
+           y="76.871834"
+           id="number_roman_caminho_18"><tspan
+             id="tspan54_caminho_18"
+             x="25.70698"
+             y="76.871834">XVIII</tspan></text>
+      </g>
+      <g
+         id="caminho_19"
+         transform="matrix(-0.57425114,0.8201156,0.78014372,0.54626251,64.772474,220.79556)"
+         style="display:inline"
+        onmouseover="setColorPath('caminho_19', '#ff9a00');"
+        onmouseout="setColorPath('caminho_19', '#ffffff');">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.394766;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           d="M 35.473341,-11.394374 H 25.395379 v 68.039226 h 10.077962 v -6.665079 z"
+           id="caminho_caminho_19">
+          <title
+             id="title69-5-82-5">caminho</title>
+        </path>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="30.864643"
+           y="11.730624"
+           id="symbol_caminho_19"><tspan
+             id="tspan50_caminho_19"
+             x="30.864643"
+             y="11.730624">☉</tspan><tspan
+             id="tspan51_caminho_19"
+             x="30.864643"
+             y="22.526556" /></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Noto Serif Hebrew';-inkscape-font-specification:'Noto Serif Hebrew, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="29.792519"
+           y="22.864058"
+           id="text71-2-8-0_caminho_19"><tspan
+             id="tspan49_caminho_19"
+             x="29.792519"
+             y="22.864058">ר</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.33533px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="30.697874"
+           y="35.367882"
+           id="number_roman_caminho_19"><tspan
+             id="tspan48_caminho_19"
+             x="30.697874"
+             y="35.367882">XIX</tspan></text>
+      </g>
+      <g
+         id="caminho_20"
+         transform="matrix(-0.90737388,0.4231154,0.40249303,0.86314907,68.707108,246.76972)"
+         style="display:inline"
+        onmouseover="setColorPath('caminho_20', '#ff2600');"
+        onmouseout="setColorPath('caminho_20', '#ffffff');">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.578266;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           d="M 36.26403,-18.515781 24.176073,-17.893349 17.98046,104.144 30.068417,103.52156 Z"
+           id="caminho_caminho_20">
+          <title
+             id="title73-8-3">caminho</title>
+        </path>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="28.246117"
+           y="19.242985"
+           id="symbol_caminho_20"><tspan
+             id="tspan57_caminho_20"
+             x="28.246117"
+             y="19.242985">🜂</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Noto Serif Hebrew';-inkscape-font-specification:'Noto Serif Hebrew, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="27.029791"
+           y="46.59417"
+           id="letra_hebrew_caminho_20"><tspan
+             id="tspan56_caminho_20"
+             x="27.029791"
+             y="46.59417">ש</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.78044px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="25.70698"
+           y="76.871834"
+           id="number_roman_caminho_20"><tspan
+             id="tspan55_caminho_20"
+             x="25.70698"
+             y="76.871834">XX</tspan></text>
+      </g>
+      <g
+         id="caminho_21"
+         transform="matrix(1.0011763,0,0,0.95237964,67.813036,301.7594)"
+         style="display:inline"
+        onmouseover="setColorPath('caminho_21', '#6d2ee0');"
+        onmouseout="setColorPath('caminho_21', '#ffffff');"
+         >
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.364756;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           d="M 37.017005,-10.342585 H 27.22711 v 59.796978 h 9.789895 z"
+           id="caminho_caminho_21">
+          <title
+             id="title68-01-0-7">caminho</title>
+        </path>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="32.311546"
+           y="7.1812344"
+           id="symbol_caminho_21"><tspan
+             id="tspan63_caminho_21"
+             x="32.311546"
+             y="7.1812344">♄</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="32.263332"
+           y="16.339375"
+           id="symbol_caminho_21"><tspan
+             id="tspan64_caminho_21"
+             x="32.263332"
+             y="16.339375">🜃</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Noto Serif Hebrew';-inkscape-font-specification:'Noto Serif Hebrew, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="32.162746"
+           y="25.53919"
+           id="letra_hebrew_caminho_21"><tspan
+             id="tspan59_caminho_21"
+             x="32.162746"
+             y="25.53919">ת</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.78044px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+           x="32.278706"
+           y="33.051193"
+           id="number_roman_caminho_21"><tspan
+             id="tspan58_caminho_21"
+             x="32.278706"
+             y="33.051193">XXI</tspan></text>
+      </g>
+    </g>
+    <g
+       id="sefirot"
+       style="display:inline">
+      <g
+         id="group_kether">
+        <title
+           id="title3">group_kether</title>
+        <g
+           id="kether">
+          <circle
+             style="fill:#fafafa;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             id="circle_sefira_kether"
+             cx="100"
+             cy="25"
+             r="20">
+            <title
+               id="title5_kether">circle_sefira</title>
+          </circle>
+          <text
+             xml:space="preserve"
+             style="font-size:8.46667px;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="100"
+             y="15"
+             id="number_sefira_kether"><title
+               id="title4_kether">number_sefira</title><tspan
+               id="tspan6_kether"
+               style="stroke-width:0.5"
+               x="100"
+               y="15">1</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:8.46667px;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="99.559715"
+             y="26.575098"
+             id="title_sefira_kether"><title
+               id="title2">title_sefira</title><tspan
+               id="tspan3_kether"
+               style="font-size:8.46667px;stroke-width:0.5"
+               x="99.559715"
+               y="26.575098">Kether</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:9.87778px;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="100.11759"
+             y="40.94556"
+             id="planet_symbol_sefira_kether"><title
+               id="title1_kether">planet_symbol_sefira</title><tspan
+               id="tspan5_kether"
+               style="font-size:9.87778px;stroke-width:0.5"
+               x="100.11759"
+               y="40.94556">♆</tspan></text>
+        </g>
+      </g>
+      <g
+         id="group_chokmah"
+         transform="translate(70.202791,40.012401)">
+        <title
+           id="title3-9">group_chokmah</title>
+        <g
+           id="chokmah">
+          <circle
+             style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             id="circle_sefira_chokmah"
+             cx="100"
+             cy="25"
+             r="20">
+            <title
+               id="title2-6">circle_sefira</title>
+          </circle>
+          <text
+             xml:space="preserve"
+             style="font-size:8.46667px;text-align:center;text-anchor:middle;fill:#000100;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="100.12816"
+             y="27.03174"
+             id="title_sefira_chokmah"><title
+               id="title5-7_chokmah">title_sefira</title><tspan
+               id="tspan3-6_chokmah"
+               style="font-size:8.46667px;fill:#000100;fill-opacity:1;stroke-width:0.5"
+               x="100.12816"
+               y="27.03174">Chokmah</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="100.11759"
+             y="40.94556"
+             id="planet_symbol_sefira_chokmah"><title
+               id="title7_chokmah">planet_symbol_sefira</title><tspan
+               id="tspan7_chokmah"
+               x="100.11759"
+               y="40.94556">♅</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:8.46667px;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="100"
+             y="15"
+             id="number_sefira_chokmah"><title
+               id="title6_chokmah">number_sefira</title><tspan
+               id="tspan6-9_chokmah"
+               style="fill:#000000;fill-opacity:1;stroke-width:0.5"
+               x="100"
+               y="15">2</tspan></text>
+        </g>
+      </g>
+      <g
+         id="group_binah"
+         transform="translate(-70.143055,40.249898)"
+         onmouseout="setColorText('binah','#000000'); setColorCircle('binah','#ffffff');"
+         onmouseover="setColorText('binah','#fff'); setColorCircle('binah','#000000');">
+        <title
+           id="title3-6">group_binah</title>
+        <g
+           id="binah">
+          <circle
+             style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             id="circle_sefira_binah"
+             cx="100"
+             cy="25"
+             r="20">
+            <title
+               id="title2-0_binah">circle_sefira</title>
+          </circle>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="99.559715"
+             y="26.575098"
+             id="title_sefira_binah"><title
+               id="title14_binah">title_sefira</title><tspan
+               id="tspan8_binah">Binah</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="100.11759"
+             y="40.94556"
+             id="planet_symbol_sefira_binah"><title
+               id="title12_binah">planet_symbol_sefira</title><tspan
+               id="tspan9_binah">♄</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="100"
+             y="15"
+             id="number_sefira_binah"><title
+               id="title11_binah">number_sefira</title><tspan
+               id="tspan10_binah">3</tspan></text>
+        </g>
+      </g>
+      <g
+         id="group_daath"
+         transform="translate(-0.09583441,82.047919)"
+         style="display:inline;opacity:0.086"
+         onmouseout="this.style.opacity=&quot;0.09&quot;; setColorText('daath','#000000'); setColorCircle('daath','#ffffff');"
+         onmouseover="this.style.opacity=&quot;1&quot;;setColorText('daath','#fff'); setColorCircle('daath','#000000');">
+        <title
+           id="title3-46">group_daath</title>
+        <g
+           id="daath">
+          <circle
+             style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             id="circle_sefira_daath"
+             cx="100"
+             cy="25"
+             r="20">
+            <title
+               id="title2-3">circle_sefira</title>
+          </circle>
+          <text
+             xml:space="preserve"
+             style="font-size:8.46667px;text-align:center;text-anchor:middle;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="99.559715"
+             y="26.575098"
+             id="title_sefira_daath"><title
+               id="title5-58_daath">title_sefira</title><tspan
+               id="tspan3-60_daath"
+               style="font-size:8.46667px;stroke-width:0.5"
+               x="99.559715"
+               y="26.575098">Daath</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="100.11759"
+             y="40.94556"
+             id="planet_symbol_sefira_daath"><title
+               id="title15_daath">planet_symbol_sefira</title><tspan
+               id="tspan11_daath">♇</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:8.46667px;text-align:center;text-anchor:middle;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="100"
+             y="15"
+             id="number_sefira_daath"><title
+               id="title6-3_daath">number_sefira</title><tspan
+               id="tspan6-5_daath"
+               style="stroke-width:0.5"
+               x="100"
+               y="15">11</tspan></text>
+        </g>
+      </g>
+      <g
+         id="group_chesed"
+         transform="translate(70.018762,134.57506)"
+             onmouseout="setColorCircle('chesed', '#ffffff'); setColorText('chesed','#000000');"
+             onmouseover=" setColorCircle('chesed', '#0433ff'); setColorText('chesed','#fff');">
+        <title
+           id="title3-1">group_chesed</title>
+        <g
+           id="chesed">
+          <circle
+             style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             id="circle_sefira_chesed"
+             cx="100"
+             cy="25"
+             r="20">
+            <title
+               id="title2-09_chesed">circle_sefira</title>
+          </circle>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="99.559715"
+             y="26.575098"
+             id="title_sefira_chesed"><title
+               id="title8_chesed">title_sefira</title><tspan
+               id="tspan17_chesed">Chesed</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="100.11759"
+             y="40.94556"
+             id="planet_symbol_sefira_chesed"><title
+               id="title9_chesed">planet_symbol_sefira</title><tspan
+               id="tspan16_chesed">♃</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="100"
+             y="15"
+             id="number_sefira_chesed"><title
+               id="title10_chesed">number_sefira</title><tspan
+               id="tspan15_chesed">4</tspan></text>
+        </g>
+      </g>
+      <g
+         id="group_geburah"
+         transform="translate(-70.210421,134.57506)"
+             onmouseout="setColorCircle('geburah', '#ffffff');"
+             onmouseover=" setColorCircle('geburah', '#ff0000');">
+        <title
+           id="title3-4">group_geburah</title>
+        <g
+           id="geburah">
+          <circle
+             style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             id="circle_sefira_geburah"
+             cx="100"
+             cy="25"
+             r="20">
+            <title
+               id="title2-7_geburah">circle_sefira</title>
+          </circle>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="99.559715"
+             y="26.575098"
+             id="title_sefira_geburah"><title
+               id="title13_geburah">title_sefira</title><tspan
+               id="tspan19_geburah">Geburah</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="100.11759"
+             y="40.94556"
+             id="planet_symbol_sefira_geburah"><title
+               id="title16_geburah">planet_symbol_sefira</title><tspan
+               id="tspan20_geburah">♂</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="100"
+             y="15"
+             id="number_sefira_geburah"><title
+               id="title17_geburah">number_sefira</title><tspan
+               id="tspan18_geburah">5</tspan></text>
+        </g>
+      </g>
+      <g
+         id="group_tipheret"
+         transform="translate(-0.09583436,167.77285)"
+             onmouseout="setColorCircle('tiferet','#ffffff');"
+             onmouseover="setColorCircle('tiferet','#fcfb00');">
+        <title
+           id="title3-8">group_tipheret</title>
+        <g
+           id="tiferet">
+          <circle
+             style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             id="circle_sefira_tipheret"
+             cx="100"
+             cy="25"
+             r="20">
+            <title
+               id="title2-2_tipheret">circle_sefira</title>
+          </circle>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="99.559715"
+             y="26.575098"
+             id="title_sefira_tipheret"><title
+               id="title22_tipheret">title_sefira</title><tspan
+               id="tspan22_tipheret"
+               x="99.559715"
+               y="26.575098">Tipheret</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="100.11759"
+             y="40.94556"
+             id="planet_symbol_sefira_tipheret"><tspan
+               id="tspan23_tipheret"
+               x="100.11759"
+               y="40.94556">☉</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="100"
+             y="15"
+             id="number_sefira_tipheret"><title
+               id="title23_tipheret">number_sefira</title><tspan
+               id="tspan21_tipheret">6</tspan></text>
+        </g>
+      </g>
+      <g
+         id="group_netzach"
+         transform="translate(70.283329,205.00606)"
+             onmouseout="setColorCircle('netzach','#ffffff');"
+             onmouseover="setColorCircle('netzach','#26ce23');">
+        <g
+           id="netzach">
+          <circle
+             style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             id="circle_sefira_netzach"
+             cx="100"
+             cy="25"
+             r="20">
+            <title
+               id="title2-31_netzach">circle_sefira</title>
+          </circle>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="99.559715"
+             y="26.575098"
+             id="title_sefira_netzach"><title
+               id="title24_netzach">title_sefira</title><tspan
+               id="tspan24_netzach"
+               x="99.559715"
+               y="26.575098">Netzach</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="100.11759"
+             y="40.94556"
+             id="planet_symbol_sefira_netzach"><tspan
+               id="tspan25_netzach"
+               x="100.11759"
+               y="40.94556">♀</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="100"
+             y="15"
+             id="number_sefira_netzach"><tspan
+               id="tspan29_netzach"
+               x="100"
+               y="15">7</tspan></text>
+        </g>
+      </g>
+      <g
+         id="group_hod"
+         transform="matrix(1,0,0,0.99999833,-70.475031,205.00607)"
+             onmouseout=" setColorCircle('hod','#ffffff');"
+             onmouseover="setColorCircle('hod','#ff9a00');">
+        <g
+           id="hod">
+          <circle
+             style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             id="circle_sefira_hod"
+             cx="100"
+             cy="25"
+             r="20">
+            <title
+               id="title2-4_hod">circle_sefira</title>
+          </circle>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="99.559715"
+             y="26.575098"
+             id="title_sefira_hod"><tspan
+               id="tspan26_hod"
+               x="99.559715"
+               y="26.575098">Hod</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="100.11759"
+             y="40.94556"
+             id="planet_symbol_sefira_hod"><tspan
+               id="tspan27_hod"
+               x="100.11759"
+               y="40.94556">☿</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="100"
+             y="15"
+             id="number_sefira_hod"><title
+               id="title29_hod">number_sefira</title><tspan
+               id="tspan28_hod"
+               x="100"
+               y="15">8</tspan></text>
+        </g>
+      </g>
+      <g
+         id="group_yesod"
+         transform="translate(-0.09583433,254.66906)"
+             onmouseover="setColorText('yesod','#ffffff'); setColorCircle('yesod','#9a2dcf');"
+             onmouseout="setColorText('yesod','#000000'); setColorCircle('yesod','#ffffff');">
+        <title
+           id="title3-19_yesod">group_yesod</title>
+        <g
+           id="yesod">
+          <circle
+             style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             id="circle_sefira_yesod"
+             cx="100"
+             cy="25"
+             r="20">
+            <title
+               id="title2-68_yesod">circle_sefira</title>
+          </circle>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="99.559715"
+             y="26.575098"
+             id="title_sefirayesod"><tspan
+               id="tspan30_yesod"
+               x="99.559715"
+               y="26.575098">Yesod</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="100.11759"
+             y="40.94556"
+             id="planet_symbol_sefira_yesod"><tspan
+               id="tspan31_yesod"
+               x="100.11759"
+               y="40.94556">☾</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="100"
+             y="15"
+             id="number_sefira-13"><tspan
+               id="tspan32_yesod"
+               x="100"
+               y="15">9</tspan></text>
+        </g>
+      </g>
+      <g
+         id="group_malkut"
+         transform="translate(-0.09583433,333.07106)"
+             onmouseover="startRotation()"
+             onmouseout="stopRotation()">
+        <title
+           id="title3-80">group_malkut</title>
+        <g
+           id="malkut"
+           style="display:inline">
+          <circle
+             style="fill:#fafafa;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             id="circle_malkut"
+             cx="100"
+             cy="25"
+             r="20">
+            <title
+               id="title2-41_malkut">circle_malkut</title>
+            <animateTransform
+               id="rotateMalkut"
+               attributeName="transform"
+               type="rotate"
+               from="0 100 25"
+               to="360 100 25"
+               dur="5s"
+               repeatCount="indefinite"
+               begin="indefinite" />
+          </circle>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="99.559715"
+             y="26.575098"
+             id="title_sefira_malkut"><tspan
+               id="tspan39_malkut"
+               x="99.559715"
+               y="26.575098">Malkut</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="100.11759"
+             y="40.94556"
+             id="planet_symbol_sefira_malkut"><tspan
+               id="tspan40_malkut"
+               x="100.11759"
+               y="40.94556">🜨</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             x="100"
+             y="15"
+             id="number_sefira_malkut"><tspan
+               id="tspan43_malkut"
+               x="100"
+               y="15">10</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+  <script
+     type="text/javascript"
+     id="script5">
+    function startRotation() {
+        const malkutCircle = document.getElementById('circle_malkut');
+        if (!malkutCircle) {
+            return;
+        }
+        malkutCircle.style.fill = 'url(#malkutPattern)';
+      document.getElementById('rotateMalkut').beginElement();
+        setColorText('malkut', '#ffffff');
+    }
+
+    function stopRotation() {
+        const malkutCircle = document.getElementById('circle_malkut');
+        if (!malkutCircle) {
+            return;
+        }
+        malkutCircle.style.fill = 'url(#gradient_malkut)';
+      document.getElementById('rotateMalkut').endElement();
+      setColorText('malkut', '#000000');
+    }
+
+    function setColorText(groupId, color) {
+        const groupElement = document.getElementById(groupId);
+        if (!groupElement) {
+            return;
+        }
+        const textElements = groupElement.querySelectorAll('text');
+        textElements.forEach(text =&gt; {
+            text.style.fill = color;
+        });
+    
+    }
+
+    function setColorCircle(groupId, color) {
+        const groupElement = document.getElementById(groupId);
+        if (!groupElement) {
+            return;
+        }
+        const circleElement = groupElement.querySelector('circle');
+        if (circleElement) {
+            circleElement.style.fill = color;
+        }
+    }
+
+    function setColorPath(groupId, color) {
+        const groupElement = document.getElementById(groupId);
+        if (!groupElement) {
+            return;
+        }
+        const pathElement = groupElement.querySelector('path');
+        if (pathElement) {
+            pathElement.style.fill = color;
+        }
+    }
+  </script>
+</svg>

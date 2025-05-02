@@ -4,6 +4,6 @@ export const Divs = styled.div`
 
 
 a{
-   color: red;
+   color: #ff9494;
 }
 `;
