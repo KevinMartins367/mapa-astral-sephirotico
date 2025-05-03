@@ -8,10 +8,7 @@ interface KabbalahProps {
 
 export default function Kabbalah({ onSephiraChange, handlePathChange }: KabbalahProps) {
 
-    const [sephira, setSephira] = useState<string | null>(null);
-    const [path, setPath] = useState<string | null>(null);
 
-    // Mapeamento dos ids do SVG para os nomes correspondentes
     const groupSephiroth: Record<string, string> = {
         malkut: "malkuth",
         yesod: "yesod",
@@ -68,7 +65,6 @@ export default function Kabbalah({ onSephiraChange, handlePathChange }: Kabbalah
                 }
             }
             if (newSephira) {
-                setSephira(newSephira);
                 handlePathChange('');
                 onSephiraChange(newSephira);
             }
@@ -84,7 +80,6 @@ export default function Kabbalah({ onSephiraChange, handlePathChange }: Kabbalah
                 }
             }
             if (newPath) {
-                setPath(newPath);
                 onSephiraChange('');
                 handlePathChange(newPath);
             }

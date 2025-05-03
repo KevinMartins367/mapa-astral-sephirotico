@@ -1,0 +1,57 @@
+{
+    "neptune": {
+        "name": "Netuno",
+        "symbol": "♆",
+        "color": "#00BFFF"
+    },
+    "uranus": {
+        "name": "Urano",
+        "symbol": "♅",
+        "color": "#00FF00"
+    },
+    "saturn": {
+        "name": "Saturno",
+        "symbol": "♄",
+        "color": "#FFA500"
+    },
+    "pluto": {
+        "name": "Plutão",
+        "symbol": "♇",
+        "color": "#FF0000"
+    },
+    "jupiter": {
+        "name": "Júpiter",
+        "symbol": "♃",
+        "color": "#FFFF00"
+    },
+    "mars": {
+        "name": "Marte",
+        "symbol": "♂",
+        "color": "#FF69B4"
+    },
+    "sun": {
+        "name": "Sol",
+        "symbol": "☉",
+        "color": "#FFD700"
+    },
+    "venus": {
+        "name": "Vênus",
+        "symbol": "♀",
+        "color": "#FF1493"
+    },
+    "mercury": {
+        "name": "Mercúrio",
+        "symbol": "☿",
+        "color": "#8A2BE2"
+    },
+    "moon": {
+        "name": "Lua",
+        "symbol": "☽",
+        "color": "#FFFFFF"
+    },
+    "ascendant": {
+        "name": "Ascendente",
+        "symbol": "↑",
+        "color": "#FF4500"
+    }
+}

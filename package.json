@@ -3,6 +3,8 @@
   "version": "2.0.0",
   "private": true,
   "dependencies": {
+    "@astrodraw/astrochart": "^3.0.2",
+    "@svgr/webpack": "^8.1.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
@@ -13,6 +15,7 @@
     "axios": "^1.9.0",
     "bootstrap": "^5.3.5",
     "bootstrap-icons": "^1.11.3",
+    "circular-natal-horoscope-js": "^1.1.0",
     "localforage": "^1.10.0",
     "match-sorter": "^8.0.1",
     "moment": "^2.30.1",
@@ -24,11 +27,11 @@
     "react-intersection-observer": "^9.16.0",
     "react-lazy-load-image-component": "^1.6.3",
     "react-router-dom": "^7.5.3",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "sass-google-fonts": "^1.0.1",
     "sort-by": "^1.2.0",
     "styled-components": "^6.1.17",
-    "typescript": "^5.8.3",
+    "typescript": "^4.9.5",
     "web-vitals": "^4.2.4"
   },
   "scripts": {

@@ -14,6 +14,7 @@ const Loadable = <T extends {}>(Component: React.ComponentType<T>) => (props: T)
 
 //  * HOME PAGE
 const Home = Loadable(lazy(() => import('./pages/home')));
+const Maps = Loadable(lazy(() => import('./pages/maps')));
 
 const routes: RouteObject[] = [
 
@@ -29,6 +30,19 @@ const routes: RouteObject[] = [
         },
       ],
     },
+    {
+        path: '/maps',
+        element: <MainLayout />,
+        children: [
+            {
+                index: true,
+                element: (
+                    <Maps />
+                ),
+            },
+        ],
+            
+    }
 ];
 
 export default routes;

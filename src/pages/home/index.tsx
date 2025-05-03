@@ -29,7 +29,7 @@ export default function Home() {
                      <Form_infos />
                   </Col> */}
 
-                        <Col sm={12} md={12} lg={5} className='pb-3'>
+                        <Col sm={12} md={12} lg={3} className='pb-3'>
                             <aside>
                                 <Card>
                                     <Card.Body>
@@ -39,7 +39,7 @@ export default function Home() {
                             </aside>
                         </Col>
 
-                        <Col sm={12} md={12} lg={7} className='pb-3'>
+                        <Col sm={12} md={12} lg={9} className='pb-3'>
                             <section>
                                 <Infos sephira={sephira} path={path} />
                             </section>

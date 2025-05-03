@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState } from 'react';
 import { Navbar, Container, Nav, Form, Button, Image } from 'react-bootstrap';
 
 import { ThemeContext } from 'styled-components';
@@ -18,7 +18,7 @@ export default function Header(props: any) {
          <header>
             <Navbar bg="dark">
                <Container className="pt-0 pb-0">
-                  <Navbar.Brand href="#home">
+                  <Navbar.Brand href="/">
       
                      <Image
                      alt=""
