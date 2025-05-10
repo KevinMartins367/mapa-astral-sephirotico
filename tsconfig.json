@@ -1,39 +1,32 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
-  "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
-    "outDir": "./dist/out-tsc",
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "noImplicitReturns": true,
-    "noImplicitAny": false,
-    "noFallthroughCasesInSwitch": true,
-    "sourceMap": true,
-    "declaration": false,
-    "downlevelIteration": true,
-    "experimentalDecorators": true,
-    "moduleResolution": "node",
-    "importHelpers": true,
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports":true,
-    "target": "es2015",
-    "module": "es2020",
+    "target": "es5",
     "lib": [
-      "es2018",
-      "dom"
+      "dom",
+      "dom.iterable",
+      "esnext"
     ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "types": []
+  },
+  "include": [
+    "src"
+  ],
     "paths": {
       "crypto": [
         "../../node_modules/crypto-js"
       ]
     }
-  },
-  "angularCompilerOptions": {
-    "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true,
-    "enableIvy": false,
-    "strictInputAccessModifiers": true,
-    "strictTemplates": true
-  }
 }
