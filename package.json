@@ -2,6 +2,7 @@
   "name": "map-sephirotico",
   "version": "2.0.0",
   "private": true,
+  "homepage":"mapa-astral-sephirotico",
   "dependencies": {
     "@astrodraw/astrochart": "^3.0.2",
     "@svgr/webpack": "^8.1.0",
