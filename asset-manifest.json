@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/mapa-astral-sephirotico/static/css/main.3ce7bc41.css",
-    "main.js": "/mapa-astral-sephirotico/static/js/main.3c97a62b.js",
-    "static/js/705.7d8ff89b.chunk.js": "/mapa-astral-sephirotico/static/js/705.7d8ff89b.chunk.js",
-    "static/js/670.98cb7d8f.chunk.js": "/mapa-astral-sephirotico/static/js/670.98cb7d8f.chunk.js",
+    "main.js": "/mapa-astral-sephirotico/static/js/main.57a44c2f.js",
+    "static/js/705.5a51a049.chunk.js": "/mapa-astral-sephirotico/static/js/705.5a51a049.chunk.js",
+    "static/js/670.7b3c4054.chunk.js": "/mapa-astral-sephirotico/static/js/670.7b3c4054.chunk.js",
     "static/js/488.a218466b.chunk.js": "/mapa-astral-sephirotico/static/js/488.a218466b.chunk.js",
     "static/js/79.46b782ad.chunk.js": "/mapa-astral-sephirotico/static/js/79.46b782ad.chunk.js",
     "static/js/339.d3699196.chunk.js": "/mapa-astral-sephirotico/static/js/339.d3699196.chunk.js",
     "index.html": "/mapa-astral-sephirotico/index.html",
     "main.3ce7bc41.css.map": "/mapa-astral-sephirotico/static/css/main.3ce7bc41.css.map",
-    "main.3c97a62b.js.map": "/mapa-astral-sephirotico/static/js/main.3c97a62b.js.map",
-    "705.7d8ff89b.chunk.js.map": "/mapa-astral-sephirotico/static/js/705.7d8ff89b.chunk.js.map",
-    "670.98cb7d8f.chunk.js.map": "/mapa-astral-sephirotico/static/js/670.98cb7d8f.chunk.js.map",
+    "main.57a44c2f.js.map": "/mapa-astral-sephirotico/static/js/main.57a44c2f.js.map",
+    "705.5a51a049.chunk.js.map": "/mapa-astral-sephirotico/static/js/705.5a51a049.chunk.js.map",
+    "670.7b3c4054.chunk.js.map": "/mapa-astral-sephirotico/static/js/670.7b3c4054.chunk.js.map",
     "488.a218466b.chunk.js.map": "/mapa-astral-sephirotico/static/js/488.a218466b.chunk.js.map",
     "79.46b782ad.chunk.js.map": "/mapa-astral-sephirotico/static/js/79.46b782ad.chunk.js.map",
     "339.d3699196.chunk.js.map": "/mapa-astral-sephirotico/static/js/339.d3699196.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3ce7bc41.css",
-    "static/js/main.3c97a62b.js"
+    "static/js/main.57a44c2f.js"
   ]
 }
