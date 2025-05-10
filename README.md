@@ -1,46 +1,39 @@
-# Getting Started with Create React App
+# Grimorio Open source
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto de código aberto para o Grimorio, uma ferramenta para consulta de dados da kabbalah, tarot e astrologia. O projeto é mantido por [Kevin Martins](https://github.com/KevinMartins367/), caso queira contribuir, entre em contato. Lembrando que o projeto é gratuito e não possui fins lucrativos, portanto, não é permitido o uso comercial. O projeto é um trabalho em andamento e pode conter erros. Caso encontre algum erro, por favor, entre em contato para que possamos corrigir, porém nem todas as sugestões serão aceitas, por varios motivos. 
 
-## Available Scripts
+## Instalação
 
-In the project directory, you can run:
+Para instalar o projeto, você pode usar o seguinte comando:
 
-### `npm start`
+```bash
+git clone git@github.com:KevinMartins367/mapa-astral-sephirotico.git
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Uso
+Para usar o projeto, você pode executar o seguinte comando:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```bash
+npm start
+```
 
-### `npm test`
+## Acesso ao projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para acessar o projeto, você pode usar o seguinte link: [Grimorio]([https://kevinmartins367.github.io/mapa-astral-sephirotico])
 
-### `npm run build`
+## Contribuição
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Se você deseja contribuir com o projeto, você pode fazer isso de várias maneiras:
+- Reportando bugs
+- Sugerindo melhorias
+- Contribuindo com código
+- Ajudando a documentar o projeto
+- Compartilhando o projeto com outras pessoas
+- Ajudando a divulgar o projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Licença
+Este projeto é licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contato
+Se você deseja entrar em contato, você pode fazer isso através do meu [LinkedIn](https://www.linkedin.com/in/kevinsmartins367/) ou do meu [GitHub](https://github.com/KevinMartins367/).
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
