@@ -56,7 +56,15 @@ function detail(horoscope: Horoscope): GraphInfos[] {
 
 
 export default function Maps() {
-    const [origin, setOrigin] = React.useState<OriginStruture | null>(null);;
+    const [origin, setOrigin] = React.useState<OriginStruture | null>({
+        date: 3,
+        month: 8,
+        year: 1997,
+        hour: 8,
+        minute: 20,
+        latitude: -23.603889,
+        longitude: -46.918889,
+    });
     const [graphInfos, setGraphInfos] = useState<GraphInfos[]>([]);
     const [horoscope, setHoroscope] = useState<Horoscope | null>(null);
     const [horoscopeData, setHoroscopeData] = useState<HoroscopeStruture | null>(null);
@@ -81,7 +89,7 @@ export default function Maps() {
 
         const rangeIndex = Math.min(Math.floor(graus / 5), 5);
         const angel = angels[indice][sign][rangeIndex];
-        return angel ? angel.angel : null; // Retorna apenas o nome do anjo
+        return angel;
     }
 
     function getPlanetsName(planet: string) {
@@ -195,7 +203,7 @@ export default function Maps() {
         data = data.map((item) => {
             const sign = item.sign;
             const angel = angel_sign(sign, parseInt(item.graus));
-            if (angel) {
+            if (angel.angel) {
                 item.angel = angel;
             }
             item.sign = getSignName(item.sign) || '';
@@ -220,6 +228,7 @@ export default function Maps() {
             longitude: longitude,
 
         };
+        console.log(`🚀 ~ index.tsx:223 ~ handleSubmit ~ newOrigin:`, newOrigin)
         setOrigin(newOrigin);
 
     }
@@ -294,7 +303,8 @@ export default function Maps() {
                             <>
                                 <Col sm={12} md={12} lg={4} className='pb-3'>
                                     <aside>
-                                        <Card >
+                                        <Card  className='text-center'>
+                                            <Card.Header>Mapa Astral</Card.Header>
                                             <Card.Body>
                                                 <div className='graphBackground p-2'>
                                                     <Graph horoscope={horoscope} />
@@ -306,9 +316,7 @@ export default function Maps() {
                                 <Col sm={12} md={12} lg={8} className='pb-3'>
                                     <section>
                                         <Card className='text-center'>
-                                            <Card.Header>Mapas</Card.Header>
                                             <Card.Body>
-                                                <Card.Title>Mapas</Card.Title>
                                                 {graphInfos.length > 0 ? (
                                                     <Table responsive className="table table-striped table-bordered table-hover">
                                                         <thead>
@@ -328,7 +336,7 @@ export default function Maps() {
                                                                     <td>{info.sign}</td>
                                                                     <td>{info.planet}</td>
                                                                     <td>{info.position}</td>
-                                                                    <td>{info.angel}</td>
+                                                                    <td>{info.angel.angel}</td>
                                                                 </tr>
                                                             ))}
                                                         </tbody>
@@ -341,9 +349,8 @@ export default function Maps() {
                                 <Col sm={12} md={12} lg={4} className='pb-3'>
                                     <aside>
                                         <Card className='text-center'>
-                                            <Card.Header>Mapa Astral</Card.Header>
+                                            <Card.Header>Mapa Sephirotico</Card.Header>
                                             <Card.Body>
-                                                <Card.Title>Mapa Astral</Card.Title>
                                                 <KabbalahAngles angels={graphInfos} onSephiraChange={onSephiraChange} />
                                             </Card.Body>
                                         </Card>
@@ -352,9 +359,7 @@ export default function Maps() {
                                 <Col sm={12} md={12} lg={8} className='pb-3'>
                                     <section>
                                         <Card className='text-center'>
-                                            <Card.Header>Mapa Astral</Card.Header>
                                             <Card.Body>
-                                                <Card.Title>Mapa Astral</Card.Title>
                                                 {graphInfos.length > 0 ? (
                                                     <Table responsive className="table table-striped table-bordered table-hover">
                                                         <thead>
@@ -374,7 +379,7 @@ export default function Maps() {
                                                                     <td>{info.sign}</td>
                                                                     <td>{info.planet}</td>
                                                                     <td>{info.position}</td>
-                                                                    <td>{info.angel}</td>
+                                                                    <td>{info.angel.angel}</td>
                                                                 </tr>
                                                             ))}
                                                         </tbody>
