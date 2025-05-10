@@ -1,9 +1,9 @@
 const primary = {
    title: 'primary',
 
-   favicon: '/img/icons/leitura_icone.ico',
-   icon: '/img/icons/leitura_icone-dark.svg',
-   icon_dark: '/img/icons/leitura_icone.svg',
+   favicon: './logo.ico',
+   icon: './logo.png',
+   icon_dark: './logo.png',
    colors: {
       primary: '#000',
       secondary: '#706F6F',

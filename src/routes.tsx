@@ -2,6 +2,7 @@ import { Suspense, lazy } from 'react';
 import type { RouteObject } from 'react-router';
 import LoadingScreen from './components/LoadingScreen';
 import MainLayout from './layout/MainLayout';
+import { Navigate } from 'react-router';
 
 
 
@@ -17,18 +18,15 @@ const Home = Loadable(lazy(() => import('./pages/home')));
 const Maps = Loadable(lazy(() => import('./pages/maps')));
 
 const routes: RouteObject[] = [
-
-   {
-      path: '*',
-      element: <MainLayout />,
-      children: [
-        {
-          index: true,
-          element: (
-              <Home />
-          ),
-        },
-      ],
+    {
+        path: '/',
+        element: <MainLayout />,
+        children: [
+            {
+                index: true,
+                element: <Home />,
+            },
+        ],
     },
     {
         path: '/maps',
@@ -36,13 +34,14 @@ const routes: RouteObject[] = [
         children: [
             {
                 index: true,
-                element: (
-                    <Maps />
-                ),
+                element: <Maps />,
             },
         ],
-            
-    }
+    },
+    {
+        path: '*',
+        element: <Navigate to="/" replace />,
+    },
 ];
 
 export default routes;

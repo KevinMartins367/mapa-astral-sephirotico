@@ -10,37 +10,45 @@ import usePeristedState from '../../utils/usePersistedState';
 
 export default function Header(props: any) {
 
-   const [term, setTerm] = useState((props.term ?? ''));
-   const [user, setUser] = usePeristedState<any>('user');
+    const [term, setTerm] = useState((props.term ?? ''));
+    const [user, setUser] = usePeristedState<any>('user');
 
-   return(
-      <Headers>
-         <header>
-            <Navbar bg="dark">
-               <Container className="pt-0 pb-0">
-                  <Navbar.Brand href="/">
-      
-                     <Image
-                     alt=""
-                     src="./logo192.png"
-                     width="30"
-                     height="30"
-                     className="d-inline-block align-top"
-                     />{' '}
-                     Kabbalah Hermética
-                  </Navbar.Brand>
-                  <Form className="d-flex">
-                     <Form.Control
-                     type="search"
-                     placeholder="Arcanos, Anjos, Sephira"
-                     className="me-2"
-                     aria-label="Arcanos, Anjos, Sephira"
-                     />
-                     <Button variant="outline-success">Pesquisar</Button>
-                  </Form>
-               </Container>
-            </Navbar>
-         </header>
-      </Headers>
-   )
+    return (
+        <Headers>
+            <header>
+                <Navbar  collapseOnSelect expand="lg" bg="dark"  variant="dark" >
+                    <Container >
+                        <Navbar.Brand href="/">
+
+                            <Image
+                                alt=""
+                                src="./logo.png"
+                                width="30"
+                                height="30"
+                                className="d-inline-block align-top"
+                            />{' '}
+                            Grimório open source
+                        </Navbar.Brand>
+                        
+                        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                        <Navbar.Collapse id="responsive-navbar-nav">
+                            <Nav className="me-auto">
+                                <Nav.Link className="text-light" href="/">Home</Nav.Link>
+                                <Nav.Link className="text-light" href="/maps">Mapas</Nav.Link>
+                            </Nav>
+                            <Form className="d-flex">
+                                <Form.Control
+                                    type="search"
+                                    placeholder="Arcanos, Anjos, Sephira"
+                                    className="me-2"
+                                    aria-label="Arcanos, Anjos, Sephira"
+                                />
+                                <Button variant="outline-success">Pesquisar</Button>
+                            </Form>
+                        </Navbar.Collapse>
+                    </Container>
+                </Navbar>
+            </header>
+        </Headers>
+    )
 }
