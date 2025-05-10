@@ -106,11 +106,11 @@ export default function Minor_arcana(props: any) {
                     <Row>
                         <Col sm={12} md={12} lg={3}>
 
-                            <Image className='img-fluid pb-3' alt='arcano Rider Waite' src={arcana.image_rider_waite} />
+                            <Image className='img-fluid pb-3' alt='arcano Rider Waite' src={`${process.env.PUBLIC_URL}/${arcana.image_rider_waite}`} />
                             <p>arcano Rider Waite</p>
                         </Col>
                         <Col sm={12} md={12} lg={3}>
-                            <Image className='img-fluid pb-3' alt='arcano Crowley' src={arcana.image_crowley} />
+                            <Image className='img-fluid pb-3' alt='arcano Crowley' src={`${process.env.PUBLIC_URL}/${arcana.image_crowley}`} />
                             <p>arcano Crowley</p>
                         </Col>
                     </Row>

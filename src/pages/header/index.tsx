@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Navbar, Container, Nav, Form, Button, Image } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 import { ThemeContext } from 'styled-components';
 import { Headers } from './styles'
@@ -18,11 +19,11 @@ export default function Header(props: any) {
             <header>
                 <Navbar  collapseOnSelect expand="lg" bg="dark"  variant="dark" >
                     <Container >
-                        <Navbar.Brand href="/">
+                        <Navbar.Brand as={Link} to="/">
 
                             <Image
                                 alt=""
-                                src="./logo.png"
+                                src={`${process.env.PUBLIC_URL}/logo.png`}
                                 width="30"
                                 height="30"
                                 className="d-inline-block align-top"
@@ -33,8 +34,8 @@ export default function Header(props: any) {
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="me-auto">
-                                <Nav.Link className="text-light" href="/">Home</Nav.Link>
-                                <Nav.Link className="text-light" href="/maps">Mapas</Nav.Link>
+                                <Nav.Link className="text-light" as={Link} to="/">Home</Nav.Link>
+                                <Nav.Link className="text-light" as={Link} to="/maps">Mapas</Nav.Link>
                             </Nav>
                             <Form className="d-flex">
                                 <Form.Control

@@ -81,19 +81,19 @@ export default function Major_arcana(props: any) {
                     <h3>Cartas</h3>
                     <Row>
                         <Col sm={12} md={12} lg={3}>
-                            <Image className='img-fluid' alt='arcano Rider Waite' src={arcana.image_rider_waite} />
+                            <Image className='img-fluid' alt='arcano Rider Waite' src={`${process.env.PUBLIC_URL}/${arcana.image_rider_waite}`} />
                             <p>arcano Rider Waite</p>
                         </Col>
                         <Col sm={12} md={12} lg={3}>
-                            <Image className='img-fluid' alt='arcano Marselli' src={arcana.image_marseille} />
+                            <Image className='img-fluid' alt='arcano Marselli' src={`${process.env.PUBLIC_URL}/${arcana.image_marseille}`} />
                             <p>arcano Marselli</p>
                         </Col>
                         <Col sm={12} md={12} lg={3}>
-                            <Image className='img-fluid' alt='arcano Crowley' src={arcana.image_crowley} />
+                            <Image className='img-fluid' alt='arcano Crowley' src={`${process.env.PUBLIC_URL}/${arcana.image_crowley}`} />
                             <p>arcano Crowley</p>
                         </Col>
                         <Col sm={12} md={12} lg={3}>
-                            <Image className='img-fluid' alt='arcano CdH' src={arcana.image_cdh} />
+                            <Image className='img-fluid' alt='arcano CdH' src={`${process.env.PUBLIC_URL}/${arcana.image_cdh}`} />
                             <p>arcano CdH </p>
                         </Col>
                     </Row>

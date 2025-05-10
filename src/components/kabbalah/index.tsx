@@ -104,7 +104,7 @@ export default function Kabbalah({ onSephiraChange, handlePathChange }: Kabbalah
     return (
         <object
             id="kabbalah-svg-object"
-            data="./assets/images/kabbalah.svg"
+            data={`${process.env.PUBLIC_URL}/assets/images/kabbalah.svg`}
             type="image/svg+xml" 
             width="100%"
             height="100%"
