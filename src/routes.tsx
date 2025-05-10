@@ -19,7 +19,7 @@ const Maps = Loadable(lazy(() => import('./pages/maps')));
 
 const routes: RouteObject[] = [
     {
-        path: '/',
+        path: '/mapa-astral-sephirotico/',
         element: <MainLayout />,
         children: [
             {
@@ -29,7 +29,7 @@ const routes: RouteObject[] = [
         ],
     },
     {
-        path: '/maps',
+        path: '/mapa-astral-sephirotico/maps',
         element: <MainLayout />,
         children: [
             {
@@ -40,7 +40,7 @@ const routes: RouteObject[] = [
     },
     {
         path: '*',
-        element: <Navigate to="/" replace />,
+        element: <Navigate to="/mapa-astral-sephirotico/" replace />,
     },
 ];
 
