@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/mapa-astral-sephirotico/static/css/main.3ce7bc41.css",
-    "main.js": "/mapa-astral-sephirotico/static/js/main.d7a8bba7.js",
-    "static/js/705.44d82204.chunk.js": "/mapa-astral-sephirotico/static/js/705.44d82204.chunk.js",
-    "static/js/670.1a2515ca.chunk.js": "/mapa-astral-sephirotico/static/js/670.1a2515ca.chunk.js",
+    "main.js": "/mapa-astral-sephirotico/static/js/main.b096916a.js",
+    "static/js/705.8ba4ca00.chunk.js": "/mapa-astral-sephirotico/static/js/705.8ba4ca00.chunk.js",
+    "static/js/670.9c763273.chunk.js": "/mapa-astral-sephirotico/static/js/670.9c763273.chunk.js",
     "static/js/488.a218466b.chunk.js": "/mapa-astral-sephirotico/static/js/488.a218466b.chunk.js",
     "static/js/79.46b782ad.chunk.js": "/mapa-astral-sephirotico/static/js/79.46b782ad.chunk.js",
     "static/js/339.d3699196.chunk.js": "/mapa-astral-sephirotico/static/js/339.d3699196.chunk.js",
     "index.html": "/mapa-astral-sephirotico/index.html",
     "main.3ce7bc41.css.map": "/mapa-astral-sephirotico/static/css/main.3ce7bc41.css.map",
-    "main.d7a8bba7.js.map": "/mapa-astral-sephirotico/static/js/main.d7a8bba7.js.map",
-    "705.44d82204.chunk.js.map": "/mapa-astral-sephirotico/static/js/705.44d82204.chunk.js.map",
-    "670.1a2515ca.chunk.js.map": "/mapa-astral-sephirotico/static/js/670.1a2515ca.chunk.js.map",
+    "main.b096916a.js.map": "/mapa-astral-sephirotico/static/js/main.b096916a.js.map",
+    "705.8ba4ca00.chunk.js.map": "/mapa-astral-sephirotico/static/js/705.8ba4ca00.chunk.js.map",
+    "670.9c763273.chunk.js.map": "/mapa-astral-sephirotico/static/js/670.9c763273.chunk.js.map",
     "488.a218466b.chunk.js.map": "/mapa-astral-sephirotico/static/js/488.a218466b.chunk.js.map",
     "79.46b782ad.chunk.js.map": "/mapa-astral-sephirotico/static/js/79.46b782ad.chunk.js.map",
     "339.d3699196.chunk.js.map": "/mapa-astral-sephirotico/static/js/339.d3699196.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3ce7bc41.css",
-    "static/js/main.d7a8bba7.js"
+    "static/js/main.b096916a.js"
   ]
 }
