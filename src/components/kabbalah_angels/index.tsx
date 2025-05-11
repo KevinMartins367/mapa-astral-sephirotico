@@ -8,6 +8,7 @@ interface KabbalahProps {
 }
 
 export default function Kabbalah_angels({ onSephiraChange, angels }: KabbalahProps) {
+    
     const groupSephiroth: Record<string, string> = {
         malkut: "malkuth",
         yesod: "yesod",
@@ -48,13 +49,19 @@ export default function Kabbalah_angels({ onSephiraChange, angels }: KabbalahPro
         objectElement?.addEventListener('load', () => {
             const svgDoc = (objectElement as HTMLObjectElement).contentDocument;
             if (svgDoc) {
-                // Update text content for elements with specific IDs
-                    console.log(`🚀 ~ index.tsx:57 ~ angels.forEach ~ angels:`, angels)
+                svgDoc.getElementById('script5')?.remove();
                 angels.forEach(({ sephira, angel }) => {
                     const elementId = `title_sefira_${sephira}`;
                     const textElement = svgDoc.getElementById(elementId);
                     if (textElement) {
-                        textElement.textContent = angel ?? '';
+                        textElement.textContent = angel.angel ?? '';
+                        textElement.style.fill = '#f0f0f0';
+                    }
+                    
+                    const cirleElement = svgDoc.getElementById(`circle_sefira_${sephira}`);
+                    
+                    if (cirleElement) {
+                        cirleElement.style.fill = angel.color ?? '#f0f0f0';
                     }
                 });
 
@@ -72,7 +79,7 @@ export default function Kabbalah_angels({ onSephiraChange, angels }: KabbalahPro
     return (
         <object
             id="kabbalah-svg-object"
-            data="./assets/images/kabbalah.svg"
+            data={`${process.env.PUBLIC_URL}/assets/images/kabbalah_angels.svg`}
             type="image/svg+xml" 
             width="100%"
             height="100%"

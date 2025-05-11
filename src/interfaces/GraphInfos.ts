@@ -5,7 +5,7 @@ interface GraphInfos {
     planet: string;
     point: any;
     sephira: string;
-    angel?: string;
+    angel?: any;
 }
 
 export default GraphInfos;

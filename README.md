@@ -19,7 +19,7 @@ npm start
 
 ## Acesso ao projeto
 
-Para acessar o projeto, você pode usar o seguinte link: [Grimorio]([https://kevinmartins367.github.io/mapa-astral-sephirotico])
+Para acessar o projeto, você pode usar o seguinte link: [Grimorio](https://kevinmartins367.github.io/mapa-astral-sephirotico)
 
 ## Contribuição
 
@@ -35,5 +35,5 @@ Se você deseja contribuir com o projeto, você pode fazer isso de várias manei
 Este projeto é licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## Contato
-Se você deseja entrar em contato, você pode fazer isso através do meu [LinkedIn](https://www.linkedin.com/in/kevinsmartins367/) ou do meu [GitHub](https://github.com/KevinMartins367/).
+Se você deseja entrar em contato, você pode fazer isso através do meu [LinkedIn](https://www.linkedin.com/in/kevin-martins-010532119/) ou do meu [GitHub](https://github.com/KevinMartins367/).
 
