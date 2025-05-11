@@ -56,15 +56,17 @@ function detail(horoscope: Horoscope): GraphInfos[] {
 
 
 export default function Maps() {
-    const [origin, setOrigin] = React.useState<OriginStruture | null>({
-        date: 3,
-        month: 8,
-        year: 1997,
-        hour: 8,
-        minute: 20,
-        latitude: -23.603889,
-        longitude: -46.918889,
-    });
+    // const [origin, setOrigin] = React.useState<OriginStruture | null>({
+    //     date: 3,
+    //     month: 8,
+    //     year: 1997,
+    //     hour: 8,
+    //     minute: 20,
+    //     latitude: -23.603889,
+    //     longitude: -46.918889,
+    // });
+    
+    const [origin, setOrigin] = React.useState<OriginStruture | null>(null);
     const [graphInfos, setGraphInfos] = useState<GraphInfos[]>([]);
     const [horoscope, setHoroscope] = useState<Horoscope | null>(null);
     const [horoscopeData, setHoroscopeData] = useState<HoroscopeStruture | null>(null);
