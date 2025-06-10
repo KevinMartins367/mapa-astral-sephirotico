@@ -141,7 +141,6 @@ export default function Major_arcana(props: any) {
                                                                 text = React.Children.toArray(props.children).join('');
                                                             }
                                                         }
-                                                            console.log(`🚀 ~ index.tsx:163 ~ Major_arcana ~ text:`, text);
                                                         const id = arcana.name.toString()
                                                             .normalize('NFD')
                                                             .replace(/[\u0300-\u036f]/g, '')
