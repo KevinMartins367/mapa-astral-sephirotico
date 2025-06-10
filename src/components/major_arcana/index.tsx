@@ -88,7 +88,8 @@ export default function Major_arcana(props: any) {
                                     <li>Signo: {arcana.signo}</li>
                                 )}
                                 <li>Cor (segundo Golden Dawn):  <div style={{ ...props.style, backgroundColor: arcana.color, width: `50px`, height: `20px`, display: `inline-block` }}>   </div> <span>{arcana.color}</span> </li>
-                                
+                                <li>Titulo Thelemita: {arcana.thelemita_title}</li>
+
                             </ul>
 
                         </Col>
