@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Navbar, Container, Nav, Form, Button, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-import { ThemeContext } from 'styled-components';
 import { Headers } from './styles'
 
 
@@ -36,6 +35,7 @@ export default function Header(props: any) {
                             <Nav className="me-auto">
                                 <Nav.Link className="text-light" as={Link} to="/">Home</Nav.Link>
                                 <Nav.Link className="text-light" as={Link} to="/maps">Mapas</Nav.Link>
+                                <Nav.Link className="text-light" as={Link} to="/references">Referências</Nav.Link>
                             </Nav>
                             <Form className="d-flex">
                                 <Form.Control

@@ -1,0 +1,83 @@
+[
+    {
+        "title": "Alquimia e Tarô",
+        "authors": ["Robert M. Place"],
+        "year": 2017,
+        "publisher": "Pressagio Editora",
+        "isbn": "978-8593158100",
+        "url": "https://www.amazon.com.br/Alquimia-tar%C3%B4-investiga%C3%A7%C3%A3o-conex%C3%B5es-hist%C3%B3ricas-ebook/dp/B071FMYVWY",
+        "cover": "https://m.media-amazon.com/images/I/91mHKTHqfoL._SY466_.jpg"
+    },
+    {
+        "title": "Tarô – Dicionário e Compêndio",
+        "authors": ["Jana Riley"],
+        "year": 2000,
+        "publisher": "Zahar",
+        "isbn": "978-8571105621",
+        "url": "https://www.amazon.com.br/Taro-Dicion%C3%A1rio-Compendio-Jana-Riley/dp/8571105626/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&s=digital-text&sr=1-1",
+        "cover": "https://m.media-amazon.com/images/I/61qVaryYqDL._SY466_.jpg"
+    },
+    {
+        "title": "Tarot o Templo Vivente Vol.1",
+        "authors": ["Frater Goya"],
+        "year": 2022,
+        "publisher": "Clube de Autores",
+        "isbn": "B09WQBY2C2",
+        "url": "https://www.amazon.com.br/Tarot-Templo-Vivente-Anderson-Frater/dp/B09WQBY2C2/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&s=digital-text&sr=1-1",
+        "cover": "https://m.media-amazon.com/images/I/51hvmGG--JL._SY425_.jpg"
+    },
+    {
+        "title": "O tarô cabalístico: Manual prático sobre a representação da árvore da vida no simbolismo dos 78 arcanos",
+        "authors": ["Robert Wang"],
+        "year": 1983,
+        "publisher": "Pensamento",
+        "isbn": "978-8531523793",
+        "url": "https://www.amazon.com.br/Tar%C3%B4-Cabal%C3%ADstico-Pr%C3%A1tico-Representa%C3%A7%C3%A3o-Simbolismo/dp/8531523796/ref=tmm_hrd_swatch_0?_encoding=UTF8&sr=1-1",
+        "cover": "https://m.media-amazon.com/images/I/51eeCXR-TAL._SY522_.jpg"
+    },
+    {
+        "title": "O Livro de Thoth",
+        "authors": ["Aleister Crowley"],
+        "year": 1944,
+        "publisher": "",
+        "isbn": "",
+        "url": "https://www.amazon.com.br/Book-Thoth-Aleister-Crowley/dp/0877282684/ref=sr_1_5?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&s=books&sr=1-5",
+        "cover": "https://m.media-amazon.com/images/I/91aXFtzMPJL._SY466_.jpg"
+    },
+    {
+        "title": "Guia Completo do Tarô: um Novo Sistema de Disposição e Interpretação das Cartas e Suas Correlações com a Mitologia, o I Ching e a Astrologia",
+        "authors": ["Hajo Banzhaf"],
+        "year": 1988,
+        "publisher": "Pensamento",
+        "isbn": "978-8531523106",
+        "url": "https://www.amazon.com.br/Guia-completo-tar%C3%B4-interpreta%C3%A7%C3%A3o-correla%C3%A7%C3%B5es/dp/8531523109/ref=sr_1_2?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&s=books&sr=1-2",
+        "cover": "https://m.media-amazon.com/images/I/91UCRn3gUeL._SY425_.jpg"
+    },
+    {
+        "title": "Bíblia Clássica do Tarot",
+        "authors": ["Rachel Pollack"],
+        "year": 1999,
+        "publisher": "Darkside",
+        "isbn": "978-6555982640",
+        "url": "https://www.amazon.com.br/dp/6555982640",
+        "cover": "https://m.media-amazon.com/images/I/71SBxxGtDXL._SY466_.jpg"
+    },
+    {
+        "title": "O Tarot Hermético",
+        "authors": ["Marcelo Del Debbio", "Pri Martinelli"],
+        "year": 2019,
+        "publisher": "Daemon Editora",
+        "isbn": "978-8587013873",
+        "url": "https://www.amazon.com.br/Tarot-Herm%C3%A9tico-Marcelo-Del-Debbio/dp/8587013874",
+        "cover": "https://m.media-amazon.com/images/I/71kL-WG7stL._SY425_.jpg"
+    },
+    {
+        "title": "O Livro de Thoth",
+        "authors": ["Johan Heyss"],
+        "year": 2000,
+        "publisher": "RECORD",
+        "isbn": "978-8501058003",
+        "url": "https://www.amazon.com.br/Taro-Thoth-Johann-Heyss/dp/8501058009/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&s=books&sr=1-1",
+        "cover": "https://m.media-amazon.com/images/I/31H1sOi9zNL.jpg"
+    }
+]

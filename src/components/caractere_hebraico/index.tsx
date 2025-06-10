@@ -48,9 +48,6 @@ export default function Caractere_hebraico(props: any) {
                         <li>Ritual: {caractere.exercise} </li>
                     </ul>
                 </Card.Body>
-                <Card.Footer>
-
-                </Card.Footer>
             </Card>
         </Caractere_hebraicos>
     )

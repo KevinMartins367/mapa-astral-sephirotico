@@ -214,8 +214,7 @@ export default function Maps() {
         });
         setGraphInfos(data);
 
-    }
-        , [horoscope, angels, planets]);
+    }, [horoscope, angels, planets]);
 
     function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
         event.preventDefault();
@@ -230,7 +229,6 @@ export default function Maps() {
             longitude: longitude,
 
         };
-        console.log(`🚀 ~ index.tsx:223 ~ handleSubmit ~ newOrigin:`, newOrigin)
         setOrigin(newOrigin);
 
     }
