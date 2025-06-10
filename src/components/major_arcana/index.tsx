@@ -66,16 +66,6 @@ export default function Major_arcana(props: any) {
                     <Row>
                         <Col sm={12} md={6} lg={6}>
                             <ul>
-                                {((arcana.caractere_hebraico_link != ``) && (arcana.caractere_hebraico_link != undefined)) ?
-
-                                    <li>letra Hebraica:
-                                        <div>
-                                            { }
-                                            <Caractere_hebraico caractere={arcana.caractere_hebraico_link} />
-                                        </div>
-                                    </li>
-                                    : ``
-                                }
                                 <li>Runa: <span className='simbolo hebraic'>{arcana.runa}</span></li>
 
                                 {arcana.elemento && arcana.elemento !== "" && (
@@ -90,6 +80,16 @@ export default function Major_arcana(props: any) {
                                 <li>Cor (segundo Golden Dawn):  <div style={{ ...props.style, backgroundColor: arcana.color, width: `50px`, height: `20px`, display: `inline-block` }}>   </div> <span>{arcana.color}</span> </li>
                                 <li>Titulo Thelemita: {arcana.thelemita_title}</li>
 
+                                {((arcana.caractere_hebraico_link != ``) && (arcana.caractere_hebraico_link != undefined)) ?
+
+                                    <li>letra Hebraica:
+                                        <div>
+                                            { }
+                                            <Caractere_hebraico caractere={arcana.caractere_hebraico_link} />
+                                        </div>
+                                    </li>
+                                    : ``
+                                }
                             </ul>
 
                         </Col>
