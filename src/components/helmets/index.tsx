@@ -15,7 +15,7 @@ export default function Helmets() {
             <meta name="theme-color" content={`${theme.colors.primary}`} />
             <link rel="apple-touch-icon" href={`${theme.favicon}`} />
             <title>Grimório open source</title>
-            <link rel="canonical" href="http://mysite.com/example" />
+            <link rel="canonical" href={`${process.env.REACT_APP_BASE_URL}`} />
             <meta name="description" content="Este é um Grimório Open Source, sobre tarot, kabbalah e astrologia, navegue pela arvore da vida para acessar os conhecimentos" />
         </Helmet>
     )
