@@ -52,6 +52,23 @@ export default function data() {
             })
         },
 
+        getTarot_Arcana_Major: function getTarot_Arcana_Major() {
+            return axios.get(`${base_url}tarot_arcana_major.json`, {
+                headers: {
+                    'Access-Control-Allow-Origin': '*',
+                    'Content-Type': 'application/json;charset=UTF-8',
+                }
+            })
+        },
+        getTarot_Arcana_Minor: function getTarot_Arcana_Minor() {
+            return axios.get(`${base_url}tarot_arcana_minor.json`, {
+                headers: {
+                    'Access-Control-Allow-Origin': '*',
+                    'Content-Type': 'application/json;charset=UTF-8',
+                }
+            })
+        },
+
         getSigns: function getSigns() {
             return axios.get(`${base_url}signs.json`, {
                 headers: {
@@ -68,7 +85,20 @@ export default function data() {
                     'Content-Type': 'application/json;charset=UTF-8',
                 }
             })
-        }
+        },
+
+        getMarkdown: function getMarkdown(link: string) {
+            return axios.get(`${base_url}markdowns/${link}`)
+        },
+
+        getReferences: function getReferences() {
+            return axios.get(`${base_url}references.json`, {
+                headers: {
+                    'Access-Control-Allow-Origin': '*',
+                    'Content-Type': 'application/json;charset=UTF-8',
+                }
+            })
+        },
 
 
 

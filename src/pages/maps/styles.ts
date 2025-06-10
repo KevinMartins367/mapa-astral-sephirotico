@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Divs = styled.div`
 
-}
+
 
 .container-md{
    max-width: 150rem !important;

@@ -4,22 +4,24 @@ import { Card, Row, Col, Image } from 'react-bootstrap';
 import { Major_arcanas } from './styles';
 
 import Caractere_hebraico from '../caractere_hebraico'
+import Markdown from 'react-markdown'
 
 import data from '../../services/data';
 
 export default function Major_arcana(props: any) {
 
     const [arcana, setArcana]: any = useState('');
+    const [content, setContent] = useState<string>('')
 
     useEffect(() => {
         async function Get_arcanas() {
-            data().getTarot()
+            data().getTarot_Arcana_Major()
                 .then((result: any) => {
                     return result.data;
 
                 })
                 .then((full_arcana: any) => {
-                    setArcana(full_arcana[0].major_arcana[props.arcana])
+                    setArcana(full_arcana[props.arcana]);
                 })
                 .catch((error: any) => {
                     console.log("🚀 ~ file: index.tsx:20 ~ Get_arcanas ~ error:", error)
@@ -30,6 +32,26 @@ export default function Major_arcana(props: any) {
             Get_arcanas();
         }
     }, [props.arcana]);
+
+    useEffect(() => {
+
+        async function getMarkdown() {
+            let link = arcana.interpretation;
+            if (link != undefined && link != ``) {
+                data().getMarkdown(link)
+                    .then(res => {
+
+                        setContent(res.data);
+                    })
+                    .catch((error: any) => {
+                        console.log("🚀 ~ file: index.tsx:20 ~ Get_arcanas ~ error:", error)
+                    })
+            }
+        }
+        if (arcana != undefined && arcana != ``) {
+            getMarkdown();
+        }
+    }, [arcana]);
 
 
     return (
@@ -55,9 +77,18 @@ export default function Major_arcana(props: any) {
                                     : ``
                                 }
                                 <li>Runa: <span className='simbolo hebraic'>{arcana.runa}</span></li>
-                                <li>Elemento: {arcana.elemento}</li>
+
+                                {arcana.elemento && arcana.elemento !== "" && (
+                                    <li>Elemento: {arcana.elemento}</li>
+                                )}
+                                {arcana.planeta && arcana.planeta !== "" && (
+                                    <li>Planeta: {arcana.planeta}</li>
+                                )}
+                                {arcana.signo && arcana.signo !== "" && (
+                                    <li>Signo: {arcana.signo}</li>
+                                )}
                                 <li>Cor (segundo Golden Dawn):  <div style={{ ...props.style, backgroundColor: arcana.color, width: `50px`, height: `20px`, display: `inline-block` }}>   </div> <span>{arcana.color}</span> </li>
-                                <li>interpretação Goya ( templo vivente ): {arcana.tarot_crowley_goya_sign}</li>
+                                
                             </ul>
 
                         </Col>
@@ -74,6 +105,70 @@ export default function Major_arcana(props: any) {
                             </ul>
 
                         </Col>
+                        <Col className='m-3' sm={12} md={12} lg={12}>
+                            <h2>Síntese</h2>
+                            <p className='m-3'>{arcana.synthesis}</p>
+                        </Col>
+
+                        {
+                            (arcana.interpretation != undefined && arcana.interpretation != ``) ?
+                                <Col className='m-3' sm={12} md={12} lg={12}>
+                                    <h2>Interpretação</h2>
+                                        <div className='m-3'>
+                                            <Markdown 
+                                                components={{
+                                                    h3: ({ node, ...props }) => {
+                                                        let text = '';
+                                                        if (typeof props.children === 'string') {
+                                                            text = props.children;
+                                                        } else if (Array.isArray(props.children)) {
+                                                            // Procura por <strong> e pega o texto dentro dela
+                                                            const strongChild = React.Children.toArray(props.children).find(
+                                                                (child: any) => React.isValidElement(child) && child.type === 'strong'
+                                                            );
+                                                            if (
+                                                                React.isValidElement(strongChild) &&
+                                                                typeof strongChild === 'object' &&
+                                                                strongChild !== null &&
+                                                                'props' in strongChild &&
+                                                                (strongChild as { props?: { children?: React.ReactNode } }).props &&
+                                                                (strongChild as { props: { children?: React.ReactNode } }).props.children
+                                                            ) {
+                                                                const strongChildContent = (strongChild as { props: { children: React.ReactNode } }).props.children;
+                                                                text = strongChildContent !== undefined ? String(strongChildContent) : '';
+                                                            } else {
+                                                                text = React.Children.toArray(props.children).join('');
+                                                            }
+                                                        }
+                                                            console.log(`🚀 ~ index.tsx:163 ~ Major_arcana ~ text:`, text);
+                                                        const id = arcana.name.toString()
+                                                            .normalize('NFD')
+                                                            .replace(/[\u0300-\u036f]/g, '')
+                                                            .replace(/[^a-zA-Z0-9\s-]/g, '')
+                                                            .trim()
+                                                            .replace(/\s+/g, '-')
+                                                            .toLowerCase()+ `-` + text
+                                                            .toString()
+                                                            .normalize('NFD')
+                                                            .replace(/[\u0300-\u036f]/g, '')
+                                                            .replace(/[^a-zA-Z0-9\s-]/g, '')
+                                                            .trim()
+                                                            .replace(/\s+/g, '-')
+                                                            .toLowerCase();
+                                                        
+                                                        return <h3 {...props} id={id} />;
+                                                    },
+                                                    
+                                                }}
+                                            >
+                                            {content ?? ''
+                                            }
+                                            </Markdown>
+                                        </div>
+
+                                </Col>
+                                : ``
+                        }
                     </Row>
                 </Card.Body>
 
@@ -101,4 +196,5 @@ export default function Major_arcana(props: any) {
             </Card>
         </Major_arcanas>
     )
+                                                        
 }

@@ -13,13 +13,13 @@ export default function Minor_arcana(props: any) {
 
     useEffect(() => {
         async function Get_arcanas() {
-            data().getTarot()
+            data().getTarot_Arcana_Minor()
                 .then((result: any) => {
                     return result.data;
 
                 })
                 .then((full_arcana: any) => {
-                    setArcana(full_arcana[0].minor_arcana[props.arcana])
+                    setArcana(full_arcana[props.arcana])
                 })
                 .catch((error: any) => {
 
@@ -80,7 +80,6 @@ export default function Minor_arcana(props: any) {
 
                                 <li>Correspondente sephirotico: {` ` + arcana.sephiroth} </li>
                                 <li>Correspondente de reino: {` ` + arcana.reino} </li>
-                                <li>interpretação Goya ( templo vivente ): {arcana.tarot_crowley_goya_sign}</li>
                             </ul>
                         </Col>
                         <Col sm={12} md={6} lg={6}>
