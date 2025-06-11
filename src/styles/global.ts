@@ -1,9 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
 
+let fontUrl = (process.env.REACT_APP_BASE_URL ?? `${window.location.origin}`)  + "assets/fonts/SBL_Hbrw.ttf";
+
 export default createGlobalStyle`
 @font-face {
     font-family: 'SBL Hebrew';
-    src: url('/assets/fonts/SBL_Hbrw.ttf') format('truetype');
+    src: url(${fontUrl}) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
