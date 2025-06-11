@@ -68,7 +68,6 @@ export default function Modal_combinations(props: any) {
 
     useEffect(() => {
         if (arcanaSelectedIndex !== '') {
-            console.log(`🚀 ~ index.tsx:63 ~ useEffect ~ arcanaSelectedIndex:`, arcanaSelectedIndex)
             if( arcanaType === 'major') {
                 const selectedArcana = listMajorArcanas[arcanaSelectedIndex];
                 setMajorArcanas(selectedArcana);
