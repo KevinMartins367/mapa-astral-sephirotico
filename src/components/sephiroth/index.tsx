@@ -67,7 +67,7 @@ export default function Sephiroth(props: any) {
                                         return <Accordion.Item eventKey={index + ''}>
                                             <Accordion.Header>{arcana}</Accordion.Header>
                                             <Accordion.Body>
-                                                <Minor_arcana arcana={arcana} />
+                                                <Minor_arcana arcana={arcana} showModal={props.showModal} />
                                             </Accordion.Body>
                                         </Accordion.Item>
                                     })

@@ -37,7 +37,14 @@ export default function Minor_arcana(props: any) {
         <Minor_arcanas>
             <Card>
                 <Card.Header>
-                    <h2>{arcana.name ?? 'titulo de informações'}</h2>
+                    <Row>
+                        <Col sm={12} md={10} lg={10}>
+                            <h2 >{arcana.name ?? 'titulo de informações'}</h2>
+                        </Col>
+                        <Col sm={12} md={2} lg={2}>
+                            <button className='btn btn-primary' onClick={() => props.showModal(props.arcana, 'minor')}>Combinações</button>
+                        </Col>
+                    </Row>
                 </Card.Header>
                 <Card.Body>
                     <Row>
@@ -96,6 +103,10 @@ export default function Minor_arcana(props: any) {
 
                                 <li>Pagina do TARÔ DE CROWLEY - PALAVRAS-CHAVE: {arcana.pages_tarot_crowley_word_key} .pg</li>
                             </ul>
+                        </Col>
+                        <Col className='m-3' sm={12} md={12} lg={12}>
+                            <h2>Síntese</h2>
+                            <p className='m-3'>{arcana.synthesis}</p>
                         </Col>
                     </Row>
 

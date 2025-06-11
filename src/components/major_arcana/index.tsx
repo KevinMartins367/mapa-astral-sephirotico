@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Card, Row, Col, Image } from 'react-bootstrap';
 
 import { Major_arcanas } from './styles';
@@ -59,7 +59,14 @@ export default function Major_arcana(props: any) {
 
             <Card>
                 <Card.Header>
-                    <h1>{arcana.name ?? 'titulo de informações'}</h1>
+                    <Row>
+                        <Col sm={12} md={10} lg={10}>
+                            <h2 >{arcana.name ?? 'titulo de informações'}</h2>
+                        </Col>
+                        <Col sm={12} md={2} lg={2}>
+                            <button className='btn btn-primary' onClick={() => props.showModal(props.arcana, 'major')}>Combinações</button>
+                        </Col>
+                    </Row>
                 </Card.Header>
 
                 <Card.Body>
