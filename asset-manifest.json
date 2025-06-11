@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mapa-astral-sephirotico/static/css/main.3ce7bc41.css",
-    "main.js": "/mapa-astral-sephirotico/static/js/main.0830bac8.js",
+    "main.js": "/mapa-astral-sephirotico/static/js/main.57cca0b5.js",
     "static/js/96.b0cabddf.chunk.js": "/mapa-astral-sephirotico/static/js/96.b0cabddf.chunk.js",
     "static/js/670.95486f94.chunk.js": "/mapa-astral-sephirotico/static/js/670.95486f94.chunk.js",
     "static/js/720.4fdb109d.chunk.js": "/mapa-astral-sephirotico/static/js/720.4fdb109d.chunk.js",
@@ -11,7 +11,7 @@
     "static/js/339.d3699196.chunk.js": "/mapa-astral-sephirotico/static/js/339.d3699196.chunk.js",
     "index.html": "/mapa-astral-sephirotico/index.html",
     "main.3ce7bc41.css.map": "/mapa-astral-sephirotico/static/css/main.3ce7bc41.css.map",
-    "main.0830bac8.js.map": "/mapa-astral-sephirotico/static/js/main.0830bac8.js.map",
+    "main.57cca0b5.js.map": "/mapa-astral-sephirotico/static/js/main.57cca0b5.js.map",
     "96.b0cabddf.chunk.js.map": "/mapa-astral-sephirotico/static/js/96.b0cabddf.chunk.js.map",
     "670.95486f94.chunk.js.map": "/mapa-astral-sephirotico/static/js/670.95486f94.chunk.js.map",
     "720.4fdb109d.chunk.js.map": "/mapa-astral-sephirotico/static/js/720.4fdb109d.chunk.js.map",
@@ -22,6 +22,6 @@
   },
   "entrypoints": [
     "static/css/main.3ce7bc41.css",
-    "static/js/main.0830bac8.js"
+    "static/js/main.57cca0b5.js"
   ]
 }
